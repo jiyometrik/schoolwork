@@ -1,1 +1,0 @@
-LSS: Lower Secondary Science

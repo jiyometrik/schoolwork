@@ -4,7 +4,9 @@ node_modules/
 
 # latex
 *.aux
+*.dvi
 *.fdb_latexmk
+*.ps
 *.log
 *.toc
 *.xdv
@@ -14,8 +16,9 @@ node_modules/
 
 # media
 *.mp3
-*.jpg
-*.png
-*.jpeg
 *.mp4
 *.mov
+*.jpeg
+*.jpg
+*.png
+*.wav
