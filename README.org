@@ -10,7 +10,10 @@ when I change my operating system.
    :CUSTOM_ID: file-structure
    :END:
 
-Each large directory indicates the year and the level. In each large
-directory, there are sub-directories for each subject taken in that
-year. In each subject directory, each piece of work is labelled with the
+Each large directory indicates the year and the level.
+
+In each large directory, there are sub-directories for each subject taken in that
+year.
+
+In each subject directory, each piece of work is labelled with the
 date and the name of the assignment.
