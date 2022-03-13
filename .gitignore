@@ -1,0 +1,13 @@
+# infocomm projects
+.vscode/
+node_modules/
+
+# latex
+*.aux
+*.fdb_latexmk
+*.log
+*.toc
+*.xdv
+
+# markdown
+*.md
