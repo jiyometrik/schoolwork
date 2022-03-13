@@ -11,3 +11,11 @@ node_modules/
 
 # markdown
 *.md
+
+# media
+*.mp3
+*.jpg
+*.png
+*.jpeg
+*.mp4
+*.mov
