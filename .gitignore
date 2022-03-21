@@ -6,8 +6,10 @@ node_modules/
 *.aux
 *.dvi
 *.fdb_latexmk
+*.fls
 *.ps
 *.log
+*.synctex*
 *.toc
 *.xdv
 
