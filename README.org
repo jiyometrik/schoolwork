@@ -16,4 +16,5 @@ In each large directory, there are sub-directories for each subject taken in tha
 year.
 
 In each subject directory, each piece of work is labelled with the
-date and the name of the assignment.
+date and the name of the assignment (in the format MMDD).
+For year-long projects, no date is given.
