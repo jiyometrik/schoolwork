@@ -1,9 +1,9 @@
-\documentclass[12pt, a4paper, answers]{exam}
+\documentclass[12pt, answers]{exam}
 
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1in, a4paper]{geometry}
 
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage{notomath, noto-mono}
+\usepackage{plex-otf, eulervm}
 
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{siunitx}
@@ -21,13 +21,17 @@
 
 	%%% QUESTION 1: 21 March %%%
 	\question (\textbf{21 Mar}) Simplify the algebraic fraction
-	\(\dfrac{a^4 - a^2b^2}{(a - b)^2} \div \dfrac{a(a + b)}{b^2} \times \dfrac{b}{a}\).
+	\(\dfrac{a^4-a^2b^2}{(a-b)^2} \div \dfrac{a(a+b)}{b^2} \times \dfrac{b}{a}\).
 
 	\begin{solution}
 		\begin{align*}
-			\dfrac{a^4 - a^2b^2}{(a - b)^2} \div \dfrac{a(a + b)}{b^2} \times \dfrac{b^2}{a} & = \dfrac{\cancel{a^2}\cancel{(a+b)}\cancel{(a-b)}}{(a-b)^\cancel{2}} \times \dfrac{b^2}{\cancel{a}\cancel{(a+b)}} \times \dfrac{b^2}{\cancel{a}} \\
-			                                                                                 & = \dfrac{b^4}{a-b}
+			 & \dfrac{a^4-a^2b^2}{(a-b)^2} \div \dfrac{a(a+b)}{b^2} \times \dfrac{b^2}{a}                                            \\
+			 & = \dfrac{\cancel{a^2(a+b)(a-b)}}{(a-b)^\cancel{2}} \times \dfrac{b^2}{\cancel{a(a+b)}} \times \dfrac{b^2}{\cancel{a}} \\
+			 & = \dfrac{b^4}{a-b}
 		\end{align*}
 	\end{solution}
+
+
+	%%% QUESTION 2: DD MMM %%%
 \end{questions}
 \end{document}
