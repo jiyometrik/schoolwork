@@ -40,10 +40,8 @@ BraceWrapping:
   AfterUnion: false
   AfterExternBlock: false
   BeforeCatch: false
-  # BeforeCatch: true
   BeforeLambdaBody: false
   BeforeElse: false
-  # BeforeElse: true
   BeforeWhile: false
   IndentBraces: false
   SplitEmptyFunction: false
