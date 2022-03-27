@@ -16,11 +16,8 @@ node_modules/
 # markdown
 *.md
 
-# media
+# media (except pngs, they're important)
 *.mp3
 *.mp4
 *.mov
-*.jpeg
-*.jpg
-*.png
 *.wav

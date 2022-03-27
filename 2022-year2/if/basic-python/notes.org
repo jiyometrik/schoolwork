@@ -1,0 +1,266 @@
+* Basic Python
+A short document detailing things you probably need to know in order to
+survive in the Python course this year.
+
+This document is not exhaustive, it is recommended you attempt exercises
+you find online.
+
+** Comments
+
+Comments:
+
+- start with a =#=,
+- are ignored by Python (you can write whatever you want in comments),
+- help you understand what your code is doing.
+
+#+begin_src python
+# This is a comment
+# Comments will be ignored by Python
+#+end_src
+
+** Output
+In order to output, say, a line of text to the screen, we use the
+=print()= function.
+
+#+begin_src python
+# remember, this is a comment and will be ignored.
+print("hi!") # will print hi! to the screen
+#+end_src
+
+*** Different Endings
+Usually, when something is printed to the screen, Python automatically
+appends (adds to the back) a newline, which is the equivalent of
+pressing =Enter=.
+
+To change this, we can use the =end= parameter in the =print()=
+function.
+
+#+begin_src python
+# this is a comment, REMEMBER
+print('hi!') # prints hi! normally, appends a newline (represented by \n)
+
+print('successive', end=' ') # changes the newline to a space
+print('words', end=' --- ') # changes the newline to a space with three dashes
+#+end_src
+
+*** Concatenation
+Say you wanted to put two strings together and output them as one. We
+can do that.
+
+#+begin_src python
+print("hello " + "there!") # using the + operator
+print("hello", "there!") # using the , operator
+#+end_src
+
+** Variables and Datatypes
+You can think of a variable like a container, or a box, which stores a
+value.
+
+This value can then be referenced by stating the name of said box.
+
+#+begin_src python
+number = 1
+string = "hello there" # a string is anything that is surrounded by quotes
+boolean = True # a boolean is either True or False
+
+print(number, string, boolean)
+#+end_src
+
+*** Conversion of Datatypes
+Let's say you have a string with the value of ="5"=. If you wanted to
+use it in a calculation, you couldn't just use the string and add it to
+a number, right?
+
+Thankfully, there are ways to convert strings to numbers (integers),
+vice versa, and more.
+
+#+begin_src python
+# convert a string to an integer
+a_string = "5070"
+an_integer = int(a_string)
+
+# convert an integer to a string
+num1 = 680
+print(str(num1) + " is a number.") # recall from the previous section
+#+end_src
+
+*** Operators
+Operators can be split into two categories - arithmetic (for performing
+calculations), and logical (for use in selections, later).
+
+Here's a few examples:
+
+#+begin_src python
+a = 1 + 2
+b = 2 - 35
+c = 3 * 4
+d1 = 3 / 4 # produces a decimal number (or what we call floats), 0.75
+d2 = 3 // 4 # produces only the quotient, 0
+e = 2 ** 3 # exponentiation (2 to the power of 3)
+
+# we can also use these operators to assign new values to variables
+x, y = 5, 2
+x += y # adds the value of y to x
+x *= y # multiples the value of y to the new x, 7
+# ...
+#+end_src
+
+*** Strings
+Strings are a /different/ class of datatype - they're essentially
+"strings" of characters.
+
+#+begin_quote
+  A character is a single 'unit' within a string, such as 'D' or '$'.
+#+end_quote
+
+We can perform some operations on strings.
+
+#+begin_src python
+string = "So you're challenging me? 1812 was a damn fine year."
+
+print(string.upper()) # changes all to uppercase
+print(string.lower()) # changes all to lowercase
+
+print(string.isalpha()) # check whether all characters are alphabets
+print(string.isdigit()) # check whether all characters are digits
+print(string.isalnum()) # check whether all characters are either alphabets or digits
+
+print(len(string)) # gets the length of the string
+print(string.count('i')) # counts the number of a certain character
+
+# * we start counting from 0, not from 1
+print(string[0]) # prints out the first character
+print(string[4]) # prints out the ___ character (what do you think?)
+
+# * negative (start counting from the back of the string)
+print(string[-5]) # prints out the ___ character (what do you think?)
+
+# * take out a chunk of the string
+print(string[3:7]) # prints out the 4th to 7th character (8th not included)
+
+# prints the index of the first occurrence of the character
+print(string.find('o')) # will it output 1 or 2?
+#+end_src
+
+** Selection (If Statements)
+Sometimes, you might want your computer to make decisions for you. We
+can do that using if-statements.
+
+The general structure of an if-statement is:
+
+#+begin_example
+if <condition>:
+    <statements>
+elif <other condition>: (if the first condition isn't fulfilled)
+    <statements>
+else: (if none of the above conditions are fulfilled)
+    <statements>
+#+end_example
+
+Notice the 4-space indentation before the statements. Here's an example:
+
+#+begin_src python
+a, b = 5, 3
+
+if a > b:
+    print("oh wow a is larger than b")
+elif a < b:
+    print("a is smaller than b")
+else:
+    print("a is probably equal to b")
+#+end_src
+
+** Loops
+Loops essentially repeat a set of statements for a predefined number of
+times.
+
+*** For-Loops
+Using for-loops, you have to specify the number of times you want the
+statements to be repeated.
+
+One of the ways you can do this is by using =range()=.
+
+#+begin_src python
+for i in range(5):
+    print(i)
+#+end_src
+
+Using the =range()= function, you can specify a starting point, a
+stopping point, and an interval which you want to skip by.
+
+#+begin_src python
+for i in range(1, 6): # what happens now?
+    print(i)
+
+for j in range(0, 19, 3): # the third number is the skipping interval
+    print(j, end=' ')
+
+# ...
+#+end_src
+
+*** Looping through Strings
+We can also loop through strings in an easier fashion
+
+#+begin_src python
+for c in "hello, world": # the variable c will loop through each character in the string
+    print(c, end=' ')
+#+end_src
+
+*** While-Loops
+Although similar in principle to the for-loop, the while-loop takes a
+predefined *condition* and repeats the statements *until* the condition
+is proven false.
+
+Below are two ways you can count from 1 to 10.
+
+#+begin_src python
+# for-loop
+for i in range(1, 11):
+    print(i, end=' ')
+
+# while-loop
+j = 1 # be sure to define the variable before using it in a while-loop
+while j <= 10: # less than or equal to
+    print(j)
+    j = j + 1 # increment j by 1 every time to keep the counting going
+#+end_src
+
+Which method do you prefer?
+
+** Lists
+Lists are a way for you to store many variables within an arbitary
+container.
+
+Strings are a type of lists too!
+
+#+begin_src python
+list1 = [1, 5, 6, 7, 11] # this is a list of integers
+
+# we can perform certain operations on lists
+print(list1[4]) # just like strings, we can index elements
+print(len(list1)) # length of the list
+
+# adding elements
+list1.append(99) # adds 99 to the back of the list
+list1.insert(2, 34) # inserts 34 as the 3rd element of the list
+
+# removing elements
+list1.pop(0) # removes the first element
+list1.pop() # removes the last element if index unspecified
+
+# list1.clear() clears the list (removes all elements)
+
+# changing elements
+list1[2] = 4 # simple as that
+
+# looping through lists, just like strings
+for element in list1:
+    print(element, end=' ')
+
+# list comprehension
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+# filters the elements in "fruits" which contain the letter "a"
+newlist = [x for x in fruits if "a" in x]
+print(newlist)
+#+end_src
