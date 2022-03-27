@@ -142,6 +142,15 @@ print(string[3:7]) # prints out the 4th to 7th character (8th not included)
 print(string.find('o')) # will it output 1 or 2?
 #+end_src
 
+** Input
+We can take in input from the user by using the =input()= function.
+
+#+BEGIN_SRC python
+# for integers, remember to do the conversion when inputting
+user_number = int(input("enter a number pls: "))
+print(user_number + 1)
+#+END_SRC
+
 ** Selection (If Statements)
 Sometimes, you might want your computer to make decisions for you. We
 can do that using if-statements.
