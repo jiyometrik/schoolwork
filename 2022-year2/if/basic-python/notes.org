@@ -86,7 +86,7 @@ print(str(num1) + " is a number.") # recall from the previous section
 
 *** Operators
 Operators can be split into two categories - arithmetic (for performing
-calculations), and logical (for use in selections, later).
+calculations), and comparison (for use in selections, later).
 
 Here's a few examples:
 
@@ -178,6 +178,19 @@ elif a < b:
 else:
     print("a is probably equal to b")
 #+end_src
+
+*** Comparison Operators
+Beforehand, I mentioned that there are some comparison operators
+you should probably know about. Here are them now:
+
+| Operator | Meaning |
+|----------+---------|
+| < | less than |
+| > | more than |
+| <= | less than or equal to |
+| >= | more than or equal to |
+| == | equal to |
+| != | not equal to |
 
 ** Loops
 Loops essentially repeat a set of statements for a predefined number of
