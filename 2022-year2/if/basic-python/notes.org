@@ -67,7 +67,7 @@ print(number, string, boolean)
 #+end_src
 
 *** Conversion of Datatypes
-Let's say you have a string with the value of ="5"=. If you wanted to
+Let's say you have a string with the value of ='5'=. If you wanted to
 use it in a calculation, you couldn't just use the string and add it to
 a number, right?
 
