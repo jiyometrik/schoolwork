@@ -10,8 +10,7 @@
 \usepackage{tikz}
 \usepackage{cancel}
 
-\lhead{Problem of the Day 2022}
-\rhead{\thepage}
+\pagestyle{plain}
 
 \begin{document}
 \begin{center}
@@ -54,6 +53,69 @@
 			 & = \dfrac{4x^3}{a^4-x^4}-\dfrac{4x^3}{a^4+x^4}+\dfrac{8x^7}{a^8-x^8}                           \\
 			 & = \dfrac{8x^7}{a^8-x^8}+\dfrac{8x^7}{a^8-x^8}                                                 \\
 			 & = \dfrac{16x^7}{a^8-x^8}
+		\end{align*}
+	\end{solution}
+
+	%%% QUESTION 4: 24 March %%%
+	\question (\textbf{24 Mar}) Factorise completely
+	\(64x^6 - y^{12}\).
+	\begin{solution}
+		\begin{align*}
+			64x^6 - y^{12} & = (8x^3 + y^6)(8x^3 - y^6)                                     \\
+			               & = (2x + y^2)(2x - y^2)(4x^2 + 2xy^2 + y^4)(4x^2 - 2xy^2 + y^4) \\
+		\end{align*}
+	\end{solution}
+
+	%%% QUESTION 5: 25 March %%%
+	\question (\textbf{25 Mar}) Factorise completely
+	\(x^2(x-1)^2 + 32(x-x^2) + 60\).
+	\begin{solution}
+		\begin{align*}
+			 & x^2(x-1)^2 + 32(x-x^2) + 60             \\
+			 & = x^2(x-1)^2 - 32x(x-1) + 60            \\
+			 & = [x(x-1)]^2 - 32[x(x-1)] + 16^2 - 14^2 \\
+			 & = [x(x-1) - 16]^2 - 14^2                \\
+			 & = (x^2-x-2)(x^2-x-30)                   \\
+			 & = (x-6)(x-2)(x+1)(x+5)
+		\end{align*}
+	\end{solution}
+
+	%%% QUESTION 6: 28 March %%%
+	\question (\textbf{28 Mar}) Simplify
+	\(\dfrac{x^2-4}{x^2-4x+4}+\dfrac{2-x}{x+2}\).
+	\begin{solution}
+		\begin{align*}
+			 & \dfrac{x^2-4}{x^2-4x+4} + \dfrac{2-x}{x+2}                            \\
+			 & = \dfrac{(x+2)\cancel{(x-2)}}{(x-2)^\cancel{2}} + \dfrac{-(x-2)}{x+2} \\
+			 & = \dfrac{(x+2)^2 - (x-2)^2}{(x+2)(x-2)}                               \\
+			 & = \dfrac{8x}{x^2 - 4}
+		\end{align*}
+	\end{solution}
+
+	%%% QUESTION 7: 29 March %%%
+	\question (\textbf{29 Mar}) An equation in \(x\),
+	\(\dfrac{m}{x-1} + \dfrac{3}{1-x} = 1\), has a positive solution.
+	Find the possible range of values for \(m\).
+	\begin{solution}
+		\begin{align*}
+			\dfrac{m}{x-1} + \dfrac{3}{1-x} & = 1     \\
+			m - 3                           & = x - 1 \\
+			x                               & = m - 2 \\
+			\because x                      & > 0,    \\
+			\therefore m                    & >2      \\
+		\end{align*}
+	\end{solution}
+
+	%%% QUESTION 8: 30 March %%%
+	\question (\textbf{30 Mar}) Given that \(\dfrac{1}{x} + \dfrac{1}{y} = 3\),
+	find the value of \(\dfrac{3x + 4xy + 3y}{x + 2xy + y}\).
+	\begin{solution}
+		\begin{align*}
+			\because \dfrac{1}{x} + \dfrac{1}{y} & = 3                                           \\
+			\therefore x + y                     & = 3xy                                         \\
+			\\
+			\dfrac{3x+4xy+3y}{x+2xy+y}           & = \dfrac{\frac{13}{3}(x+y)}{\frac{5}{3}(x+y)} \\
+			                                     & = \dfrac{13}{5}                               \\
 		\end{align*}
 	\end{solution}
 \end{questions}
