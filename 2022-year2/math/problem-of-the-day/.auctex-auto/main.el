@@ -13,6 +13,7 @@
     "mathpazo"
     "amsmath"
     "amssymb"
+    "amsthm"
     "siunitx"
     "tikz"
     "setspace"
