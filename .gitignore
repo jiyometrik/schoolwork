@@ -3,6 +3,7 @@
 node_modules/
 
 # latex
+.auctex-auto/
 *.aux
 *.dvi
 *.fdb_latexmk

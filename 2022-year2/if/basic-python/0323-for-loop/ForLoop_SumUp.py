@@ -5,7 +5,7 @@ compute the sum of all the n numbers the user enters.
 
 n = int(input("how many numbers do you want to add? "))
 total = 0
-for i in range(1, n + 1):
-    num = int(input(f"[{i}]: "))
+for i in range(n):
+    num = int(input("enter a number: "))
     total += num
-print(f"total: {total}")
+print(f"the total is: {}", total)
