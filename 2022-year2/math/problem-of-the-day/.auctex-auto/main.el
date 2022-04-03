@@ -10,6 +10,7 @@
     "exam"
     "exam12"
     "geometry"
+    "mathpazo"
     "amsmath"
     "amssymb"
     "siunitx"
