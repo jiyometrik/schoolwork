@@ -151,22 +151,60 @@
 	\end{numcases}
 	\begin{solution}
 		\begin{align*}
-			\text{From (1):}                                      &                                                                            \\
-			xy                                                    & = \dfrac{x+y}{5} \text{\quad(3)}                                           \\
-			\text{Substitute (3) into (2):}                       &                                                                            \\
-			x+y                                                   & = 5x - 5y                                                                  \\
-			4x                                                    & = 6y                                                                       \\
-			x                                                     & = \dfrac{3}{2}y \text{\quad(4)}                                            \\
-			\text{Substitute (4) into (2):}                       &                                                                            \\
-			\dfrac{3}{2}y^{2}                                     & = \dfrac{1}{2}y                                                            \\
-			y\left(\dfrac{3}{2}y-\dfrac{1}{2}\right)              & = 0                                                                        \\
+			\text{From (1):}                                      &                                                                                                 \\
+			xy                                                    & = \dfrac{x+y}{5} \text{\quad(3)}                                                                \\
+			\text{Substitute (3) into (2):}                       &                                                                                                 \\
+			x+y                                                   & = 5x - 5y                                                                                       \\
+			4x                                                    & = 6y                                                                                            \\
+			x                                                     & = \dfrac{3}{2}y \text{\quad(4)}                                                                 \\
+			\text{Substitute (4) into (2):}                       &                                                                                                 \\
+			\dfrac{3}{2}y^{2}                                     & = \dfrac{1}{2}y                                                                                 \\
+			y\left(\dfrac{3}{2}y-\dfrac{1}{2}\right)              & = 0                                                                                             \\
 			\therefore y                                          & = 0 \left(\text{rej., } \dfrac{1}{y} \text{ cannot be undefined}\right) \text{or } \dfrac{1}{3} \\
-			\text{Substitute } y = \dfrac{1}{3} \text{ into (2):} &                                                                            \\
-			\dfrac{1}{3}x                                         & = x - \dfrac{1}{3}                                                         \\
-			\dfrac{2}{3}x                                         & = \dfrac{1}{3}                                                             \\
-			x                                                     & = \dfrac{1}{2}                                                             \\
+			\text{Substitute } y = \dfrac{1}{3} \text{ into (2):} &                                                                                                 \\
+			\dfrac{1}{3}x                                         & = x - \dfrac{1}{3}                                                                              \\
+			\dfrac{2}{3}x                                         & = \dfrac{1}{3}                                                                                  \\
+			x                                                     & = \dfrac{1}{2}                                                                                  \\
 			\therefore x                                          & = \dfrac{1}{2} \text{ and } y = \dfrac{1}{3}
 		\end{align*}
 	\end{solution}
+
+	\question (\textbf{5 Apr})
+	\begin{parts}
+		\part Find the equation of the line \(l_{1}\) that makes a \ang{45} angle with the positive \(x\)-axis and its \(y\)-intercept is \(-3\).
+		\begin{solution}
+			Since the angle between the positive \(x\)-axis and \(l_{1}\) has to be \ang{45}, the gradient (\(m\)) can only be \(1\).
+			Since the \(y\)-intercept is \(-3\), the value of \(c\) in the gradient-intercept form has to be \(-3\) as well.
+			Therefore, the equation of line \(l_{1}\) is \(y = x - 3\).
+		\end{solution}
+
+	\part Hence, find the equation of a vertical line \(l_{2}\) which
+		intersects with \(l_{1}\) at a point with a \(y\)-coordinate of 10.
+		\begin{solution}
+			\begin{align*}
+				y &= x - 3 \\
+				10 &= x - 3 \\
+				\therefore x &= 13
+			\end{align*}
+			The equation of line \(l_{2}\) is \(x = 13\).
+		\end{solution}
+
+	\part Are the following three points collinear:
+		the intersection point between \(l_{1}\) and \(l_{2}\),
+		the origin, and \((-6.5, -5)\)?
+		\begin{solution}
+			There can be a line, \(l_{3}\), with both the origin and the intersection on it.
+			The equation of this line would thus be:
+			\begin{equation*}
+				y = \dfrac{10 - 0}{13 - 0}x = \dfrac{10}{13}x
+			\end{equation*}
+			Substituting \(x = -6.5\) and \(y = -5\) into that equation,
+			we see that:
+			\[
+				-5 = \dfrac{10}{13} \times -\dfrac{13}{2}
+			\]
+			Therefore, all three points are collinear.
+		\end{solution}
+	\end{parts}
 \end{questions}
 \end{document}
