@@ -2,8 +2,6 @@
 
 \usepackage[margin=1in, a4paper]{geometry}
 
-\usepackage{mathpazo}
-
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{siunitx}
 \usepackage{tikz}
@@ -11,6 +9,7 @@
 \usepackage{cancel}
 \usepackage{cases}
 \usepackage{showlabels}
+\usepackage{pxfonts}
 
 \pagestyle{plain}
 
@@ -178,18 +177,18 @@
 			Therefore, the equation of line \(l_{1}\) is \(y = x - 3\).
 		\end{solution}
 
-	\part Hence, find the equation of a vertical line \(l_{2}\) which
+		\part Hence, find the equation of a vertical line \(l_{2}\) which
 		intersects with \(l_{1}\) at a point with a \(y\)-coordinate of 10.
 		\begin{solution}
 			\begin{align*}
-				y &= x - 3 \\
-				10 &= x - 3 \\
-				\therefore x &= 13
+				y            & = x - 3 \\
+				10           & = x - 3 \\
+				\therefore x & = 13
 			\end{align*}
 			The equation of line \(l_{2}\) is \(x = 13\).
 		\end{solution}
 
-	\part Are the following three points collinear:
+		\part Are the following three points collinear:
 		the intersection point between \(l_{1}\) and \(l_{2}\),
 		the origin, and \((-6.5, -5)\)?
 		\begin{solution}
@@ -206,5 +205,14 @@
 			Therefore, all three points are collinear.
 		\end{solution}
 	\end{parts}
+
+	\question Expand and simplify the expression \(\left[x\left(x^{4}-y^{4}\right)-3xy\left(-y\right)^{3}\right] \cdot x^{2}y\).
+	\begin{solution}
+		\begin{align*}
+			 & \left[x\left(x^{4}-y^{4}\right)-3xy\left(-y\right)^{3}\right] \cdot x^{2}y \\
+			 & = x^{3}y\left[x^{4}-y^{4}-3y\left(-y\right)^{3}\right]                     \\
+			 & = x^{3}y\left(x^{4}+2y^{4}\right)
+		\end{align*}
+	\end{solution}
 \end{questions}
 \end{document}

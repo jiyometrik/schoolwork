@@ -1,15 +1,8 @@
 * Schoolwork
-  :PROPERTIES:
-  :CUSTOM_ID: schoolwork
-  :END:
 A repository of the schoolwork I do (digitally) so that it isn't lost
 when I change my operating system.
 
 ** File Structure
-   :PROPERTIES:
-   :CUSTOM_ID: file-structure
-   :END:
-
 Each large directory indicates the year and the level.
 
 In each large directory, there are sub-directories for each subject taken in that

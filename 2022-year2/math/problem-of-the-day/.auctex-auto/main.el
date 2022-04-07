@@ -10,7 +10,6 @@
     "exam"
     "exam12"
     "geometry"
-    "mathpazo"
     "amsmath"
     "amssymb"
     "amsthm"
@@ -19,6 +18,7 @@
     "setspace"
     "cancel"
     "cases"
-    "showlabels"))
+    "showlabels"
+    "pxfonts"))
  :latex)
 

@@ -6,7 +6,6 @@ This document is not exhaustive, it is recommended you attempt exercises
 you find online.
 
 ** Comments
-
 Comments:
 
 - start with a =#=,
@@ -189,7 +188,7 @@ you should probably know about. Here are them now:
 | =>= | more than |
 | =<== | less than or equal to |
 | =>== | more than or equal to |
-| == | equal to |
+| ==== | equal to |
 | =!== | not equal to |
 
 ** Loops
