@@ -1,5 +1,4 @@
 \documentclass[12pt, answers]{exam}
-
 \usepackage[margin=1in, a4paper]{geometry}
 
 \usepackage{amsmath, amssymb, amsthm}
@@ -10,10 +9,8 @@
 \usepackage{cases}
 \usepackage{showlabels}
 
-% \usepackage{notomath, noto-mono}
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{helvet}
-\usepackage[italic]{mathastext}
+\usepackage[T1]{fontenc}
+\usepackage{txfonts}
 
 \pagestyle{plain}
 
@@ -262,18 +259,18 @@
 
 			\begin{align*}
 				\text{total surface area}
-				&= 2 \cdot \left[\left(5a + 4b\right)\left(4a+3b\right) - 4(a+b)\right] \\
-				&= 2\left(20a^{2}+15ab+16ab+12b^{2}-4\left(a+b\right)\right) \\
-				&= 40a^{2} + 62ab + 24b^{2} - 8a - 8b
+				 & = 2 \cdot \left[\left(5a + 4b\right)\left(4a+3b\right) - 4(a+b)\right] \\
+				 & = 2\left(20a^{2}+15ab+16ab+12b^{2}-4\left(a+b\right)\right)            \\
+				 & = 40a^{2} + 62ab + 24b^{2} - 8a - 8b
 			\end{align*}
 		\end{solution}
 		\part Find the volume of the paper box.
-			\begin{solution}
-				\begin{align*}
-					\text{volume of paper box} &= (3a+2b)(2a+b)(a+b) \\
-																			 &= 6a^{3} + 13a^{2}b + 9ab^{2} + 2b^{3}
-				\end{align*}
-			\end{solution}
+		\begin{solution}
+			\begin{align*}
+				\text{volume of paper box} & = (3a+2b)(2a+b)(a+b)                   \\
+				                           & = 6a^{3} + 13a^{2}b + 9ab^{2} + 2b^{3}
+			\end{align*}
+		\end{solution}
 	\end{parts}
 \end{questions}
 \end{document}
