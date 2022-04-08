@@ -4,7 +4,7 @@
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("exam" "12pt" "answers")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("geometry" "margin=1in" "a4paper")))
+                     '(("geometry" "margin=1in" "a4paper") ("mathastext" "italic")))
    (TeX-run-style-hooks
     "latex2e"
     "exam"
@@ -19,7 +19,7 @@
     "cancel"
     "cases"
     "showlabels"
-    "notomath"
-    "noto-mono"))
+    "helvet"
+    "mathastext"))
  :latex)
 
