@@ -19,6 +19,7 @@
     "cancel"
     "cases"
     "showlabels"
-    "pxfonts"))
+    "notomath"
+    "noto-mono"))
  :latex)
 
