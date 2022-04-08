@@ -214,5 +214,62 @@
 			 & = x^{3}y\left(x^{4}+2y^{4}\right)
 		\end{align*}
 	\end{solution}
+
+	\question (\textbf{8 Apr}) There is a rectangluar piece of paper
+	with length \((5a + 4b)\) and breadth \((4a + 3b)\). A square of
+	side length \((a + b)\) is cut away from the four corners of the
+	paper. Using the remaining paper, a box without its top cover
+	can be folded.
+	\begin{parts}
+		\part Find the total surface area of the folded paper box.
+		\begin{solution}
+			Draw the diagram.
+
+			\begin{tikzpicture}
+				\draw [red, dashed] (0, 0) -- node[below] {\(a + b\)} (2, 0);
+				\draw [red, dashed] (0, 0) -- (0, 2);
+				\draw (0, 2) -- (2, 2);
+				\draw (2, 2) -- (2, 0);
+				\draw (0, 2) -- (0, 6);
+				\draw (0, 6) -- (2, 6);
+				\draw [blue, dashed] (2, 6) -- node[right] {\(2a + b\)} (2, 2);
+				\draw [red, dashed] (0, 6) -- (0, 8);
+				\draw [red, dashed] (0, 8) -- (2, 8);
+				\draw (2, 8) -- (2, 6);
+				\draw (2, 8) -- node[above] {\(5a + 4b\)} (8, 8);
+				\draw [latex-](0, 8.25) -- (4.25, 8.25);
+				\draw [-latex](5.75, 8.25) -- (10, 8.25);
+				\draw (8, 8) -- (8, 6);
+				\draw [blue, dashed] (8, 6) -- (8, 2);
+				\draw (8, 6) -- (10, 6);
+				\draw (10, 6) -- node[right] {\(4a + 3b\)}( 10, 2);
+				\draw [-latex](10.75, 4.5) -- (10.75, 8);
+				\draw [-latex](10.75, 3.5) -- (10.75, 0);
+				\draw (10, 2) -- (8, 2);
+				\draw (8, 2) -- (8, 0);
+				\draw (8, 0) -- (2, 0);
+				\draw [magenta, dashed] (8, 2) -- node[above] {\(3a + 2b\)}(2, 2);
+				\draw [magenta, dashed] (8, 6) -- (2, 6);
+				\draw [red, dashed] (8, 8) -- (10, 8);
+				\draw [red, dashed] (10, 8) -- (10, 6);
+				\draw [red, dashed] (10, 2) -- (10, 0);
+				\draw [red, dashed] (10, 0) -- (8, 0);
+			\end{tikzpicture}
+
+			\begin{align*}
+				\text{total surface area}
+				&= 2 \cdot \left[\left(5a + 4b\right)\left(4a+3b\right) - 4(a+b)\right] \\
+				&= 2\left(20a^{2}+15ab+16ab+12b^{2}-4\left(a+b\right)\right) \\
+				&= 40a^{2} + 62ab + 24b^{2} - 8a - 8b
+			\end{align*}
+		\end{solution}
+		\part Find the volume of the paper box.
+			\begin{solution}
+				\begin{align*}
+					\text{volume of paper box} &= (3a+2b)(2a+b)(a+b) \\
+																			 &= 6a^{3} + 13a^{2}b + 9ab^{2} + 2b^{3}
+				\end{align*}
+			\end{solution}
+	\end{parts}
 \end{questions}
 \end{document}
