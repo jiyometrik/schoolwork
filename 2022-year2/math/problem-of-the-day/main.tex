@@ -1,7 +1,8 @@
+%! TeX program = xelatex
 \documentclass[12pt, answers]{exam}
 \usepackage[margin=1in, a4paper]{geometry}
 
-\usepackage{amsmath, amssymb, amsthm}
+\usepackage{amsmath, amsthm, amssymb}
 \usepackage{siunitx}
 \usepackage{tikz}
 \usepackage{setspace}
@@ -10,7 +11,7 @@
 \usepackage{showlabels}
 
 \usepackage[T1]{fontenc}
-\usepackage{txfonts}
+\usepackage{pxfonts}
 
 \pagestyle{plain}
 
@@ -23,13 +24,13 @@
 
 \begin{questions}
 	\question (\textbf{21 Mar}) Simplify the algebraic fraction
-	\( \dfrac{a^4-a^2b^2}{(a-b)^2} \div \dfrac{a(a+b)}{b^2} \times \dfrac{b}{a} \).
+	\( \frac{a^4-a^2b^2}{(a-b)^2} \div \frac{a(a+b)}{b^2} \times \frac{b}{a} \).
 
 	\begin{solution}
 		\begin{align*}
-			 & \dfrac{a^4-a^2b^2}{(a-b)^2} \div \dfrac{a(a+b)}{b^2} \times \dfrac{b^2}{a}                                              \\
-			 & = \dfrac{\cancel{a^2(a+b)(a-b)}}{(a-b)^{\cancel{2}}} \times \dfrac{b^2}{\cancel{a(a+b)}} \times \dfrac{b^2}{\cancel{a}} \\
-			 & = \dfrac{b^4}{a-b}
+			 & \frac{a^4-a^2b^2}{(a-b)^2} \div \frac{a(a+b)}{b^2} \times \frac{b^2}{a}                                              \\
+			 & = \frac{\cancel{a^2(a+b)(a-b)}}{(a-b)^{\cancel{2}}} \times \frac{b^2}{\cancel{a(a+b)}} \times \frac{b^2}{\cancel{a}} \\
+			 & = \frac{b^4}{a-b}
 		\end{align*}
 	\end{solution}
 
@@ -42,14 +43,14 @@
 		\end{align*}
 	\end{solution}
 
-	\question (\textbf{23 Mar}) Simplify \(\dfrac{1}{a-x}-\dfrac{1}{a+x}-\dfrac{2x}{a^2+x^2}-\dfrac{4x^3}{a^4+x^4}+\dfrac{8x^7}{a^8-x^8}\).
+	\question (\textbf{23 Mar}) Simplify \(\frac{1}{a-x}-\frac{1}{a+x}-\frac{2x}{a^2+x^2}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8}\).
 	\begin{solution}
 		\begin{align*}
-			 & \dfrac{1}{a-x}-\dfrac{1}{a+x}-\dfrac{2x}{a^2+x^2}-\dfrac{4x^3}{a^4+x^4}+\dfrac{8x^7}{a^8-x^8} \\
-			 & = \dfrac{2x}{a^2-x^2}-\dfrac{2x}{a^2+x^2}-\dfrac{4x^3}{a^4+x^4}+\dfrac{8x^7}{a^8-x^8}         \\
-			 & = \dfrac{4x^3}{a^4-x^4}-\dfrac{4x^3}{a^4+x^4}+\dfrac{8x^7}{a^8-x^8}                           \\
-			 & = \dfrac{8x^7}{a^8-x^8}+\dfrac{8x^7}{a^8-x^8}                                                 \\
-			 & = \dfrac{16x^7}{a^8-x^8}
+			 & \frac{1}{a-x}-\frac{1}{a+x}-\frac{2x}{a^2+x^2}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8} \\
+			 & = \frac{2x}{a^2-x^2}-\frac{2x}{a^2+x^2}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8}        \\
+			 & = \frac{4x^3}{a^4-x^4}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8}                         \\
+			 & = \frac{8x^7}{a^8-x^8}+\frac{8x^7}{a^8-x^8}                                              \\
+			 & = \frac{16x^7}{a^8-x^8}
 		\end{align*}
 	\end{solution}
 
@@ -63,6 +64,7 @@
 	\end{solution}
 
 	\question (\textbf{25 Mar}) Factorise completely
+
 	\(x^2(x-1)^2 + 32(x-x^2) + 60\).
 	\begin{solution}
 		\begin{align*}
@@ -76,38 +78,38 @@
 	\end{solution}
 
 	\question (\textbf{28 Mar}) Simplify
-	\(\dfrac{x^2-4}{x^2-4x+4}+\dfrac{2-x}{x+2}\).
+	\(\frac{x^2-4}{x^2-4x+4}+\frac{2-x}{x+2}\).
 	\begin{solution}
 		\begin{align*}
-			 & \dfrac{x^2-4}{x^2-4x+4} + \dfrac{2-x}{x+2}                              \\
-			 & = \dfrac{(x+2)\cancel{(x-2)}}{(x-2)^{\cancel{2}}} + \dfrac{-(x-2)}{x+2} \\
-			 & = \dfrac{(x+2)^2 - (x-2)^2}{(x+2)(x-2)}                                 \\
-			 & = \dfrac{8x}{x^2 - 4}
+			 & \frac{x^2-4}{x^2-4x+4} + \frac{2-x}{x+2}                              \\
+			 & = \frac{(x+2)\cancel{(x-2)}}{(x-2)^{\cancel{2}}} + \frac{-(x-2)}{x+2} \\
+			 & = \frac{(x+2)^2 - (x-2)^2}{(x+2)(x-2)}                                \\
+			 & = \frac{8x}{x^2 - 4}
 		\end{align*}
 	\end{solution}
 
 	\question (\textbf{29 Mar}) An equation in \(x\),
-	\(\dfrac{m}{x-1} + \dfrac{3}{1-x} = 1\), has a positive solution.
+	\(\frac{m}{x-1} + \frac{3}{1-x} = 1\), has a positive solution.
 	Find the possible range of values for \(m\).
 	\begin{solution}
 		\begin{align*}
-			\dfrac{m}{x-1} + \dfrac{3}{1-x} & = 1     \\
-			m - 3                           & = x - 1 \\
-			x                               & = m - 2 \\
-			\because x                      & > 0,    \\
-			\therefore m                    & >2      \\
+			\frac{m}{x-1} + \frac{3}{1-x} & = 1     \\
+			m - 3                         & = x - 1 \\
+			x                             & = m - 2 \\
+			\because x                    & > 0    \\
+			\therefore m                  & > 2     \\
 		\end{align*}
 	\end{solution}
 
-	\question (\textbf{30 Mar}) Given that \(\dfrac{1}{x} + \dfrac{1}{y} = 3\),
-	find the value of \(\dfrac{3x + 4xy + 3y}{x + 2xy + y}\).
+	\question (\textbf{30 Mar}) Given that \(\frac{1}{x} + \frac{1}{y} = 3\),
+	find the value of \(\frac{3x + 4xy + 3y}{x + 2xy + y}\).
 	\begin{solution}
 		\begin{align*}
-			\because \dfrac{1}{x} + \dfrac{1}{y} & = 3                                                             \\
-			\therefore x + y                     & = 3xy                                                           \\
+			\because \frac{1}{x} + \frac{1}{y} & = 3                                                            \\
+			\therefore x + y                   & = 3xy                                                          \\
 			\\
-			\dfrac{3x+4xy+3y}{x+2xy+y}           & = \dfrac{\frac{13}{3}\cancel{(x+y)}}{\frac{5}{3}\cancel{(x+y)}} \\
-			                                     & = \dfrac{13}{5}                                                 \\
+			\frac{3x+4xy+3y}{x+2xy+y}          & = \frac{\frac{13}{3}\cancel{(x+y)}}{\frac{5}{3}\cancel{(x+y)}} \\
+			                                   & = \frac{13}{5}                                                 \\
 		\end{align*}
 	\end{solution}
 
@@ -121,51 +123,51 @@
 	\begin{solution}
 		Let \(x\) be the number of toys per day the factory planned to manufacture originally.
 		\begin{align*}
-			\dfrac{480}{x} - \dfrac{480}{\frac{3}{2}x} & = 10    \\
-			\dfrac{720x - 480x}{\frac{3}{2}x^2}        & = 10    \\
-			240x                                       & = 15x^2 \\
-			x                                          & = 16
+			\frac{480}{x} - \frac{480}{\frac{3}{2}x} & = 10    \\
+			\frac{720x - 480x}{\frac{3}{2}x^2}       & = 10    \\
+			240x                                     & = 15x^2 \\
+			x                                        & = 16
 		\end{align*}
 		The company originally planned to manufacture 16 toys per day.
 	\end{solution}
 
 	\question (\textbf{1 Apr})
 	Make \(y\) the subject of the formula:
-	\[\sqrt{\dfrac{x^3-x+y}{xy}} = x\]
+	\[\sqrt{\frac{x^3-x+y}{xy}} = x\]
 	\begin{solution}
 		\begin{align*}
-			\sqrt{\dfrac{x^3-x+y}{xy}} & = x                                                     \\
-			x^2                        & = \dfrac{x^3-x+y}{xy}                                   \\
-			x^3y                       & = x^3-x+y                                               \\
-			y(x^{3}-1)                 & = x^{3}-x                                               \\
-			y                          & = \dfrac{x^{3}-x}{x^{3}-1}                              \\
-			                           & = \dfrac{x(x+1)\cancel{(x-1)}}{\cancel{(x-1)}(x^2+x+1)} \\
-			                           & = \dfrac{x(x+1)}{x^2+x+1}
+			\sqrt{\frac{x^3-x+y}{xy}} & = x                                                    \\
+			x^2                       & = \frac{x^3-x+y}{xy}                                   \\
+			x^3y                      & = x^3-x+y                                              \\
+			y(x^{3}-1)                & = x^{3}-x                                              \\
+			y                         & = \frac{x^{3}-x}{x^{3}-1}                              \\
+			                          & = \frac{x(x+1)\cancel{(x-1)}}{\cancel{(x-1)}(x^2+x+1)} \\
+			                          & = \frac{x(x+1)}{x^2+x+1}
 		\end{align*}
 	\end{solution}
 
 	\question (\textbf{4 Apr}) Solve the SLEs:
 	\begin{numcases}{}
-		\dfrac{1}{x} + \dfrac{1}{y} & = 5     \\
+		\frac{1}{x} + \frac{1}{y} & = 5     \\
 		xy                          & = \(x - y\)
 	\end{numcases}
 	\begin{solution}
 		\begin{align*}
-			\text{From (1):}                                      &                                                                                                 \\
-			xy                                                    & = \dfrac{x+y}{5} \text{\quad(3)}                                                                \\
-			\text{Substitute (3) into (2):}                       &                                                                                                 \\
-			x+y                                                   & = 5x - 5y                                                                                       \\
-			4x                                                    & = 6y                                                                                            \\
-			x                                                     & = \dfrac{3}{2}y \text{\quad(4)}                                                                 \\
-			\text{Substitute (4) into (2):}                       &                                                                                                 \\
-			\dfrac{3}{2}y^{2}                                     & = \dfrac{1}{2}y                                                                                 \\
-			y\left(\dfrac{3}{2}y-\dfrac{1}{2}\right)              & = 0                                                                                             \\
-			\therefore y                                          & = 0 \left(\text{rej., } \dfrac{1}{y} \text{ cannot be undefined}\right) \text{or } \dfrac{1}{3} \\
-			\text{Substitute } y = \dfrac{1}{3} \text{ into (2):} &                                                                                                 \\
-			\dfrac{1}{3}x                                         & = x - \dfrac{1}{3}                                                                              \\
-			\dfrac{2}{3}x                                         & = \dfrac{1}{3}                                                                                  \\
-			x                                                     & = \dfrac{1}{2}                                                                                  \\
-			\therefore x                                          & = \dfrac{1}{2} \text{ and } y = \dfrac{1}{3}
+			\text{From (1):}                                     &                                                                                               \\
+			xy                                                   & = \frac{x+y}{5} \text{\quad(3)}                                                               \\
+			\text{Substitute (3) into (2):}                      &                                                                                               \\
+			x+y                                                  & = 5x - 5y                                                                                     \\
+			4x                                                   & = 6y                                                                                          \\
+			x                                                    & = \frac{3}{2}y \text{\quad(4)}                                                                \\
+			\text{Substitute (4) into (2):}                      &                                                                                               \\
+			\frac{3}{2}y^{2}                                     & = \frac{1}{2}y                                                                                \\
+			y\left(\frac{3}{2}y-\frac{1}{2}\right)               & = 0                                                                                           \\
+			\therefore y                                         & = 0 \left(\text{rej., } \frac{1}{y} \text{ cannot be undefined}\right) \text{or } \frac{1}{3} \\
+			\text{Substitute } y = \frac{1}{3} \text{ into (2):} &                                                                                               \\
+			\frac{1}{3}x                                         & = x - \frac{1}{3}                                                                             \\
+			\frac{2}{3}x                                         & = \frac{1}{3}                                                                                 \\
+			x                                                    & = \frac{1}{2}                                                                                 \\
+			\therefore x                                         & = \frac{1}{2} \text{ and } y = \frac{1}{3}
 		\end{align*}
 	\end{solution}
 
@@ -196,12 +198,12 @@
 			There can be a line, \(l_{3}\), with both the origin and the intersection on it.
 			The equation of this line would thus be:
 			\begin{equation*}
-				y = \dfrac{10 - 0}{13 - 0}x = \dfrac{10}{13}x
+				y = \frac{10 - 0}{13 - 0}x = \frac{10}{13}x
 			\end{equation*}
 			Substituting \(x = -6.5\) and \(y = -5\) into that equation,
 			we see that:
 			\[
-				-5 = \dfrac{10}{13} \times -\dfrac{13}{2}
+				-5 = \frac{10}{13} \times -\frac{13}{2}
 			\]
 			Therefore, all three points are collinear.
 		\end{solution}
@@ -216,7 +218,7 @@
 		\end{align*}
 	\end{solution}
 
-	\question (\textbf{8 Apr}) There is a rectangluar piece of paper
+	\question (\textbf{8 Apr}) There is a rectangular piece of paper
 	with length \((5a + 4b)\) and breadth \((4a + 3b)\). A square of
 	side length \((a + b)\) is cut away from the four corners of the
 	paper. Using the remaining paper, a box without its top cover
