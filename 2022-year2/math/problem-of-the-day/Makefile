@@ -16,4 +16,4 @@ view:
 	okular ${filename}.pdf &
 
 clean:
-	rm -rf .auctex-auto/ ${filename}.{ps,log,aux,out,dvi,bbl,blg,toc,fls,fdb_latexmk} indent.log missfont.log
+	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc} .auctex-auto/ *.log
