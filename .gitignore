@@ -4,6 +4,8 @@ node_modules/
 # latex
 .auctex-auto/
 *.aux
+*.bbl
+*.blg
 *.dvi
 *.fdb_latexmk
 *.fls
