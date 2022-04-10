@@ -1,19 +1,30 @@
 # infocomm projects
 node_modules/
 
-# latex
+# latex (a lot of files)
+# emacs
 .auctex-auto/
+
+# generated files
 *.aux
+*.log
+*.toc
+
+# bibliography
 *.bbl
 *.blg
-*.dvi
+
+# latexmk
 *.fdb_latexmk
 *.fls
-*.ps
-*.log
 *.synctex*
-*.toc
+
+# xelatex
 *.xdv
+
+# different output methods
+*.dvi
+*.ps
 
 # markdown
 *.md
