@@ -17,3 +17,6 @@ view:
 
 clean:
 	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc} .auctex-auto/ *.log
+
+remove:
+	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,dvi,ps,pdf} .auctex-auto/ *.log
