@@ -13,7 +13,7 @@ ps:
 	dvips ${filename}.dvi
 
 view:
-	okular ${filename}.pdf &
+	atril ${filename}.pdf &
 
 clean:
 	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc} .auctex-auto/ *.log
