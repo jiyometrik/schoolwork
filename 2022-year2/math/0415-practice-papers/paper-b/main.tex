@@ -32,7 +32,6 @@
 
 \bracketedpoints%
 \pointsinrightmargin%
-\definecolor{SolutionColor}{rgb}{0.8, 0.9, 1}
 
 \begin{questions}
 	\question[3]
@@ -208,8 +207,6 @@
 		\begin{tikzpicture}
 			\begin{axis}[axis lines = left, xlabel = \(x\), ylabel = \(y\), domain=0:6]
 				\addplot[color = black]{6 - 0.5 * x};
-				\draw[dashed] (4, 4) -- (4, 0);
-				\draw[dashed] (4, 4) -- (0, 4);
 			\end{axis}
 		\end{tikzpicture}
 		\label{fig:l1}
@@ -283,7 +280,7 @@
 			\begin{tikzpicture}
 				\begin{axis}[domain=-1:2, axis x line=middle, axis y line=middle]
 					\addplot[red, thick, mark=x] coordinates {(-1, -5) (0, -2) (2, 4)};
-					\addplot[blue, thick] {.5};
+					\addplot[blue, thick, mark=x] coordinates {(0.5, -4) (0.5, 0) (0.5, 4)};
 				\end{axis}
 			\end{tikzpicture}
 			\label{fig:9b}
