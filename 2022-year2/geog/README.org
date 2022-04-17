@@ -2,6 +2,6 @@
 
 ** Population
 
-** Housing & Infrastructure
+** Housing
 
-** Migration
+** Transport

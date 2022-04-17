@@ -16,7 +16,7 @@ view:
 	atril ${filename}.pdf &
 
 clean:
-	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc} .auctex-auto/ *.log
+	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex.gz} .auctex-auto/ *.log
 
 remove:
-	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,dvi,ps,pdf} .auctex-auto/ *.log
+	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex.gz,dvi,ps,pdf} .auctex-auto/ *.log
