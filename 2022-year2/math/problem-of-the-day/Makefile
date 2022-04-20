@@ -4,6 +4,7 @@ pdf:
 	/usr/bin/latex ${filename}.tex
 	dvips ${filename}.dvi
 	ps2pdf ${filename}.ps
+	# xelatex ${filename}.tex
 
 dvi:
 	/usr/bin/latex ${filename}.tex

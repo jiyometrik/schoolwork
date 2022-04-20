@@ -1,15 +1,15 @@
 \documentclass[12pt, answers]{exam}
 \usepackage[margin=1in, a4paper]{geometry}
 
-\usepackage{amsmath, amsthm, amssymb}
+\usepackage{amsmath, amsthm}
 \usepackage{siunitx}
 \usepackage{tikz}
 \usepackage{setspace}
 \usepackage{cancel}
 \usepackage{cases}
-\usepackage{showlabels}
+\usepackage[nolabel, final]{showlabels}
 
-\usepackage{notomath, noto-mono}
+\usepackage[garamond]{mathdesign}
 
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\ints}{\mathbb{Z}}
@@ -52,9 +52,9 @@
 	\begin{solution}
 		\begin{align*}
 			 & \frac{1}{a-x}-\frac{1}{a+x}-\frac{2x}{a^2+x^2}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8} \\
-			 & = \frac{2x}{a^2-x^2}-\frac{2x}{a^2+x^2}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8}         \\
-			 & = \frac{4x^3}{a^4-x^4}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8}                           \\
-			 & = \frac{8x^7}{a^8-x^8}+\frac{8x^7}{a^8-x^8}                                                 \\
+			 & = \frac{2x}{a^2-x^2}-\frac{2x}{a^2+x^2}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8}        \\
+			 & = \frac{4x^3}{a^4-x^4}-\frac{4x^3}{a^4+x^4}+\frac{8x^7}{a^8-x^8}                         \\
+			 & = \frac{8x^7}{a^8-x^8}+\frac{8x^7}{a^8-x^8}                                              \\
 			 & = \frac{16x^7}{a^8-x^8}
 		\end{align*}
 	\end{solution}
@@ -86,7 +86,7 @@
 		\begin{align*}
 			 & \frac{x^2-4}{x^2-4x+4} + \frac{2-x}{x+2}                              \\
 			 & = \frac{(x+2)\cancel{(x-2)}}{(x-2)^{\cancel{2}}} + \frac{-(x-2)}{x+2} \\
-			 & = \frac{(x+2)^2 - (x-2)^2}{(x+2)(x-2)}                                 \\
+			 & = \frac{(x+2)^2 - (x-2)^2}{(x+2)(x-2)}                                \\
 			 & = \frac{8x}{x^2 - 4}
 		\end{align*}
 	\end{solution}
@@ -97,10 +97,10 @@
 	\begin{solution}
 		\begin{align*}
 			\frac{m}{x-1} + \frac{3}{1-x} & = 1     \\
-			m - 3                           & = x - 1 \\
-			x                               & = m - 2 \\
-			\because x                      & > 0     \\
-			\therefore m                    & > 2     \\
+			m - 3                         & = x - 1 \\
+			x                             & = m - 2 \\
+			\because x                    & > 0     \\
+			\therefore m                  & > 2     \\
 		\end{align*}
 	\end{solution}
 
@@ -108,11 +108,11 @@
 	find the value of \(\frac{3x + 4xy + 3y}{x + 2xy + y}\).
 	\begin{solution}
 		\begin{align*}
-			\because \frac{1}{x} + \frac{1}{y} & = 3                                                               \\
-			\therefore x + y                     & = 3xy                                                             \\
+			\because \frac{1}{x} + \frac{1}{y} & = 3                                                            \\
+			\therefore x + y                   & = 3xy                                                          \\
 			\\
-			\frac{3x+4xy+3y}{x+2xy+y}           & = \frac{\frac{13}{3}\cancel{(x+y)}}{\frac{5}{3}\cancel{(x+y)}} \\
-			                                     & = \frac{13}{5}                                                   \\
+			\frac{3x+4xy+3y}{x+2xy+y}          & = \frac{\frac{13}{3}\cancel{(x+y)}}{\frac{5}{3}\cancel{(x+y)}} \\
+			                                   & = \frac{13}{5}                                                 \\
 		\end{align*}
 	\end{solution}
 
@@ -127,9 +127,9 @@
 		Let \(x\) be the number of toys per day the factory planned to manufacture originally.
 		\begin{align*}
 			\frac{480}{x} - \frac{480}{\frac{3}{2}x} & = 10    \\
-			\frac{720x - 480x}{\frac{3}{2}x^2}        & = 10    \\
-			240x                                        & = 15x^2 \\
-			x                                           & = 16
+			\frac{720x - 480x}{\frac{3}{2}x^2}       & = 10    \\
+			240x                                     & = 15x^2 \\
+			x                                        & = 16
 		\end{align*}
 		The company originally planned to manufacture 16 toys per day.
 	\end{solution}
@@ -139,13 +139,13 @@
 	\[\sqrt{\frac{x^3-x+y}{xy}} = x\]
 	\begin{solution}
 		\begin{align*}
-			\sqrt{\frac{x^3-x+y}{xy}} & = x                                                     \\
-			x^2                        & = \frac{x^3-x+y}{xy}                                   \\
-			x^3y                       & = x^3-x+y                                               \\
-			y(x^{3}-1)                 & = x^{3}-x                                               \\
-			y                          & = \frac{x^{3}-x}{x^{3}-1}                              \\
-			                           & = \frac{x(x+1)\cancel{(x-1)}}{\cancel{(x-1)}(x^2+x+1)} \\
-			                           & = \frac{x(x+1)}{x^2+x+1}
+			\sqrt{\frac{x^3-x+y}{xy}} & = x                                                    \\
+			x^2                       & = \frac{x^3-x+y}{xy}                                   \\
+			x^3y                      & = x^3-x+y                                              \\
+			y(x^{3}-1)                & = x^{3}-x                                              \\
+			y                         & = \frac{x^{3}-x}{x^{3}-1}                              \\
+			                          & = \frac{x(x+1)\cancel{(x-1)}}{\cancel{(x-1)}(x^2+x+1)} \\
+			                          & = \frac{x(x+1)}{x^2+x+1}
 		\end{align*}
 	\end{solution}
 
@@ -156,21 +156,21 @@
 	\end{numcases}
 	\begin{solution}
 		\begin{align*}
-			\text{From (1):}                                      &                                                                                                 \\
-			xy                                                    & = \frac{x+y}{5} \text{\quad(3)}                                                                \\
-			\text{Substitute (3) into (2):}                       &                                                                                                 \\
-			x+y                                                   & = 5x - 5y                                                                                       \\
-			4x                                                    & = 6y                                                                                            \\
-			x                                                     & = \frac{3}{2}y \text{\quad(4)}                                                                 \\
-			\text{Substitute (4) into (2):}                       &                                                                                                 \\
-			\frac{3}{2}y^{2}                                     & = \frac{1}{2}y                                                                                 \\
-			y\left(\frac{3}{2}y-\frac{1}{2}\right)              & = 0                                                                                             \\
-			\therefore y                                          & = 0 \left(\text{rej., } \frac{1}{y} \text{ cannot be undefined}\right) \text{or } \frac{1}{3} \\
-			\text{Substitute } y = \frac{1}{3} \text{ into (2):} &                                                                                                 \\
-			\frac{1}{3}x                                         & = x - \frac{1}{3}                                                                              \\
-			\frac{2}{3}x                                         & = \frac{1}{3}                                                                                  \\
-			x                                                     & = \frac{1}{2}                                                                                  \\
-			\therefore x                                          & = \frac{1}{2} \text{ and } y = \frac{1}{3}
+			\text{From (1):}                                     &                                                                                               \\
+			xy                                                   & = \frac{x+y}{5} \text{\quad(3)}                                                               \\
+			\text{Substitute (3) into (2):}                      &                                                                                               \\
+			x+y                                                  & = 5x - 5y                                                                                     \\
+			4x                                                   & = 6y                                                                                          \\
+			x                                                    & = \frac{3}{2}y \text{\quad(4)}                                                                \\
+			\text{Substitute (4) into (2):}                      &                                                                                               \\
+			\frac{3}{2}y^{2}                                     & = \frac{1}{2}y                                                                                \\
+			y\left(\frac{3}{2}y-\frac{1}{2}\right)               & = 0                                                                                           \\
+			\therefore y                                         & = 0 \left(\text{rej., } \frac{1}{y} \text{ cannot be undefined}\right) \text{or } \frac{1}{3} \\
+			\text{Substitute } y = \frac{1}{3} \text{ into (2):} &                                                                                               \\
+			\frac{1}{3}x                                         & = x - \frac{1}{3}                                                                             \\
+			\frac{2}{3}x                                         & = \frac{1}{3}                                                                                 \\
+			x                                                    & = \frac{1}{2}                                                                                 \\
+			\therefore x                                         & = \frac{1}{2} \text{ and } y = \frac{1}{3}
 		\end{align*}
 	\end{solution}
 
@@ -296,9 +296,9 @@
 
 		\textbf{Case 2}: Solve for \(y\).
 		\begin{align*}
-			(x+1)(1-3x)(4y-5)                        & = 7(5-4y)                                         \\
-			-12x^{2}y + 15x^{2} - 8xy + 10x + 4y - 5 & = -28y + 35                                       \\
-			y \left(-12x^{2} - 8x + 32 \right)       & = -15x^{2} - 10x + 40                             \\
+			(x+1)(1-3x)(4y-5)                        & = 7(5-4y)                                        \\
+			-12x^{2}y + 15x^{2} - 8xy + 10x + 4y - 5 & = -28y + 35                                      \\
+			y \left(-12x^{2} - 8x + 32 \right)       & = -15x^{2} - 10x + 40                            \\
 			y                                        & = \frac{-15x^{2} - 10x + 40}{-12x^{2} - 8x + 32} \\
 			                                         & = \frac{5}{4}
 		\end{align*}
@@ -309,8 +309,8 @@
 		\[
 			\therefore
 			\begin{cases}
-				x = -2 \text{ or } \frac{4}{3}, & y \in \reals     \\
-				x \in \reals,                    & y = \frac{5}{4}
+				x = -2 \text{ or } \frac{4}{3}, & y \in \reals    \\
+				x \in \reals,                   & y = \frac{5}{4}
 			\end{cases}
 		\]
 	\end{solution}
@@ -328,8 +328,8 @@
 			\item \(\frac{5x}{x^{2} + 1}\) can be expressed in the form \(ax^{2} + bx + c = 0\).
 			      \begin{align*}
 				      \frac{5x}{x^{2} + 1} & = 2                       \\
-				      5x                    & = 2\left(x^{2} + 1\right) \\
-				      2x^{2} - 5x + 2       & = 0
+				      5x                   & = 2\left(x^{2} + 1\right) \\
+				      2x^{2} - 5x + 2      & = 0
 			      \end{align*}
 			\item \((x + 1)(x - 2) = x^{2}\) cannot be expressed in the form \(ax^{2} + bx + c = 0\). It is in fact, a linear equation.
 			      \begin{align*}
@@ -371,13 +371,133 @@
 	\((x - 1)^{2} - 5x(x + 5) = -2(x - 2) + 3\).
 	\begin{solution}
 		\begin{align*}
-			(x - 1)^{2} - 5x(x + 5)                          & = -2(x - 2) + 3               \\
-			x^{2} - 2x + 1 - 5x^{2} - 25x                    & = -2x + 7                     \\
-			-4x^{2} - 25x - 6                                & = 0                           \\
-			\left(-4x^{2} - x\right) + \left(-24x - 6\right) & = 0                           \\
-			(4x + 1)(- x - 6)                                & = 0                           \\
+			(x - 1)^{2} - 5x(x + 5)                          & = -2(x - 2) + 3              \\
+			x^{2} - 2x + 1 - 5x^{2} - 25x                    & = -2x + 7                    \\
+			-4x^{2} - 25x - 6                                & = 0                          \\
+			\left(-4x^{2} - x\right) + \left(-24x - 6\right) & = 0                          \\
+			(4x + 1)(- x - 6)                                & = 0                          \\
 			\therefore x                                     & = -6 \text{ or} -\frac{1}{4}
 		\end{align*}
 	\end{solution}
+
+	\question (\textbf{18 Apr}) A rectangle of breadth \qty{2}{\centi\metre} is cut from a square.
+	The rectangle's length is the same as the square's.
+	The remaining area is \qty{48}{\square\centi\metre}.
+	Find the original area of the square.
+	\begin{solution}
+		Let the length of the square be \(x\) \si{\centi\metre}.
+		\begin{align*}
+			x^{2} - 2x                  & = 48 \\
+			(x + 6)(x - 8)              & = 0  \\
+			x = -6 \text{ (rej.) or } x & = 8  \\
+			\therefore  x^{2}           & = 64
+		\end{align*}
+		The original area of the square is \qty{64}{\square\centi\metre}.
+	\end{solution}
+
+	\question (\textbf{19 Apr}) Determine if the following relationships are quadratic functions.
+	\begin{parts}
+		\part Within a certain distance, the speed of the train \(v\) \si{\kilo\metre\per\hour} and the time \(t\) \si{\hour}.
+		\begin{solution}
+			No. Both \(v\) and \(t\) are constants within that certain distance.
+		\end{solution}
+
+		\part The perimeter \(C\) and the length of the side \(a\) of an equilateral triangle.
+		\begin{solution}
+			No. \(C = 3a\).
+		\end{solution}
+
+		\part The area \(S\) and the length of radius \(R\) of a sector of angle \ang{120}.
+		\begin{solution}
+			Yes. \(S = \frac{1}{3} \pi r^{2}\).
+		\end{solution}
+	\end{parts}
+
+	\question (\textbf{20 Apr}) There is a \qty{56}{\centi\metre} piece of wire.
+	It is cut into two pieces and each piece is then made into a square.
+	\begin{parts}
+		\part If the sum of the areas of the two squares is \qty{100}{\square\centi\metre},
+		how should the wire be cut?
+		\begin{solution}
+			Let the lengths of the two pieces be \(x\) \si{\centi\metre} and \(y\) \si{\centi\metre} respectively.
+			\begin{align}
+				x + y                                                          & = 56 \label{eq:0420a1} \tag{1}  \\
+				{\left(\frac{x}{4}\right)}^{2}+ {\left(\frac{y}{4}\right)}^{2} & = 100 \label{eq:0420a2} \tag{2}
+			\end{align}
+			From \eqref{eq:0420a2}:
+			\begin{align*}
+				\frac{x^{2} + y^{2}}{16} & = 100                            \\
+				x^{2} + y^{2}            & = 1600 \label{eq:0420a3} \tag{3} \\
+			\end{align*}
+			Substitute \eqref{eq:0420a1} into \eqref{eq:0420a3}:
+			\begin{align*}
+				x^{2} + (56 - x)^{2}        & = 1600                                        \\
+				x^{2} + 3136 - 112x + x^{2} & = 1600                                        \\
+				2x^{2}  - 112x + 1536       & = 0                                           \\
+				x^{2}  - 56x + 768          & = 0                                           \\
+				(x - 24)(x - 32)            & = 0                                           \\
+				x                           & = 24 \text{ or } 32 \label{eq:0420a4} \tag{4} \\
+			\end{align*}
+			Substitute \eqref{eq:0420a4} into \eqref{eq:0420a1}:
+			\[
+				\begin{cases}
+					x = 24, y = 32 \\
+					x = 32, y = 24 \\
+				\end{cases}
+			\]
+			Hence, the wire should be cut into \qty{24}{\centi\metre} and \qty{32}{\centi\metre} pieces.
+		\end{solution}
+
+		\part If the sum of the areas of the two squares is \qty{196}{\square\centi\metre},
+		how should the wire be cut?
+		\begin{solution}
+			Let the lengths of the two pieces be \(x\) \si{\centi\metre} and \(y\) \si{\centi\metre} respectively.
+			\begin{align}
+				x + y                                                          & = 56 \label{eq:0420b1} \tag{1}  \\
+				{\left(\frac{x}{4}\right)}^{2}+ {\left(\frac{y}{4}\right)}^{2} & = 196 \label{eq:0420b2} \tag{2}
+			\end{align}
+			From \eqref{eq:0420b2}:
+			\begin{align*}
+				\frac{x^{2} + y^{2}}{16} & = 196                            \\
+				x^{2} + y^{2}            & = 3136 \label{eq:0420b3} \tag{3} \\
+			\end{align*}
+			Substitute \eqref{eq:0420b1} into \eqref{eq:0420b3}:
+			\begin{align*}
+				x^{2} + (56 - x)^{2}        & = 3136                    \\
+				x^{2} + 3136 - 112x + x^{2} & = 3136                    \\
+				2x^{2}  - 112x              & = 0                       \\
+				x^{2}  - 56x                & = 0                       \\
+				x( x - 56 )                 & = 0                       \\
+				x                           & = 0 \text{ (rej.) or } 56
+			\end{align*}
+			Hence, the wire cannot be cut into two such pieces.
+		\end{solution}
+
+		\part Is it possible for the sum of the two areas to be \qty{200}{\square\centi\metre}?
+		\begin{solution}
+			Assuming that it \textbf{is} possible:
+			Let the lengths of the two pieces be \(x\) \si{\centi\metre} and \(y\) \si{\centi\metre} respectively.
+			\begin{align}
+				x + y                                                          & = 56 \label{eq:0420c1} \tag{1}  \\
+				{\left(\frac{x}{4}\right)}^{2}+ {\left(\frac{y}{4}\right)}^{2} & = 200 \label{eq:0420c2} \tag{2}
+			\end{align}
+			From \eqref{eq:0420c2}:
+			\begin{align*}
+				\frac{x^{2} + y^{2}}{16} & = 200                            \\
+				x^{2} + y^{2}            & = 3200 \label{eq:0420c3} \tag{3} \\
+			\end{align*}
+			Substitute \eqref{eq:0420c1} into \eqref{eq:0420c3}:
+			\begin{align*}
+				x^{2} + (56 - x)^{2}        & = 3200                         \\
+				x^{2} + 3136 - 112x + x^{2} & = 3200                         \\
+				2x^{2}  - 112x - 64         & = 0                            \\
+				x^{2}  - 56x -32            & = 0                            \\
+				x                           & = \frac{56 \pm \sqrt{3264}}{2} \\
+			\end{align*}
+			Even if we reject the negative case, \(x = \frac{56 - \sqrt{3264}}2\),
+			\(y\) will still be negative,
+			rendering it impossible for the sum of the areas of the two squares to be \qty{200}{\square\centi\metre}.
+		\end{solution}
+	\end{parts}
 \end{questions}
 \end{document}
