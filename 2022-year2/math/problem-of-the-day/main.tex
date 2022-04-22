@@ -3,7 +3,7 @@
 \usepackage[margin=1in, a4paper]{geometry}
 \usepackage{amsmath, amsthm}
 \usepackage{siunitx}
-\usepackage{tikz}
+\usepackage{tikz, pgfplots}
 \usepackage{setspace}
 \usepackage{cancel}
 \usepackage{cases}
@@ -504,5 +504,48 @@
 			rendering it impossible for the sum of the areas of the two squares to be \qty{200}{\square\centi\metre}.
 		\end{solution}
 	\end{parts}
+
+	\question (\textbf{21 Apr}) The graph of a quadratic function
+	\(y = mx^2 + x + m(m - 2)\) passes through the origin. Find the value of \(m\).
+	\begin{solution}
+		Substituting \(x = 0\) and \(y = 0\) into the equation:
+		\begin{align*}
+			0            & = m \cdot 0^{2} + 0 + m(m - 2) \\
+			m(m - 2)     & = 0                            \\
+			m            & = 0 \text{ (rej.) or } 2       \\
+			\therefore m & = 2
+		\end{align*}
+	\end{solution}
+
+	\question (\textbf{22 Apr}) Refer to the quadratic graph below.
+	Which of the following could be the equation of said graph?
+	\begin{figure}[htpb]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+					domain=-5:7,
+					axis x line=middle,
+					axis y line=middle,
+					xlabel=\(x\),
+					ylabel=\(y\),
+					ticks=none
+				]
+				\addplot[black, thick] {-x^2 + 2 * x + 3};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	\begin{choices}
+		\choice \(y = x^{2} - 2x + 3\)
+		\choice \(y = -x^{2} - 2x + 3\)
+		\choice \(y = x^{2} + 2x + 3\)
+		\choice \(y = -x^{2} + 2x + 3\)
+	\end{choices}
+	\begin{solution}
+		\textbf{D}.
+
+		The graph is a `n'-shaped one, meaning the coefficient of the \(x^{2}\) term is negative.
+		The turning point of the curve is also within the positive \(x\)-axis, so the coefficient
+		of the \(x\) term is positive, leaving the option of \textbf{D}.
+	\end{solution}
 \end{questions}
 \end{document}
