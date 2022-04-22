@@ -1,3 +1,4 @@
+%! Tex ts-program = xelatex
 \documentclass[12pt, answers]{exam}
 \usepackage[margin=1in, a4paper]{geometry}
 \usepackage{amsmath, amsthm}
@@ -8,7 +9,11 @@
 \usepackage{cases}
 \usepackage[nolabel, final]{showlabels}
 
-\usepackage[garamond]{mathdesign}
+\usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
+
+% most common way to install this font is through the packages on the AUR
+\setmainfont{EB Garamond}
+\setmathfont{Garamond-Math.otf}[StylisticSet={6,7,9}]
 
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\ints}{\mathbb{Z}}
