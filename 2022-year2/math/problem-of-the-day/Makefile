@@ -2,6 +2,7 @@ filename=main
 
 pdf:
 	xelatex ${filename}.tex
+	xelatex ${filename}.tex
 
 # dvi:
 # 	/usr/bin/latex ${filename}.tex
@@ -14,7 +15,7 @@ view:
 	atril ${filename}.pdf &
 
 clean:
-	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz} .auctex-auto/ *.log
+	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz,xdv} .auctex-auto/ *.log
 
 remove:
-	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz,dvi,ps,pdf} .auctex-auto/ *.log
+	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz,xdv,dvi,ps,pdf} .auctex-auto/ *.log
