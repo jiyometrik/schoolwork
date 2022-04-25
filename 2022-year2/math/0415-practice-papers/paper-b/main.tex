@@ -1,16 +1,30 @@
 %! TEX TS-program = xelatex
+\documentclass[11pt, answers]{exam}
 
-\documentclass[11pt, answers, addpoints]{exam}
+% dfrac, therefore, etc.
 \usepackage{amsmath, amsthm, amssymb}
+
+% unitts
 \usepackage{siunitx}
+
+% diagrams and graphs
 \usepackage{tikz}
 \usepackage{pgfplots}
-\usepackage{setspace}
-\usepackage{cancel}
-\usepackage{cases}
-\usepackage[nolabel, final]{showlabels}
-\usepackage{color}
+\pgfplotsset{compat=1.18}
 
+% line spacing
+\usepackage{setspace}
+
+% cancellation
+\usepackage{cancel}
+
+% cases
+\usepackage{cases}
+
+% better labelling
+\usepackage[nolabel, final]{showlabels}
+
+% font
 \usepackage[T1]{fontenc}
 \usepackage[lf]{MinionPro}
 
@@ -284,7 +298,7 @@
 					\addplot[blue, thick, mark=x] coordinates {(0.5, -4) (0.5, 0) (0.5, 4)};
 				\end{axis}
 			\end{tikzpicture}
-			\label{fig:9b}
+			\label{fig:9d}
 		\end{figure}
 
 		\part[1] Given the graphs you have drawn in (\ref{part:9b}) and (\ref{part:9d}), explain how to find the solution to the simultaneous equations \(y + 2 = 3x\) and \(x = 0.5\).

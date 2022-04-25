@@ -1,17 +1,8 @@
 filename=main
 
 pdf:
-	pdflatex ${filename}.tex
-	pdflatex ${filename}.tex
-
-dvi:
-	/usr/bin/latex ${filename}.tex
-	/usr/bin/latex ${filename}.tex
-
-ps:
-	/usr/bin/latex ${filename}.tex
-	/usr/bin/latex ${filename}.tex
-	dvips ${filename}.dvi
+	lualatex ${filename}.tex
+	lualatex ${filename}.tex
 
 view:
 	atril ${filename}.pdf &
