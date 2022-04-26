@@ -577,7 +577,7 @@
 	\begin{solution}
 		\textbf{C}.
 		\begin{itemize}
-			\item	The graph is a `n'-shaped one as the coefficient of the \(x^{2}\) term is negative.
+			\item The graph is a `n'-shaped one as the coefficient of the \(x^{2}\) term is negative.
 			\item The maximum point is on the negative \(x\)-axis as the coefficient of the \(x\) term is negative. It lies on the line \(x = -2\).
 			\item The coordinates of \(x\)-intercepts are \num{1} and \num{-5}.
 			      \begin{align*}
@@ -592,6 +592,45 @@
 			\item The point with \(y\)-coordinate \(y_{1}\) is in the 2nd Quadrant.
 			\item \(y_{3} < y_{1} < y_{2}\).
 		\end{itemize}
+	\end{solution}
+
+	\question (\textbf{26 Apr}) Refer to the graph of the quadratic function, \(y = ax^2 + bx + c \) below,
+	where \(a \neq 0\). Which of the following statement(s) is / are correct?
+	\begin{figure}[htpb]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+					domain=-3:3,
+					axis x line=middle,
+					axis y line=middle,
+					xlabel=\(x\),
+					ylabel=\(y\),
+					grid=both,
+					no markers,
+					smooth,
+					minor tick num=1,
+					ticks=none
+				]
+				\addplot[black, thick] {-x^2 + 4};
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+
+	\begin{oneparchoices}
+		\choice \(a > 0\)
+		\choice \(c > 0\)
+		\choice \(\frac{a}{c} > 0\)
+		\choice \(-ac < 0\)
+	\end{oneparchoices}
+
+	\begin{solution}
+		\textbf{B}.
+		\begin{enumerate}
+			\item The graph is an `n'-shaped one, so \(a < 0\).
+			\item The graph intercepts the \(y\)-axis on the positive \(y\)-axis, so \(c > 0\).
+			\item Since \(a < 0\) and \(c > 0\), \(\frac{a}{c} < 0\).
+			\item Since \(a < 0\) and \(c > 0\), \(-ac > 0\).
+		\end{enumerate}
 	\end{solution}
 \end{questions}
 \end{document}
