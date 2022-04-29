@@ -1,14 +1,14 @@
-filename=main
+FILE=main
 
 pdf:
-	lualatex ${filename}.tex
-	lualatex ${filename}.tex
+	lualatex ${FILE}.tex
+	lualatex ${FILE}.tex
 
 view:
-	atril ${filename}.pdf &
+	atril ${FILE}.pdf &
 
 clean:
-	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz,xdv} .auctex-auto/ *.log
+	rm -rf ${FILE}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz,xdv} .auctex-auto/ *.log
 
 remove:
-	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz,xdv,dvi,ps,pdf} .auctex-auto/ *.log
+	rm -rf ${FILE}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex\(busy\),synctex.gz,xdv,dvi,ps,pdf} .auctex-auto/ *.log
