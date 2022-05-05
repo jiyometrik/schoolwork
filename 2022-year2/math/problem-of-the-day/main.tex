@@ -28,7 +28,6 @@
 % font
 \usepackage[T1]{fontenc}
 \usepackage[lf]{MinionPro}
-% \usepackage[urw-garamond]{mathdesign}
 
 % make life easier
 \newcommand{\reals}{\mathbb{R}}
@@ -866,6 +865,21 @@
 		\end{align*}
 		The leading digit of the product is \textbf{8}. The product will have
 		\textbf{78} zeroes.
+	\end{solution}
+
+	\question (\textbf{5 May}) Given that \(5^3 + 5^3 + 5^3 + 5^3 + 5^3 = 5^x\) and
+	\(2^2 + 2^2 = 2^y\), find the value of \(x^y\).
+	\begin{solution}
+		\begin{align*}
+			5^3 + 5^3 + 5^3 + 5^3 + 5^3 & = 5 \times 5^3               \\
+			                            & = 5^4                        \\
+			x                           & = 4 \label{eq:05051} \tag{1} \\
+			2^2 + 2^2                   & = 2 \times 2^2               \\
+			                            & = 2^3                        \\
+			y                           & = 3 \label{eq:05052} \tag{2} \\
+			x^y                         & = 4^3                        \\
+			                            & = 64
+		\end{align*}
 	\end{solution}
 \end{questions}
 \end{document}

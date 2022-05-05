@@ -5,7 +5,7 @@ pdf:
 	lualatex ${filename}.tex
 
 view:
-	atril ${filename}.pdf &
+	okular ${filename}.pdf &
 
 clean:
 	rm -rf ${filename}.{aux,bbl,blg,fls,fdb_latexmk,out,toc,synctex.gz,xdv} .auctex-auto/ *.log
