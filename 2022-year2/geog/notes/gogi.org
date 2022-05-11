@@ -1,0 +1,155 @@
+#+TITLE: gogi we love, gogi we hate
+#+AUTHOR: kiki
+#+DATE: 11 may 2022
+#+OPTIONS: tex:t
+#+STARTUP: latexpreview inlineimages
+
+* population
+**  terms
++ birth rate
+  - the number of babies born per thousand people in the population per year
++ death rate
+  - the number of deaths per 1000 people
++ natural increase / decrease
+  - nat. increase: the nat. growth in population (excess of births over deaths)
+  - nat. decrease: the same; excess of deaths over births
++ net migration
+  - the figure obtained from the number of immigrants (ppl. entering) - number of emigrants (ppl. leaving)
++ life expectancy
+  - the length of time a person born in a given area can expect to live
++ dependent pop.
+  - the pop. that depends on the adult working population to support it economically
++ sex ratio
+  - the no. of males per 100 females in a population
+** birth rate factors
+*** culture
++ ppl. in rural areas, farming
+  - children are a valuable source of labour
+  - more children to work
+  - make more babies
++ men are the breadwinners / accorded more respect and importance
+  - men carry on the family line
+  - children reflect parents' virility
+  - birth rate also high
++ religion
+  - roman cath. church opposes use of artificial means of birth control
+  - example: *phillipines*
+    - 84% of people are roman catholic
+    - pop. growth rate: 2.4% (1990s)
+    - one of the highest pop. growths in asia
+*** govt. policies
++ govts. launch policies to control b/r
++ incentives for ppl. reaching children quota
+  - salary bonus
+  - access to edu., hc., tpt. etc.
++ disadvantages for people (too many / few children, depends on context)
+  - salary dec.
+  - career / edu. pathways blocked
+  - financial aid dec.
++ propaganda
+  - slowly change couples' mindsets
+  - posters, mag., TV
+  - sell more baby / family planning products (/family planning/)
++ example: *china, one-child policy (1979)*
+  - govt. afraid of overpop. $\rightarrow$ obstruct econ. growth
+  - widely publicised in mass media
+  - rewards:
+    + 10% salary inc.
+    + childcare leave, no-pay leave
+    + part-time work in the public sector guaranteed
+    + more childcare centres
+    + housing & pri-sch. reg. priority
+  - disincentives:
+    + fines + annual tax
+  - contraceptives + family planning available
+    + *b/r: 3.3% (1970) $\rightarrow$ 2.1% (1990)*
+*** female edu.
++ more focus on career/edu.
+  - dec. time to care for children $\rightarrow$ dec. time for career
+  - dec. age of marriage $\rightarrow$ inc. repro age
+  - maternity $\rightarrow$ dec. time for career
+  - less willing to care for children $\rightarrow$ don't have children $\rightarrow$ b/r dec.
++ material desire, industrialisation
++ example: *singapore*
+  - sg. fem. lit. rate: 74% (1980) $\rightarrow$ 96.1% (2019)
+  - b/r: 16.967 $\rightarrow$ 8.067 (per 1000)
+  - ppl. are less inclined to have children
+** death rate factors
+*** improved standard of living
++ improvements in:
+  - medical facilities, healthcare
+  - housing
+  - hygiene, water supply, sanitation & nutrition
+    + rubbish disposal + cleanliness of areas
+    + H2O supply, sewage
++ less likely to fall sick $\rightarrow$ dec. d/r
++ tpt. facils.
++ better econ., better food prod'n.
+*** politics
++ war
+  - mass conscription $\rightarrow$ more men die @ war (d/r inc.)
+  - destruction of homes $\rightarrow$ civilians die
+  - poor facilities (wartime rations, unclean water & home)
+    + fall sick easily w/o treatment $\rightarrow$ (d/r inc.)
+
+** pop. pyramid
+#+CAPTION: population pyramid
+[[./pop-pyramid.png]]
+
+1. stage 1
+   - concave shape
+   - broad base (high b/r)
+   - narrow peak (high d/r)
+   - famine, war, infectious disease
+   - _no country_ is at stage 1
+
+2. stage 2
+   - triangle shape
+   - broad base (high b/r)
+   - slightly broader peak (d/r dec.)
+   - _most LDCs_
+
+3. stage 3
+   - bell shape
+   - narrower base (b/r dec.)
+   - broader peak (d/r dec.)
+   - _some LDCs_
+
+4. stage 4
+   - bell (narrower bottom)
+   - narrower base (b/r dec.)
+   - broader peak (d/r dec.)
+   - _most DCs_
+
+5. stage 5
+   - very narrow base
+   - very broad peak
+   - _few DCS_
+
+** challenges faced (ageing pop.)
+*** impacts
++ inc. resources spent on healthcare
++ inc. strain of working class
+  - resources diverted
++ labour $ [shortage of young working pop.]
++ dec. productivity
+  - most of the working population old $\rightarrow$ not much work done
++ insufficient young to defend country
+***  solutions
+**** labour shortage
++ inc. retirement age $\rightarrow$ pop. work for more years
+  - possible due to inc. life expectancy
++ draw women back into labour force
+  - incentives (home-based, part-time, flexi arrangements, childcare subsidies, exemption for maid levies)
+**** financial schemes
++ enable pop. to save for retirement
+**** healthy lifestyle
++ prevent from degenerating mentally & physically
++ NTUC organises grp. activities (e.g. dances, runs for the elderly)
+**** elderly-friendly features in homes
++ hand-rails $\rightarrow$ help elderly move around
++ ramps / sliding chairs $\rightarrow$ wheelchair users
++ emergency btn. / card $\rightarrow$ summon help if needed
+**** charitable organisations
++ raise funds with govt. support (SG)
++ subsidised / free medical check-ups (medisave)
