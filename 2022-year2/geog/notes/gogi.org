@@ -375,7 +375,7 @@
 **** advantages
 + low cost (for both govt. and people)
 **** disadvantages
-+ may be difficult to roll out in a larger country due to the sheer number of residents such a scheme would have to cater to
++ may be difficult to roll out in a larger country due to the sheer number of residents such a scheme would have to cater to (diff. local issues to be managed)
 **** example
 1. *singapore*
 	 + 1960-70s: slums / squatter settlements had to be cleared \rightarrow provide higher quality housing to residents
@@ -388,3 +388,64 @@
 		 - comprises 2240 apartments which will house 10k people
 		 - govt. partnership with private sector
 			 + companies hired to build basic infrastructure of roads, sewerage & water; design and build housing units
+*** provision of inclusive housing (sg)
+**** definition
++ a city which provides all residents with adequate housing & access to all basic svcs. (tpt., rec.)
++ all residents feel a sense of belonging and actively contribute to the community
+**** affordable housing
+***** definition
++ housing that is priced at a reasonable cost such that residents still have enough money for other basic needs
+***** how?
++ variety of housing types to cater to the diff. income grps.
+	- private property / condominiums (high-income pop.)
+	- public housing (low-income pop.)
++ types of public housing increased to meet residents' needs
+	- studio apartments \rightarrow seniors
+	- 3-room flats \rightarrow smaller families
+***** examples
+1. financial schemes
+	 + subsidise the cost of flats
+	 + additional cpf housing grant (ahg) (2006)
+		 - helps low-income fam. buy their first flat
+		 - families earning not more than S$5000 / month can qualify for a grant of up to S$40000, used to pay for flat
+2. ethnic integration
+	 + ethnic integ. policy (eip) (1989)
+	 + promote racial integ. and harmony
+		 - includes ppl. of diff. races in the nbh. by specifying ethnic quotae for each block
+	 + creates opp. for interaction among residents from diverse bgs.
+**** facilites & amenities for all ages
+***** how?
++ impt. to provide range of facils. and amenities for diff. age grps.
++ retail shops, clinics, parks are common in nbhs.
+***** example
+1. 3-generation (3g) facilities
+	 + playground, adult fitness corner, wellness stations (seniors)
+	 + cater to the needs of multi generational fam.
+2. seniors activity centres (sac)
+	 + set up near hdb rental / studio apt. blocks (where the elderly usu. live)
+	 + snrs. encouraged to spend time @ centres \rightarrow interact & exercise with others
+3. gen. infrastructure
+	 + corridors in residential dev.: min. width. - 1.5 m
+		 - facil. access for ppl. using mobility aids (eg. wheelchairs)
+**** strong sense of place & belonging
+***** definition
++ sense of place = meaning and value people attach to a place as a res. of their exp. / unique. chars. of a place
+***** why?
++ ppl. may regard places w. special meaning & rmb. these places fondly
++ spent much time there / had +ve exp.
++ more likely to dev. a sense of place & belonging
+***** how?
++ distinctive phys. features \rightarrow give the place its visual quality, char. and identity
+	- monuments
+	- gardens
++ allows ppl to recog. and recall a place easily \rightarrow contrib. to sense of place & belonging
+***** example
++ rounded balconise & spiral staircases of hdb flats (tiong bahru)
+	- unique phys. feature \rightarrow may evoke a sense of place & belonging for tiong bahru residents
+** end remarks
+housing is an important basic need which impacts one's q.o.l.
+with the rise in urban pop., cities face inc. pressure to provide sufficient housing.
+the nature & extent of housing shortage varies between cities. thus, they have adopted diff. strategies to manage the issue of housing shortage.
+
+although sg has achieved considerable success in providing quality housing, it needs to continue to be responsive to the changing needs & aspirations of its people.
+as sg begins to exp. an ageing pop., facil. and amenities which provide care & support svcs. for the elderly would become inc. impt.
