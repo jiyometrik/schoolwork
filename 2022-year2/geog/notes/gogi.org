@@ -21,7 +21,7 @@
   - the pop. that depends on the adult working population to support it economically
 + sex ratio
   - the no. of males per 100 females in a population
-		\frac{\text{males} \times 100}{\text{females}}
+		$\frac{\text{males} \times 100}{\females}$
 ** birth rate factors
 *** culture
 **** explanation
