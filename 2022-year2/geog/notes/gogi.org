@@ -2,7 +2,7 @@
 #+AUTHOR: kiki
 #+DATE: 11 may 2022
 #+OPTIONS: tex:t
-#+STARTUP: latexpreview inlineimages
+#+STARTUP: inlineimages
 
 * population
 **  terms
@@ -23,6 +23,7 @@
   - the no. of males per 100 females in a population
 ** birth rate factors
 *** culture
+**** explanation
 + ppl. in rural areas, farming
   - children are a valuable source of labour
   - more children to work
@@ -33,11 +34,12 @@
   - birth rate also high
 + religion
   - roman cath. church opposes use of artificial means of birth control
-  - example: *phillipines*
-    - 84% of people are roman catholic
-    - pop. growth rate: 2.4% (1990s)
-    - one of the highest pop. growths in asia
+**** example
+    + 84% of people are roman catholic
+    + pop. growth rate: 2.4% (1990s)
+    + one of the highest pop. growths in asia
 *** govt. policies
+**** explanation
 + govts. launch policies to control b/r
 + incentives for ppl. reaching children quota
   - salary bonus
@@ -50,8 +52,8 @@
   - slowly change couples' mindsets
   - posters, mag., TV
   - sell more baby / family planning products (/family planning/)
-+ example: *china, one-child policy (1979)*
-  - govt. afraid of overpop. $\rightarrow$ obstruct econ. growth
+**** example
+  - govt. afraid of overpop. \rightarrow obstruct econ. growth
   - widely publicised in mass media
   - rewards:
     + 10% salary inc.
@@ -62,17 +64,18 @@
   - disincentives:
     + fines + annual tax
   - contraceptives + family planning available
-    + *b/r: 3.3% (1970) $\rightarrow$ 2.1% (1990)*
+    + *b/r: 3.3% (1970) \rightarrow 2.1% (1990)*
 *** female edu.
+**** explanation
 + more focus on career/edu.
-  - dec. time to care for children $\rightarrow$ dec. time for career
-  - dec. age of marriage $\rightarrow$ inc. repro age
-  - maternity $\rightarrow$ dec. time for career
-  - less willing to care for children $\rightarrow$ don't have children $\rightarrow$ b/r dec.
+  - dec. time to care for children \rightarrow dec. time for career
+  - dec. age of marriage \rightarrow inc. repro age
+  - maternity \rightarrow dec. time for career
+  - less willing to care for children \rightarrow don't have children \rightarrow b/r dec.
 + material desire, industrialisation
-+ example: *singapore*
-  - sg. fem. lit. rate: 74% (1980) $\rightarrow$ 96.1% (2019)
-  - b/r: 16.967 $\rightarrow$ 8.067 (per 1000)
+**** example
+  - sg. fem. lit. rate: 74% (1980) \rightarrow 96.1% (2019)
+  - b/r: 16.967 \rightarrow 8.067 (per 1000)
   - ppl. are less inclined to have children
 ** death rate factors
 *** improved standard of living
@@ -82,15 +85,15 @@
   - hygiene, water supply, sanitation & nutrition
     + rubbish disposal + cleanliness of areas
     + H2O supply, sewage
-+ less likely to fall sick $\rightarrow$ dec. d/r
++ less likely to fall sick \rightarrow dec. d/r
 + tpt. facils.
 + better econ., better food prod'n.
 *** politics
 + war
-  - mass conscription $\rightarrow$ more men die @ war (d/r inc.)
-  - destruction of homes $\rightarrow$ civilians die
+  - mass conscription \rightarrow more men die @ war (d/r inc.)
+  - destruction of homes \rightarrow civilians die
   - poor facilities (wartime rations, unclean water & home)
-    + fall sick easily w/o treatment $\rightarrow$ (d/r inc.)
+    + fall sick easily w/o treatment \rightarrow (d/r inc.)
 
 ** pop. pyramid
 #+CAPTION: population pyramid
@@ -133,11 +136,11 @@
   - resources diverted
 + labour $ [shortage of young working pop.]
 + dec. productivity
-  - most of the working population old $\rightarrow$ not much work done
+  - most of the working population old \rightarrow not much work done
 + insufficient young to defend country
 ***  solutions
 **** labour shortage
-+ inc. retirement age $\rightarrow$ pop. work for more years
++ inc. retirement age \rightarrow pop. work for more years
   - possible due to inc. life expectancy
 + draw women back into labour force
   - incentives (home-based, part-time, flexi arrangements, childcare subsidies, exemption for maid levies)
@@ -147,9 +150,241 @@
 + prevent from degenerating mentally & physically
 + NTUC organises grp. activities (e.g. dances, runs for the elderly)
 **** elderly-friendly features in homes
-+ hand-rails $\rightarrow$ help elderly move around
-+ ramps / sliding chairs $\rightarrow$ wheelchair users
-+ emergency btn. / card $\rightarrow$ summon help if needed
++ hand-rails \rightarrow help elderly move around
++ ramps / sliding chairs \rightarrow wheelchair users
++ emergency btn. / card \rightarrow summon help if needed
 **** charitable organisations
 + raise funds with govt. support (SG)
 + subsidised / free medical check-ups (medisave)
+
+
+* housing
+** impacts of housing shortage
+*** lack of safe shelter
++ houses made in /slums/ and /squatter settlements/ have weak foundations
++ unstable walls & roofs made of poor quality materials (e.g. zinc and cardboard)
++ houses collapse easily during natural disasters (floods, earthquakes)
++ construction materials are also flammable \rightarrow inc. risk of fire
++ houses built on unsuitable sites (low-lying areas [flood], steep slopes [landslide])
++ houses built in dense, disorderly manner
+	- narrow paths, limited access for vehicles
+	- residents may not be able to evacuate quickly, rescue efforts hampered
+*** insufficient basic services
++ people lack access to basic services (eg. electricity, clean water, proper sanitation, waste disposal)
++ lack of infrastructure (power lines, water pipes, toilets, waste mgmt. facil.)
++ example: *Nairobi, Kenya*
+	- lack of proper sanitation
+	- toilet shared by up to 1300 residents
+	- access to water is inconsistent
+		+ water piped into the slum is often diverted away by indiv. residents / private water companies
+	- waste accumulates in streets & rivers
+		+ lack of waste disposal facilities
+** causes of housing shortage
+*** rapid pop. growth
++ /urbanisation/: inc. in proportion of the world's pop. living in cities
+	- urban pop. inc.; rural pop. dec.
+	- asia & africa projected to exp. the largest inc. in % of pop. in urban areas
++ rapid pop. growth \rightarrow inc. demand for housing
++ inc. in urban pop. \rightarrow further pressure on govt. and devs.
++ rural-urban migration + high birth rates \rightarrow rapid pop. growth
+*** migration
+**** definitions
++ /migration/: mvmt. of ppl. from one area to another, to take up residence for $\geq$ 1 year
++ /rural-urban migration/: mvmt. of ppl. from rural areas to cities
++ /push factors/: undesirable qualities of the place ppl. leave
+	- lack of job opportunities
+	- poor edu. facil.
+	- lack of healthcare services
+	- famine, war
++ /pull factors/: attractive qualities of the place ppl. would like to move to
+	- job opportunities
+	- better schooling, further edu.
+	- more hospitals, doctors
+	- perception of exciting city life
+	- political stability
+**** explanation
++ ppl. move to cities in search of a better life
+	- attracted by job opp. in cities
++ more jobs created in cities
+	- wider range of econ. activities compared to rural areas
+**** example
++ *sao paulo, brazil*
++ migrants
+	- there may be insufficient jobs to cater to the huge no. of migrants there
+	- migrants may also lack skills req. for jobs avail. in cities
+	- \therefore difficulty getting jobs, unable to afford housing
++ city
+	- unable to build sufficient houses quickly enough
+		+ for housing the huge number of migrants
++ \therefore migrants settle in slums
+	- may eventually find employment there (small businesses)
+*** high birth rate
+**** explanation
++ high rates of nat. inc.
+	- high b/r, low d/r
+	- cities have a large prop. of ppl. in 20s - 30s; likely to start fam.
+	- abv. avg. fertility rates \rightarrow high nat.inc.
++ supply-demand
+	- cities have to allocate more resourcees to housing \rightarrow cater to the inc. in pop.
+	- \because cities may not be able to build houses fast enough
+	- \therefore not every couple may be able to live in formal housing
+**** example
++ *london, uk*
++ london's pop. increased (rapidly) by 104 000 in 2012-13
+	- high b/r, m/r (migration rates)
+	- 86 000 more births than deaths
+	- foreign-born mothers accounted for > 1/4 of total births
++ have to allocate more resources to housing to cater to inc. in pop.
+*** competing land use
+**** explanation
++ many uses for land
+	- residential (house)
+	- commercial (make $)
+	- industrial (factories)
+	- recreational (have fun)
+	- infrastructure (roads, airports, hospitals)
++ competing uses for land \rightarrow stiff competition \rightarrow insufficient land for housing
+	- various grps. of people may have conflict of interest
+**** example
++ *Singapore*
++ govt. has committed 17% of land supply to housing to cater to a proj. growth in pop.
++ competing land uses have been identified
+	- some golf courses in sg will be removed \rightarrow re-dev. for housing / other
+*** limited land supply
++ limited land supply of land suitable for housing
+	- physical features (seas, rivers, mts.) limit amt. of land that can be used for housing
+	- flat land is preferred for dev.; high $ of construction on steep slopes
++ some cities have small land areas (eg. sg - 716 sq km, hk - 1104 sq km)
+	- there is a limit to how much land can be reclaimed from the sea
+	- small land area \rightarrow insufficient land for housing
++ high pop. dens. (large pop., limited land area)
+	- need to house more ppl. in small area
+** consequences of housing shortage
+*** homelessness
+**** explanation
++ -ve impact on one's health
+	- exposure to cold / rain
+	- hunger, lack of sleep
+	- skin infections, respiratory problems, stress disorders
+**** example
++ us dept of housing & urban dev. estimates 610 042 homeless ppl. in the us in a single night (jan 2013)
+*** slums & squatter settlements
+**** env. pollution
+***** explanation
++ inadequate provision of basic svcs. \rightarrow env. pollution
++ *water pollution*
+	- rivers near slums may be used for /washing/, /garbage/, and /sewage disposal/.
+	- contaminants from sewage can seep into groundwater, pollute nearby water sources (e.g. wells)
++ *land pollution*
+	- lack of a garbage disposal system \rightarrow dumping of garbage into open drains
+		+ foul smell
+		+ eyesore
+***** example
++ *Guanabara Bay, Rio de Janeiro, Brazil*
++ 1970s
+	- clear waters, white sandy beaches
+	- habitat for diverse range of marine animals
++ present
+	- floating rubbish, polluted waters
+	- disposal of untreated sewage into the bay (nearby slums, squatter settlements)
+**** low level of health, due to poor living conds
+***** explanation
++ lack of basic services (clean water, proper sanitation) \rightarrow people more vulnerable to diseases
++ no access to safe drinking water
+	- use water from polluted rivers, contaminated wells
+	- may have bacteria, causing diseases (eg. cholera)
++ lack of waste mgmt. facil.
+	- improper disposal of rubbish
+	- stagnant waters (clogged drains, sewers) \rightarrow breeding grounds for mosquitoes \rightarrow malaria, dengue
++ overcrowding
+	- large family living in a small room
+	- houses closely spaced
+	- facil. the rapid spread of diseases
+***** example
++ *nairobi, kenya*
++ health of children living in slums is generally poorer than in areas with formal housing
++ d/r of children (<5 y/o) living in slums is 2.5 \times higher than in other parts of the city (who, 2008)
+**** vulnerability
+***** explanation
++ residents more susceptible to the risk of fires, landslides and evictions (see earlier chapter)
++ slums may be built on land w/o perm. from relevant auth.
+	- face the threat of eviction
+	- lack a sense of sec. \leftarrow may be forced out of their homes
+***** example
+1. *mumbai, india*
+	 + fire in slum destroys 150 houses
+		 - more than 100 1-room shacks, rendered families homeless
+		 - cause of fire: short circuit (loose electric wires)
+2. *rio de janeiro, brazil*
+	 + landslides in a favela in r.d.j. \rightarrow 256 ppl. killed (apr 2010)
+	 + occurred after a period of heavy rain, a house collapsed down a hill
+3. *dhaka, bangladesh*
+	 + court order to clear the land issued \rightarrow 40 000 people evicted from korail slum (2012)
+	 + social tension between auth. & residents
+		 - residents staged protest \rightarrow govt. promised to stop temp. evicting residents
+** strategies to manage housing
+*** slum upgrading
+**** explanation
++ cities improve the quality of housing & basic svcs.
++ slum sites cleared and basic infrastructure provided (the whole house)
++ residents move out and relocate
++ financial schemes & assistance provided
+**** advantages
++ residents can be provided with housing relatively quickly with all svcs. covered
+**** disadvantages
++ high costs for the govt.
++ some residents may face difficulties paying for the cost
++ residents reluctant to move and be left without a house temp.
+**** example
++ *nairobi, kenya*
++ govt. partnered with the un (un-habitat) in a proj. which aims to provide residents with the rights to build on the existing land & improve housing conds. and infra-str.
++ residents shift temporarily to an area with new housing units (equipped with svcs.)
++ vacated slum area upgraded & residents can return to the original sites once complete
+*** self-help schemes
+**** explanation
++ low income households to improve the cond. of existing housing
++ govt.s do not provide housing directly
+	- provide assistance in other forms:
+		+ construction materials
+		+ basic svcs.
++ ppl. build the houses themselves
+	- at their own pace / in free time (after work / weekends)
+	- training provided by govt.
+**** advantages
++ reduced construction costs
+**** disadvantages
++ training needs to be provided
+	- even then, still has chance of being dangerous
++ the pace of construction is slow due to schedule clashes etc.
+**** example
++ *rocinha project, brazil*
++ most wooden houses replaced by concrete houses
++ 75% of homes have electricity (compared to 30% in the past)
++ rooftop water tanks, piped water systems
++ sanitation facilities (eg. toilets, sewers)
+*** public housing
+**** explanation
++ govt. efforts to provide housing units with basic svcs.
+	- usu. for low-income hh. + other persons of need (elderly, disabled)
++ reasonably priced (compared to private housing)
+	- subsidised by govt.
++ other methods of public housing
+	- old flats may be rented at a low price
+	- abandoned buildings converted for residential use
+	- new apartments built
+**** advantages
++ low cost (for both govt. and people)
+**** disadvantages
++ may be difficult to roll out in a larger country due to the sheer number of residents such a scheme would have to cater to
+**** example
+1. *singapore*
+	 + 1960-70s: slums / squatter settlements had to be cleared \rightarrow provide higher quality housing to residents
+		 - hdb (housing dev. board) set up (1960) \rightarrow build and provide public housing for sg's inc. pop.
+	 + public housing programmes achieved success
+		 - address the diverse needs of all residents
+		 - > 80% of sg's pop. lives in hdb flats (2013)
+2. *r.d.j., brazil*
+	 + bairro carioca project
+		 - comprises 2240 apartments which will house 10k people
+		 - govt. partnership with private sector
+			 + companies hired to build basic infrastructure of roads, sewerage & water; design and build housing units
