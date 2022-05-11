@@ -26,8 +26,11 @@
 \usepackage[nolabel, final]{showlabels}
 
 % font
-\usepackage[T1]{fontenc}
-\usepackage[lf]{MinionPro}
+\usepackage[scale=0.9]{noto-mono}
+\usepackage[urw-garamond]{mathdesign}
+% \usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
+% \setmainfont{EB Garamond}
+% \setmathfont{Garamond-Math.otf}[StylisticSet={3,6,7,9}]
 
 % make life easier
 \newcommand{\reals}{\mathbb{R}}
@@ -908,5 +911,49 @@
 			\end{align*}
 		\end{solution}
 	\end{parts}
+
+	\question (\textbf{9 May})
+	\begin{parts}
+		\part Given that \(5^{x} = 3\), find the value of \(5^{2x + 3}\).
+		\begin{solution}
+			\begin{align*}
+				5^{2x + 3} & = 5^{2x} \cdot 5^{3}               \\
+				           & = \left(5^{x}\right)^{2} \cdot 125 \\
+				           & = 3^{2} \cdot 125                  \\
+				           & = 1125
+			\end{align*}
+		\end{solution}
+		\part Given that \(2^{x} = 6\), find the value of \(2^{3x - 1}\).
+		\begin{solution}
+			\begin{align*}
+				2^{3x - 1} & = \left(2^{x}\right)^{3} \div 2^{1} \\
+				           & = 6^{3} \div 2                      \\
+				           & =  108
+			\end{align*}
+		\end{solution}
+	\end{parts}
+
+	\question (\textbf{10 May}) Solve the equation \(2^{16^{x}} = 16^{2^{x}}\).
+	\begin{solution}
+		\begin{align*}
+			2^{16^{x}} & = 16^{2^{x}}                 \\
+			2^{16^{x}} & = \left(2^{4}\right)^{2^{x}} \\
+			16^{x}     & = 4 \cdot 2^{x}              \\
+			2^{4x}     & = 2^{x + 2}                  \\
+			4x         & = x + 2                      \\
+			x          & = \frac{2}{3}
+		\end{align*}
+	\end{solution}
+
+	\question (\textbf{11 May}) Given that \(9^{x-1} = 7\), find the value of \(3^{2x+3}\).
+	\begin{solution}
+		\begin{align*}
+			9^{x - 1}             & = 7                      \\
+			\therefore 3^{2x - 2} & = 7                      \\
+			3^{2x+3}              & = 3^{2x - 2} \cdot 3^{5} \\
+			                      & = 7 \cdot 243            \\
+			                      & = 1701
+		\end{align*}
+	\end{solution}
 \end{questions}
 \end{document}
