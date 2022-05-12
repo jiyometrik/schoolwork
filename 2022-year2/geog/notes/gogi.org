@@ -2,7 +2,7 @@
 #+AUTHOR: kiki
 #+DATE: 11 may 2022
 #+OPTIONS: tex:t
-#+STARTUP: inlineimages
+#+STARTUP: inlineimages latexpreview
 
 * population
 **  terms
