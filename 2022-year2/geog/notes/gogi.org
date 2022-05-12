@@ -507,6 +507,8 @@ as sg begins to exp. an ageing pop., facil. and amenities which provide care & s
 ***** exp.
 + ppl spend more time commuting \therefore trf-cong. reduces productivity
 + tpt. system is inefficient \rightarrow productivity goes down \rightarrow economic loss for the country
++ rising expenses in fuels
++ higher tpt. cost (goods need to be delivered)
 ***** eg.
 1. *singapore*
 	 + econ. loss from inefficient tpt. amts. to 9% of the country's annual income per person (siemens, 2014)
