@@ -627,7 +627,9 @@ as sg begins to exp. an ageing pop., facil. and amenities which provide care & s
 + bus & rail sys. can be upgraded to carry more ppl. and arrive more freq.
 + tpt. op. can put sys. in place so that buses & trains arrive at scheduled times
 ***** adv.
++ more ppl. can be transported to places within a short time
 ***** dis.
++ inc. the freq. & cap. of buses/trains could be $$$
 ***** eg.
 1. *curitiba, brazil*
 	 + brt (bus rapid transit) system
@@ -638,3 +640,109 @@ as sg begins to exp. an ageing pop., facil. and amenities which provide care & s
 		 - as often as every 90 s
 		 - on-board sensors \rightarrow trf. lights stay green when buses approach
 		 - \therefore reduces no. of times buses stop \rightarrow move at steady pace
+2. *sg*
+	 + bus
+		 - 2012: govt. partner with bus ops. to inc. cap. & freq. of buses (bus service enhancement programme)
+			 + expected to red. waiting times for buses
+	 + train
+		 - 2011: more trains added to existing lines
+		 - 2014: more trains cont. to be added
+		 - 2016: 28 trains added to nsl and ewl; 16 trains added to sengkang & punggol lrt
+		 - upgraded train signaling sys.
+			 + allow trains to arrive safely every 100 s
+			 + carry 20% more passengers
+*** managing road usage
+**** road pricing
+***** def.
++ a trf. mgmt. sys. which charges drivers when they use certain roads
+***** exp.
++ drivers req. to pay more during peak hr.
++ discourage the use of certain roads
++ no. & loc. of gantries have to be determined
+***** adv.
++ higher $ discourage driving during p.h. \rightarrow drivers use alternative tpt. (public bus/train)
+***** dis.
++ drivers avoid erp \rightarrow traffic diverted to other roads \rightarrow congestion on other roads
+***** eg.
+1. *singapore*
+	 + erp (electronic rd. pricing)
+	 + 72 erp gantries set up (2012)
+		 - located in more-cong. areas
+	 + cashcards inserted into in-vehicle units (ius)
+	 + each time a vehicle passes through an erp gantry, an amt. is deducted from its cashcard via short-range radio comm.
+	 + success
+		 - 15% reduction in trf. vol. on the rd. during peak hr.
+		 - avg. expressway speeds: 35 km/h \rightarrow 55 km/h
+		 - trf. reduced by 16% within erp zones
+		 - trf. vol. in cbd during peak hr. remains relatively stable, despite inc. car ownership over the years
+2. *stockholm, sweden*
+	 + stockholm congestion tax applies to veh. leaving/entering the cbd (2007)
+	 + a bill is sent to the veh. to inform driver of the amt. to pay
+	 + traffic vol. fell by 24% during p.h. (cong. charge secretariat, stockholm)
+**** increase parking fees
+***** exp.
++ inc. driving $, esp. to and from cbd
++ encourage pub. tpt.
++ ppl seek alt. means of tpt. such as pub. tpt. & carpooling
+	- carpooling: grp. of ppl. travelling tgt. in the same car & sharing the $
+		+ save $ on fuel, parking, cong.
+		+ reduces no. of veh. on road
+***** adv.
++ high parking $ add to the $ of owning & using cars, discouraging private car ownership
+***** dis.
++ drivers may resort to illegal parking \rightarrow block traffic / pose a danger to other drivers
+***** eg.
++ *shanghai, china*
++ city govt. plans to inc. car parking charges
+	- current:
+		+ downtown: 15 yuan (us$2.40) for the 1st h, 10 yuan for every additional 1/2h
+		+ inner ring road: 10 yuan for the 1st h, 6 yuan for every additional 1/2h
++ target:
+	- keep no. of reg. cars in central shanghai below 2.5m
+		+ current: over 2.1m (1.8m are private veh.)
+**** enhanced traffic monitoring
+***** exp.
++ traffic monitoring can alert drivers of trf-cong. \rightarrow they can avoid travelling on the road
+***** adv.
++ drivers can avoid places w. trf-cong.
+***** dis.
++ trf. monitoring only encourages drivers to drive elsewhere
++ does not reduce no. of veh. on the road
+***** eg. (singapore)
+1. emas (expressway advisory & monitoring system)
+	 + vehicle breakdown / accident \rightarrow live info made avail. to drivers on the roads \rightarrow drivers can opt to take alt. routes
+2. glide (green link determining)
+	 + computerised trf. light signalling
+		 - detects vehicles, pedestrians, maj. rd. jn. \rightarrow adj. the green time accordingly
+		 - when more vehicles detected, trf. signal remains green \rightarrow allow veh. to drive through the trf. jn.
+		 - trf. signals at nearby jn. are coordinated at the start of their green times \rightarrow drivers can catch the 'green wave' \rightarrow travel from one jn. to the next w/o stop
+*** other measures
+**** telecommuting
+***** def. and exp.
++ /telecommuting/: work arrangemt. where employees wfh or @ a loc. near home
+	- do not have to travel to office
++ made possible by tech: internet, computers, phone lines
++ ppl. can stay in contact with colleagues/clients although not phys. in the office
++ $\therefore$ eliminates need for ppl. to commute to/from workplaces \rightarrow reducing no. of veh. on the road \rightarrow reduces trf-cong.
+***** adv.
++ do not need to travel out of their residential areas to go to work
+	 - reduces no. of drivers & pub. tpt. passengers during p.h.
+***** dis.
++ when millions of ppl. change their work arrangment, local servers may go down and cease to function temporarily \rightarrow more inconv.
+**** cycling
+***** exp.
++ bicycles are env.-friendly (0 carbon emissions)
++ convenient (mobility & flexibility)
+***** adv.
++ mode of tpt. that provides flexibility and mobility
++ env.-friendly, sustainable
+***** dis.
++ cycling lanes v. near to motor veh. on the road \rightarrow dangerous for cyclists
++ layout, trf., topography \rightarrow may be unsuitable for cycling
+***** eg.
++ *copenhagen, denmark*
++ govt. built ntwk. of wide cycling lanes, covering a large part of the city
+	- v. conv. for ppl. to travel from place - place
++ numerous bicycle parking lots for cyclists
++ cycling now an impt. means of tpt.
+	- 52% ppl. in the city commute by bicycle to wk. / sch. (2013, city of copenhagen)
