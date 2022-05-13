@@ -8,6 +8,7 @@ node_modules/
 # generated files
 *.aux
 *.log
+*.out
 *.toc
 
 # bibliography
