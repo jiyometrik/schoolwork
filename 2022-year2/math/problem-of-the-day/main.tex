@@ -1,6 +1,4 @@
-\documentclass[12pt, answers]{exam}
-
-% smaller margins
+\documentclass[12pt, answers]{exam} % smaller margins
 \usepackage[margin=1in, a4paper]{geometry}
 
 % dfrac, therefore, because and others
@@ -28,9 +26,6 @@
 % font
 \usepackage[scale=0.9]{noto-mono}
 \usepackage[urw-garamond]{mathdesign}
-% \usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
-% \setmainfont{EB Garamond}
-% \setmathfont{Garamond-Math.otf}[StylisticSet={3,6,7,9}]
 
 % make life easier
 \newcommand{\reals}{\mathbb{R}}
@@ -954,6 +949,62 @@
 			                      & = 7 \cdot 243            \\
 			                      & = 1701
 		\end{align*}
+	\end{solution}
+
+	\question (\textbf{12 May}) Solve the equation \(\left(8^x\right)^{2x + 1} \cdot 16^x = \left(\frac{1}{4^x}\right)^{-3x} \cdot 32\).
+	\begin{solution}
+		\begin{align*}
+			\left(8^x\right)^{2x + 1} \cdot 16^x                              & = \left(\frac{1}{4^x}\right)^{-3x} \cdot 32          \\
+			\left[\left(2^3\right)^x\right]^{2x + 1} \cdot \left(2^4\right)^x & = \left[\left(2^{-2}\right)^x\right]^{-3x} \cdot 2^5 \\
+			2^{6x^2 + 3x}                                 \cdot 2^{4x}        & = 2^{6x^2} \cdot 2^5                                 \\
+			6x^2 + 3x + 4x                                                    & = 6x^2 + 5                                           \\
+			7x                                                                & = 5                                                  \\
+			x                                                                 & = \frac{5}{7}
+		\end{align*}
+	\end{solution}
+
+	\question (\textbf{13 May})	Given the following equations, solve for \(a\), \(b\) and \(c\).
+	\begin{align*}
+		7^{a} \cdot 7^{b}      & = 7^{c} \label{eq:13051} \tag{1}       \\
+		\left(2^{a}\right)^{b} & = 64 \label{eq:13052} \tag{2}          \\
+		\frac{3^{b}}{3^{c}}    & = \frac{1}{9} \label{eq:13053} \tag{3} \\
+	\end{align*}
+	\begin{solution}
+		We can construct 3 linear equations.
+
+		From \eqref{eq:13051}:
+		\begin{align*}
+			7^{a} \cdot 7^{b} & = 7^{c}                      \\
+			a + b             & = c \label{eq:13054} \tag{4} \\
+		\end{align*}
+		From \eqref{eq:13052}:
+		\begin{align*}
+			\left(2^{a}\right)^{b} & = 64                                   \\
+			ab                     & = 6                                    \\
+			a                      & = \frac{6}{b} \label{eq:13055} \tag{5} \\
+		\end{align*}
+		From \eqref{eq:13053}:
+		\begin{align*}
+			\frac{3^{b}}{3^{c}} & = \frac{1}{9}                    \\
+			\frac{3^{b}}{3^{c}} & = 3^{-2}                         \\
+			b - c               & = -2                             \\
+			c                   & = b + 2 \label{eq:13056} \tag{6} \\
+		\end{align*}
+		Substitute \eqref{eq:13055}, \eqref{eq:13056} into \eqref{eq:13054}:
+		\begin{align*}
+			\frac{6}{b} + b            & = b + 2        \\
+			\therefore b               & = 3            \\
+			\therefore c = b + 2       & = 3 + 2 = 5    \\
+			\therefore a = \frac{6}{b} & = 6 \div 3 = 2
+		\end{align*}
+		\[
+			\therefore
+			\begin{cases}
+				a & = 2 \\
+				b & = 3 \\
+				c & = 5
+			\end{cases}
+		\]
 	\end{solution}
 \end{questions}
 \end{document}
