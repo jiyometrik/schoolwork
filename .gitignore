@@ -10,9 +10,11 @@ node_modules/
 *.log
 *.out
 *.toc
+_minted-main/
 
 # bibliography
 *.bbl
+*.bcf
 *.blg
 
 # latexmk

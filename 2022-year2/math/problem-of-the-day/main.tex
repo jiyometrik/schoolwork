@@ -2,7 +2,7 @@
 \usepackage[margin=1in, a4paper]{geometry}
 
 % dfrac, therefore, because and others
-\usepackage{mathtools}
+\usepackage{amsmath, amssymb, amsfonts}
 
 % units
 \usepackage{siunitx}
@@ -24,8 +24,13 @@
 \usepackage[nolabel, final]{showlabels}
 
 % font
+\usepackage{microtype}
 \usepackage[scale=0.9]{noto-mono}
-\usepackage[urw-garamond]{mathdesign}
+% \usepackage[T1]{fontenc}
+% \usepackage{MinionPro}
+\usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
+\setmainfont{EB Garamond}
+\setmathfont{Garamond-Math.otf}[StylisticSet={6,7,9}]
 
 % make life easier
 \newcommand{\reals}{\mathbb{R}}
@@ -1005,6 +1010,17 @@
 				c & = 5
 			\end{cases}
 		\]
+	\end{solution}
+
+	\question (\textbf{17 May}) If both \(m\) and \(n\) are positive and
+	\(m^{n} = n^{m}\), show that \(\left(\frac{m}{n}\right)^{\frac{m}{n}} = m^{\frac{m - n}{n}}\).
+	\begin{solution}
+		\begin{align*}
+			\left(\frac{m}{n}\right)^{\frac{m}{n}} & = m^{\frac{m - n}{n}} \\
+			\sqrt[n]{\frac{m^{m}}{n^{m}}}          & = \sqrt[n]{m^{m-n}}   \\
+			\sqrt[n]{\frac{m^{m}}{m^{n}}}          & = \sqrt[n]{m^{m-n}}   \\
+			\frac{m^{m}}{m^{n}}                    & = m^{m-n}
+		\end{align*}
 	\end{solution}
 \end{questions}
 \end{document}

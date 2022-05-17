@@ -1,8 +1,10 @@
 * Schoolwork
+
 A repository of the schoolwork I do (digitally) so that it isn't lost
 when I change my operating system.
 
 ** File Structure
+
 Each large directory indicates the year and the level.
 
 In each large directory, there are sub-directories for each subject taken in that
