@@ -24,13 +24,9 @@
 \usepackage[nolabel, final]{showlabels}
 
 % font
-\usepackage{microtype}
 \usepackage[scale=0.9]{noto-mono}
-% \usepackage[T1]{fontenc}
-% \usepackage{MinionPro}
-\usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
-\setmainfont{EB Garamond}
-\setmathfont{Garamond-Math.otf}[StylisticSet={6,7,9}]
+\usepackage[T1]{fontenc}
+\usepackage{MinionPro}
 
 % make life easier
 \newcommand{\reals}{\mathbb{R}}
@@ -52,7 +48,7 @@
 
 \begin{questions}
 	\question (\textbf{21 Mar}) Simplify the algebraic fraction
-	\( \frac{a^4-a^2b^2}{(a-b)^2} \div \frac{a(a+b)}{b^2} \times \frac{b}{a} \).
+	\( \dfrac{a^4-a^2b^2}{(a-b)^2} \div \frac{a(a+b)}{b^2} \times \frac{b}{a} \).
 
 	\begin{solution}
 		\begin{align*}
@@ -1020,6 +1016,16 @@
 			\sqrt[n]{\frac{m^{m}}{n^{m}}}          & = \sqrt[n]{m^{m-n}}   \\
 			\sqrt[n]{\frac{m^{m}}{m^{n}}}          & = \sqrt[n]{m^{m-n}}   \\
 			\frac{m^{m}}{m^{n}}                    & = m^{m-n}
+		\end{align*}
+	\end{solution}
+
+	\question (\textbf{18 May}) Simplify \(\left[\left(a - b - c\right)^{3}\right]^{2n} \cdot \left[\left(b - a + c\right)^{3}\right]^{2n}\).
+	\begin{solution}
+		\begin{align*}
+			{\left[{\left(a - b - c\right)}^{3}\right]}^{2n} \cdot {\left[{\left(b - a + c\right)}^{3}\right]}^{2n} & = {\left(a - b - c\right)}^{6n} \cdot {\left(b - a + c\right)}^{6n} \\
+			                                                                                                        & = {\left[\left(a - b - c\right)\left(b - a + c\right)\right]}^{6n}  \\
+			                                                                                                        & = {\left[-{\left(a - b - c\right)}^{2}\right]}^{6n}                 \\
+			                                                                                                        & = {\left(a - b - c\right)}^{12n}
 		\end{align*}
 	\end{solution}
 \end{questions}
