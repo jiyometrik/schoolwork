@@ -2,7 +2,7 @@
 \usepackage[margin=1in, a4paper]{geometry}
 
 % dfrac, therefore, because and others
-\usepackage{amsmath, mathtools}
+\usepackage{amsmath, amssymb, amsthm, amsbsy, amsfonts, mathtools}
 
 % units
 \usepackage{siunitx}
@@ -27,7 +27,8 @@
 \usepackage[nolabel, final]{showlabels}
 
 % font
-\usepackage{fourier-otf}
+\usepackage[T1]{fontenc}
+\usepackage{mlmodern}
 
 % make life easier
 \newcommand{\reals}{\mathbb{R}}
@@ -171,6 +172,48 @@
 		As Point $B$'s $y$-coordinate approaches 0, its $x$-coordinate approaches infinity,
 		resulting in a triangle which approaches an infinite area. Point $A$ is further from
 		$(\infty, 0)$ than Point $B$, so $S_{\triangle AOC} < S_{\triangle BOD}$.
+	\end{solution}
+
+	\question \qndate{7}{Jul} Points $A$ and $B$ are on the hyperbola $y = \frac{3}{x}$.
+	Rectangles are drawn from the two points as shown. The areas bounded by the two
+	rectangles are labelled $S_1$ and $S_2$. If the shaded area is 1 sq. unit, find
+	the sum $S_1 + S_2$.
+	\begin{figure}[htpb]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+					domain=0:6,
+					axis x line=center,
+					axis y line=left,
+					xlabel=$x$,
+					ylabel=$y$,
+					ticks=none,
+					smooth,
+					xtick={1},
+					ytick={1},
+					ymin=-2,
+					scaled ticks=true,
+				]
+				\addplot[black,thick] {3/x};
+				\filldraw (1,3) circle[radius=2pt] node[right]{$A$};
+				\filldraw (3,1) circle[radius=2pt] node[above]{$B$};
+				\filldraw[gray] (0,0) rectangle (1,1);
+				\draw (0,1) rectangle (1,3) node[pos=.5]{$S_1$};
+				\draw (1,0) rectangle (3,1) node[pos=.5]{$S_2$};
+			\end{axis}
+		\end{tikzpicture}
+		\caption{The shaded areas, $S_1$ and $S_2$.}
+		\label{fig:0707_Hyper}
+	\end{figure}
+	\begin{solution}
+		\begin{align*}
+			S_1       & = (1 - 0) \times (\frac{3}{1}-1)   \\
+			          & = 2 \text{ sq. units}              \\
+			S_2       & = (\frac{3}{3} - 0) \times (3 - 1) \\
+			          & = 2 \text{ sq. units}              \\
+			S_1 + S_2 & = 2 + 2                            \\
+			          & = 4 \text{ sq. units}
+		\end{align*}
 	\end{solution}
 \end{questions}
 \end{document}
