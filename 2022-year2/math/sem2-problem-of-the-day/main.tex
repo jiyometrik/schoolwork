@@ -2,7 +2,7 @@
 \usepackage[margin=1in, a4paper]{geometry}
 
 % dfrac, therefore, because and others
-\usepackage{amsmath, amsfonts}
+\usepackage{amsmath, mathtools}
 
 % units
 \usepackage{siunitx}
@@ -44,7 +44,7 @@
 \pagestyle{plain}
 
 \begin{document}
-\onehalfspacing%
+\doublespacing%
 
 \begin{center}
 	\Large
@@ -124,6 +124,53 @@
 			\item $y_3 > 0$ since $x_3 > 0$. Hence, $y_3$ is the greatest.
 			\item $0 > x_2 > x_1$, hence $y_2 < y_1 < 0$.
 		\end{itemize}
+	\end{solution}
+
+	\question \qndate{1}{Jul} Given that $y$ varies inversely as $x$ such that
+	$y = \left(a-2\right){x}^{a^2-5}$, also when $x>0$, as $x$ increases, $y$
+	increases. Find the equation of the hyperbola.
+	\begin{solution}
+		\begin{align*}
+			\frac{k}{x}                                 & = \left(a-2\right){x}^{a^2-5}                \\
+			k                                           & = \left(a-2\right){x}^{a^2-4}                \\
+			                                            & = \left(a-2\right){x}^{(a+2)(a-2)}           \\
+			\because y                                  & = \frac{\left(a-2\right){x}^{(a+2)(a-2)}}{x} \\
+			\therefore \left(a-2\right){x}^{(a+2)(a-2)} & < 0                                          \\
+			\because a - 2 < 0                          & \text{ and } (a+2)(a-2) \geq 0               \\
+			\therefore a + 2                            & = 0                                          \\
+			\therefore a                                & = -2                                         \\
+			\therefore y                                & = \frac{-4}{x}                               \\
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{5}{Jul} If a straight line $y = (2m - 1)x$ and a hyperbola
+	$y = \frac{3-m}{x}$ has an intersection point each in Quadrant 1 and 3, what
+	is the range of values of the constant $m$?
+	\begin{solution}
+		\begin{align*}
+			\because y        & = \frac{3-m}{x} \\
+			\therefore m      & < 3             \\
+			\because y        & = x(2m - 1)     \\
+			\therefore 2m - 1 & > 0             \\
+			\therefore 0.5    & < m < 3
+		\end{align*}
+	\end{solution}
+
+	\question Points $A$ and $B$ are on the hyperbola $y = \frac{k}{x}$. Right $\triangle AOC$
+	and $\triangle BOD$ are drawn by perpendicular lines drawn from the two points and connecting
+	the points with the origin. Compare the sizes of the areas of the two triangles.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=0.7]{./images/0706_Tri.png}
+		\caption{$\triangle AOC$ and $\triangle BOD$.}
+		\label{fig:0706_Tri}
+	\end{figure}
+	\begin{solution}
+		$S_{\triangle AOC} < S_{\triangle BOD}$.
+
+		As Point $B$'s $y$-coordinate approaches 0, its $x$-coordinate approaches infinity,
+		resulting in a triangle which approaches an infinite area. Point $A$ is further from
+		$(\infty, 0)$ than Point $B$, so $S_{\triangle AOC} < S_{\triangle BOD}$.
 	\end{solution}
 \end{questions}
 \end{document}
