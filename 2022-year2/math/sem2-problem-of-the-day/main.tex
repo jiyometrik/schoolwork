@@ -1,4 +1,4 @@
-\documentclass[11pt,answers]{exam}
+\documentclass[12pt,answers]{exam}
 \usepackage[margin=1in, a4paper]{geometry}
 
 \usepackage{amsmath, amssymb, amsthm, amsbsy, amsfonts, mathtools}
@@ -14,22 +14,22 @@
 \usepackage[nolabel, final]{showlabels}
 
 \usepackage{fourier}
-\usepackage{plex-serif}
+\usepackage[lf]{CrimsonPro}
 \usepackage[basic,italic,symbolgreek]{mathastext}
-\makeatletter
-\@for\@tempa:=a,b,c,d,e,h,i,k,l,m,n,o,q,r,s,t,u,v,w,x\do{%
-\MTsetmathskips{\@tempa}{0.5mu}{0.5mu}}%
-\makeatother
-\MTsetmathskips{f}{2.5mu}{0.5mu}
-\MTsetmathskips{g}{1.5mu}{0.5mu}
-\MTsetmathskips{j}{2.5mu}{0.5mu}
-\MTsetmathskips{p}{1.5mu}{0mu}
-\MTsetmathskips{y}{1.5mu}{0.5mu}
-\MTsetmathskips{z}{1mu}{0.5mu}
+% \makeatletter
+% \@for\@tempa:=a,b,c,d,e,h,i,k,l,m,n,o,q,r,s,t,u,v,w,x\do{%
+% \MTsetmathskips{\@tempa}{0.5mu}{0.5mu}}%
+% \makeatother
+% \MTsetmathskips{f}{2.5mu}{0.5mu}
+% \MTsetmathskips{g}{1.5mu}{0.5mu}
+% \MTsetmathskips{j}{2.5mu}{0.5mu}
+% \MTsetmathskips{p}{1.5mu}{0mu}
+% \MTsetmathskips{y}{1.5mu}{0.5mu}
+% \MTsetmathskips{z}{1mu}{0.5mu}
 
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\ints}{\mathbb{Z}}
-\newcommand{\posints}{\mathbb{Z}^{+}}
+\newcommand{\posints}{{\mathbb{Z}}^{+}}
 \newcommand{\rationals}{\mathbb{Q}}
 \newcommand{\complexes}{\mathbb{C}}
 \renewcommand{\frac}[2]{\dfrac{#1}{#2}}
@@ -40,7 +40,6 @@
 
 \begin{document}
 \doublespacing%
-
 \begin{center}
 	\Large
 	\textbf{Problem Of The Day 2022}
@@ -62,7 +61,6 @@
 			\therefore m          & \neq 1
 		\end{align*}
 	\end{solution}
-
 
 	\question \qndate{28}{Jun} Which of the following is a possible plot of
 	$y = x + m$ and $y = \frac{m}{x}$ on the same axes? (The graphs are not drawn

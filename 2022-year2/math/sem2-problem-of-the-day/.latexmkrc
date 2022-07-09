@@ -4,9 +4,9 @@
 $ENV{'TZ'} = 'Asia/Singapore';
 
 # compilation
-$pdflatex = 'lualatex -shell-escape'; # enable shell-escape for `minted' package
+$pdflatex = 'pdflatex -shell-escape'; # enable shell-escape for `minted' package
 $pdf_mode = 1; # only generate the pdf
-$max_repeat = 8; # maximum number of runs
+# $max_repeat = 12; # maximum number of runs
 
 # viewing
 # $dvi_previewer = 'start okular';
