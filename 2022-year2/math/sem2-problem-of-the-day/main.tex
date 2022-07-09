@@ -1,45 +1,39 @@
-\documentclass[12pt, answers]{exam}
+\documentclass[11pt,answers]{exam}
 \usepackage[margin=1in, a4paper]{geometry}
 
-% dfrac, therefore, because and others
 \usepackage{amsmath, amssymb, amsthm, amsbsy, amsfonts, mathtools}
-
-% units
 \usepackage{siunitx}
 
-% diagrams, graphs
 \usepackage{tikz, pgfplots}
 \pgfplotsset{compat=1.16}
-
-% images
 \usepackage{graphicx}
 
-% line spacing
 \usepackage{setspace}
-
-% cancellation
 \usepackage{cancel}
-
-% cases
 \usepackage{cases}
-
-% labelling
 \usepackage[nolabel, final]{showlabels}
 
-% font
-\usepackage[T1]{fontenc}
-\usepackage{mlmodern}
+\usepackage{fourier}
+\usepackage{plex-serif}
+\usepackage[basic,italic,symbolgreek]{mathastext}
+\makeatletter
+\@for\@tempa:=a,b,c,d,e,h,i,k,l,m,n,o,q,r,s,t,u,v,w,x\do{%
+\MTsetmathskips{\@tempa}{0.5mu}{0.5mu}}%
+\makeatother
+\MTsetmathskips{f}{2.5mu}{0.5mu}
+\MTsetmathskips{g}{1.5mu}{0.5mu}
+\MTsetmathskips{j}{2.5mu}{0.5mu}
+\MTsetmathskips{p}{1.5mu}{0mu}
+\MTsetmathskips{y}{1.5mu}{0.5mu}
+\MTsetmathskips{z}{1mu}{0.5mu}
 
-% make life easier
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\ints}{\mathbb{Z}}
 \newcommand{\posints}{\mathbb{Z}^{+}}
 \newcommand{\rationals}{\mathbb{Q}}
 \newcommand{\complexes}{\mathbb{C}}
-
 \renewcommand{\frac}[2]{\dfrac{#1}{#2}}
 \newcommand{\oneover}[1]{\dfrac{1}{#1}}
-
 \newcommand{\qndate}[2]{(\textbf{#1 #2})}
 
 \pagestyle{plain}
@@ -75,7 +69,7 @@
 	to scale.)
 	\begin{figure}[htpb]
 		\centering
-		\includegraphics[scale=.7]{./images/0628_Graphs.png}
+		\includegraphics[scale=.8]{./images/0628_Graphs.png}
 		\caption{$y = x + m$ and $y = \frac{m}{x}$.}
 		\label{fig:0628_Graphs}
 	\end{figure}
@@ -132,15 +126,16 @@
 	increases. Find the equation of the hyperbola.
 	\begin{solution}
 		\begin{align*}
-			\frac{k}{x}                                 & = \left(a-2\right){x}^{a^2-5}                \\
-			k                                           & = \left(a-2\right){x}^{a^2-4}                \\
-			                                            & = \left(a-2\right){x}^{(a+2)(a-2)}           \\
-			\because y                                  & = \frac{\left(a-2\right){x}^{(a+2)(a-2)}}{x} \\
-			\therefore \left(a-2\right){x}^{(a+2)(a-2)} & < 0                                          \\
-			\because a - 2 < 0                          & \text{ and } (a+2)(a-2) \geq 0               \\
-			\therefore a + 2                            & = 0                                          \\
-			\therefore a                                & = -2                                         \\
-			\therefore y                                & = \frac{-4}{x}                               \\
+			\frac{k}{x}                                 & = \left(a-2\right){x}^{a^2-5}                                                       \\
+			k                                           & = \left(a-2\right){x}^{a^2-4}                                                       \\
+			                                            & = \left(a-2\right){x}^{(a+2)(a-2)}                                                  \\
+			\because y                                  & = \frac{\left(a-2\right){x}^{(a+2)(a-2)}}{x}                                        \\
+			\therefore \left(a-2\right){x}^{(a+2)(a-2)} & < 0                                                                                 \\
+			\because a - 2 < 0                          & \text{ and } (a+2)(a-2) \geq 0                                                      \\
+			\therefore a + 2                            & = 0                                                                                 \\
+			\therefore a                                & = -2                                                                                \\
+			\therefore y                                & = -\frac{\left(-2-2\right)\times {x}^{\left(-2+2\right)\times\left(-2-2\right)}}{x} \\
+			                                            & = -\frac{4}{x}
 		\end{align*}
 	\end{solution}
 
@@ -162,7 +157,7 @@
 	the points with the origin. Compare the sizes of the areas of the two triangles.
 	\begin{figure}[htpb]
 		\centering
-		\includegraphics[scale=0.7]{./images/0706_Tri.png}
+		\includegraphics[scale=.8]{./images/0706_Tri.png}
 		\caption{$\triangle AOC$ and $\triangle BOD$.}
 		\label{fig:0706_Tri}
 	\end{figure}
@@ -183,11 +178,11 @@
 		\begin{tikzpicture}
 			\begin{axis}[
 					domain=0:6,
+					smooth,
 					axis x line=center,
 					axis y line=left,
 					xlabel=$x$,
 					ylabel=$y$,
-					smooth,
 					xtick={1},
 					ytick={1},
 					ymin=-2,
@@ -206,11 +201,11 @@
 	\end{figure}
 	\begin{solution}
 		\begin{align*}
-			S_1       & = (1 - 0) \times (\frac{3}{1}-1)   \\
-			          & = 2 \text{ sq. units}              \\
-			S_2       & = (\frac{3}{3} - 0) \times (3 - 1) \\
-			          & = 2 \text{ sq. units}              \\
-			S_1 + S_2 & = 2 + 2                            \\
+			S_1       & = \left(1 - 0\right) \times \left(\frac{3}{1}-1\right)   \\
+			          & = 2 \text{ sq. units}                                    \\
+			S_2       & = \left(\frac{3}{3} - 0\right) \times \left(3 - 1\right) \\
+			          & = 2 \text{ sq. units}                                    \\
+			S_1 + S_2 & = 2 + 2                                                  \\
 			          & = 4 \text{ sq. units}
 		\end{align*}
 	\end{solution}
