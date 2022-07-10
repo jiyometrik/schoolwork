@@ -14,18 +14,19 @@
 \usepackage[nolabel, final]{showlabels}
 
 \usepackage{fourier}
-\usepackage[lf]{CrimsonPro}
+% \usepackage[lf]{CrimsonPro}
+\usepackage{Alegreya}
 \usepackage[basic,italic,symbolgreek]{mathastext}
-% \makeatletter
-% \@for\@tempa:=a,b,c,d,e,h,i,k,l,m,n,o,q,r,s,t,u,v,w,x\do{%
-% \MTsetmathskips{\@tempa}{0.5mu}{0.5mu}}%
-% \makeatother
-% \MTsetmathskips{f}{2.5mu}{0.5mu}
-% \MTsetmathskips{g}{1.5mu}{0.5mu}
-% \MTsetmathskips{j}{2.5mu}{0.5mu}
-% \MTsetmathskips{p}{1.5mu}{0mu}
-% \MTsetmathskips{y}{1.5mu}{0.5mu}
-% \MTsetmathskips{z}{1mu}{0.5mu}
+\makeatletter
+\@for\@tempa:=a,b,c,d,e,h,i,k,l,m,n,o,q,r,s,t,u,v,w,x\do{%
+\MTsetmathskips{\@tempa}{0.5mu}{0.5mu}}%
+\makeatother
+\MTsetmathskips{f}{2.5mu}{0.5mu}
+\MTsetmathskips{g}{1.5mu}{0.5mu}
+\MTsetmathskips{j}{2.5mu}{0.5mu}
+\MTsetmathskips{p}{1.5mu}{0mu}
+\MTsetmathskips{y}{1.5mu}{0.5mu}
+\MTsetmathskips{z}{1mu}{0.5mu}
 
 \newcommand{\reals}{\mathbb{R}}
 \newcommand{\ints}{\mathbb{Z}}
@@ -150,7 +151,7 @@
 		\end{align*}
 	\end{solution}
 
-	\question Points $A$ and $B$ are on the hyperbola $y = \frac{k}{x}$. Right $\triangle AOC$
+	\question \qndate{6}{Jul} Points $A$ and $B$ are on the hyperbola $y = \frac{k}{x}$. Right $\triangle AOC$
 	and $\triangle BOD$ are drawn by perpendicular lines drawn from the two points and connecting
 	the points with the origin. Compare the sizes of the areas of the two triangles.
 	\begin{figure}[htpb]
