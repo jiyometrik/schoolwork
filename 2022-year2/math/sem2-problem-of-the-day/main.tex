@@ -5,7 +5,9 @@
 \usepackage{siunitx}
 
 \usepackage{tikz, pgfplots}
-\pgfplotsset{compat=1.16}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{external}
+\tikzexternalize
 \usepackage{graphicx}
 
 \usepackage{setspace}
@@ -14,7 +16,6 @@
 \usepackage[nolabel, final]{showlabels}
 
 \usepackage{fourier}
-% \usepackage[lf]{CrimsonPro}
 \usepackage{Alegreya}
 \usepackage[basic,italic,symbolgreek]{mathastext}
 \makeatletter
@@ -206,6 +207,171 @@
 			          & = 2 \text{ sq. units}                                    \\
 			S_1 + S_2 & = 2 + 2                                                  \\
 			          & = 4 \text{ sq. units}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{8}{Jul} If a hyperbola $y = -\frac{3m}{x}$ and a straight line
+	$y = kx-1$ both pass through the point $P(m,-3m)$,
+	\begin{parts}
+		\part find the coordinates of $P$ and the equations of the hyperbola and the straight line.
+		\begin{solution}
+			\begin{align*}
+				y & = -\frac{3m}{x}\label{eq:0708a}\tag{1} \\
+				y & = kx - 1\label{eq:0708b}\tag{2}
+			\end{align*}
+			Subst. $x = m$, $y = -3m$ into \eqref{eq:0708a}:
+			\begin{align*}
+				-3m             & = -\frac{3m}{m}            \\
+				\therefore m    & = 1                        \\
+				\therefore P(1, & -3)\label{eq:0708c}\tag{3}
+			\end{align*}
+			We can substitute the values obtained in \eqref{eq:0708c} into \eqref{eq:0708b}:
+			\begin{align*}
+				-3           & = k - 1 \\
+				\therefore k & = -2
+			\end{align*}
+
+			The equations of the hyperbola and the straight line, are, thus:
+			\begin{align*}
+				y & = -\frac{3}{x} \\
+				y & = -2x - 1
+			\end{align*}
+		\end{solution}
+
+		\part If the points $M(a,y_1)$ and $N(a+1,y_2)$ are both on the straight line,
+		explain clearly why $y_1>y_2$.
+		\begin{solution}
+			Substitute the $x$- and $y$-coordinates of both points into the equation of the line.
+			\begin{align*}
+				y_1              & = -2a - 1                              \\
+				y_2              & = -2(a+1) - 1                          \\
+				                 & = -2a - 3                              \\
+				\because -2a - 1 & > -2a - 3 \text{, where } a \in \reals \\
+				\therefore y_1   & > y_2
+			\end{align*}
+		\end{solution}
+	\end{parts}
+
+	\question \qndate{12}{Jul} The line $y = x$ meets the hyperbola $y=\oneover{x}$
+	at points $A$ and $C$. Vertical lines from $A$ and $C$ meet the $x$-axis at points $B$
+	and $D$ respectively. Find the area of the quadrilateral $ABCD$. (The diagram is
+	not drawn to scale.)
+	\begin{figure}[htpb]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+					axis x line=middle,
+					axis y line=middle,
+					xlabel=$x$,
+					ylabel=$y$,
+					domain=-3:3,
+					ticks=none,
+					ymin=-5,
+					smooth,
+					unbounded coords=jump,
+				]
+				\addplot[black,thick,mark=none]	{1/x};
+				\addplot[blue,thick]	expression {x};
+				\addplot[mark=none] coordinates {(1,1)} node[above]{$A$};
+				\addplot[mark=none] coordinates {(-1,-1)} node[below]{$C$};
+				\addplot[mark=none,red,thick] coordinates {(1,1)(1,0)};
+				\addplot[mark=none,red,thick] coordinates {(-1,-1)(-1,0)};
+				\addplot[mark=none] coordinates {(-1,0)} node[above]{$D$};
+				\addplot[mark=none] coordinates {(1,0)} node[below]{$B$};
+				\addplot[mark=none,red,thick] coordinates {(-1,0)(1,1)};
+				\addplot[mark=none,red,thick] coordinates {(1,0)(-1,-1)};
+			\end{axis}
+		\end{tikzpicture}
+		\caption{Quadrilateral $ABCD$.}
+		\label{fig:0712}
+	\end{figure}
+	\begin{solution}
+		\begin{align*}
+			x                 & = \oneover{x}                               \\
+			\therefore x      & = \pm 1                                     \\
+			\therefore A(1,1) & \text{ and } C(-1,-1)                       \\
+			S_{ABCD}          & = 1 \times \left[1 - \left(-1\right)\right] \\
+			                  & = 2 \text{ sq. units}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{13}{Jul} A ladder $AB$ of length \qty{2.5}{\metre} has its
+	foot $B$ \qty{1.5}{\metre} away from a wall. The ladder is then moved to a new
+	position $ED$. The foot of the ladder is moved \qty{.5}{\metre} from the
+	original position $B$. Find the distance the top of the ladder drops,
+	the length of $AE$.
+
+	\begin{figure}[htpb]
+		\centering
+		\begin{tikzpicture}
+			\draw[black,thin]	(0,0)--(0,3);
+			\node[mark=none,anchor=south east] (C) at (0,0) {$C$};
+			\draw[black,thin]	(0,0)--(3,0);
+			\draw[blue,thick] (1.5,0)--(0,2);
+			\node[mark=none,anchor=north east] (A) at (0,2) {$A$};
+			\node[mark=none,anchor=north east] (B) at (1.5,0) {$B$};
+			\draw[red,thick] (2,0)--(0,1.5);
+			\node[mark=none,anchor=north east] (E) at (0,1.5) {$E$};
+			\node[mark=none,anchor=north east] (D) at (2,0) {$D$};
+		\end{tikzpicture}
+		\label{fig:Ladder}
+		\caption{The ladder, before and after.}
+	\end{figure}
+
+	\begin{solution}
+		\begin{align*}
+			AC                     & = \sqrt{{2.5}^2 - {1.5}^2}                    \\
+			                       & = \qty{2}{\metre}                             \\
+			EC                     & = \sqrt{{2.5}^2 - {\left(1.5 + 0.5\right)}^2} \\
+			                       & = \qty{1.5}{\metre}                           \\
+			\text{height dropped } & = 2 - 1.5                                     \\
+			                       & = \qty{0.5}{\metre}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{14}{Jul} In $\triangle ABC$, $\angle B = \ang{22.5}$. The
+	perpendicular bisector of $AB$ intersects $BC$ at point $D$ and ${BD}^2 = 72$.
+	$AE \perp BC$. Find $AE$.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=0.5]{./images/0714_Tri.jpeg}
+		\caption{Triangle $\triangle ABC$.}
+		\label{fig:0714_Tri}
+	\end{figure}
+
+	\begin{solution}
+		\begin{align*}
+			\angle FAD            & = \angle B                       \\
+			                      & = \ang{22.5}                     \\
+			BD                    & = AD                             \\
+			                      & = \sqrt{72}                      \\
+			\angle FDA            & = 90 - 22.5                      \\
+			                      & = \ang{67.5}                     \\
+			\angle FDB            & = \angle FDA = \ang{67.5}        \\
+			\therefore \angle ADE & = 180 - 67.5 \times 2            \\
+			                      & = \ang{45}                       \\
+			\sin \angle ADE       & = \frac{AE}{\sqrt{72}}           \\
+			AE                    & = \sqrt{72} \times \sin \ang{45} \\
+			                      & = \frac{\sqrt{72}}{\sqrt{2}}     \\
+			                      & = 6
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{15}{Jul} In $\triangle ABC$, $\angle A = \ang{90}$. The point
+	$P$ is the midpoint of $AC$. $PD \perp BC$, $BC = 9$ and $DC = 3$.
+	Find $AB$.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=.5]{images/0715_Tri.jpeg}
+		\caption{Triangle $\triangle ABC$.}
+		\label{fig:0715_Tri}
+	\end{figure}
+	\begin{solution}
+		\begin{align*}
+			\sqrt{3^2 + {PD}^2} & = \sqrt{6^2 + {PD}^2 - {AB}^2} \\
+			{PD}^2 + 9          & = {PD}^2 + 36 - {AB}^2         \\
+			27 - {AB}^2         & = 0                            \\
+			\therefore AB       & = \sqrt{27}
 		\end{align*}
 	\end{solution}
 \end{questions}
