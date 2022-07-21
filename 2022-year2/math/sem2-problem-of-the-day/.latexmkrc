@@ -4,7 +4,7 @@
 $ENV{'TZ'} = 'Asia/Singapore';
 
 # compilation
-$pdflatex = 'xelatex -shell-escape -enable-write18';
+$pdflatex = 'pdflatex -shell-escape -enable-write18';
 $pdf_mode = 1; # only generate the pdf
 $max_repeat = 12; # maximum number of runs
 
