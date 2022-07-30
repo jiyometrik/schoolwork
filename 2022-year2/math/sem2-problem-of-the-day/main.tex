@@ -1,7 +1,7 @@
 \documentclass[12pt,answers]{exam}
 \usepackage[margin=1in, a4paper]{geometry}
 
-\usepackage{amsmath, amssymb, amsthm, amsbsy, amsfonts, mathtools}
+\usepackage{amsmath, amssymb, amsthm, amsbsy, amsfonts, mathtools, gensymb}
 \usepackage{siunitx}
 
 \usepackage{tikz, pgfplots}
@@ -17,7 +17,7 @@
 
 \usepackage{microtype}
 \usepackage{fourier}
-\usepackage[mathtabular]{CrimsonPro}
+\usepackage{CrimsonPro}
 
 \usepackage[basic,italic,symbolgreek]{mathastext}
 \makeatletter
@@ -375,5 +375,158 @@
 			\therefore AB       & = \sqrt{27}
 		\end{align*}
 	\end{solution}
+
+	\question \qndate{18}{Jul} In $\triangle ABC$, $AB=7$, $BC=6$, $AC=4$, and
+	$AD$ and $AE$ are the height and the median on the side $BC$, such that $BE=EC$
+	and $AD\perp BC$. Find the length of $DE$.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=.7]{images/0718_Tri.jpeg}
+		\label{fig:0718_Tri}
+		\caption{$\triangle ABC$.}
+	\end{figure}
+	\begin{solution}
+		\begin{align*}
+			3^2 + {DE}^2 & = 7^2       \\
+			{DE}^2       & = 7^2 - 3^2 \\
+			             & = 40        \\
+			{DE}         & = \sqrt{40}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{19}{Jul} The lengths of three sides of a triangle are $m^2-n^2$,
+	$m^2+n^2$ and $2mn$, where $m$ and $n$ are positive integers and $m>n$. Determine
+	if this triangle is a right triangle or not. Show your reason clearly.
+	\begin{solution}
+		Yes. Assuming that the triangle \textbf{is} a right triangle,
+		$m^2+n^2$ would be the hypotenuse.
+		\begin{align*}
+			{\left(2mn\right)}^2 + {\left(m^2 - n^2\right)}^2 & = {\left(m^2+n^2\right)}^2                    \\
+			4m^2n^2 + m^4 - 2m^2n^2 + n^4                     & = m^4 + 2m^2n^2 + n^4 \text{ (true, proven.)}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{20}{Jul} The lengths of the three sides of a triangle satisfy
+	$a^2c^2 - b^2c^2 = a^4-b^4$. Determine the type of triangle it is. Show your reason
+	clearly.
+	\begin{solution}
+		It is a right triangle.
+		\begin{align*}
+			a^2c^2 - b^2c^2                     & = a^4-b^4                                              \\
+			c^2\left(a-b\right)\left(a+b\right) & = \left(a^2+b^2\right)\left(a-b\right)\left(a+b\right) \\
+			c^2                                 & = a^2 + b^2
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{21}{Jul} A corner of a rectangle $ABCD$ is folded along the line $AE$,
+	such that the vertex $D$ lands exactly on the opposite side $BC$ at point $F$.
+	If $AB=8$ and $BC=10$, find the length of $EC$.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=.6]{images/0721_Tri.jpeg}
+		\caption{Rectangle $ABCD$.}
+		\label{fig:0721_Tri}
+	\end{figure}
+	\begin{solution}
+		\begin{align*}
+			BC = AD                  & = AF = 10                               \\
+			BF                       & = \sqrt{{10}^2-8^2}                     \\
+			                         & = 6                                     \\
+			\therefore FC            & = 10 - 6                                \\
+			                         & = 4                                     \\
+			\angle BAF               & = \angle EFC \text{ (alt. ext. angles)} \\
+			\angle ECF               & = \angle ABF \text{ (given)}            \\
+			\therefore \triangle ABF & \simeq \triangle FCE \text{ (AA)}       \\
+			\therefore \frac{EC}{AB} & = \frac{CF}{BF}                         \\
+			\frac{EC}{8}             & = \frac{4}{6}                           \\
+			\therefore EC            & = \frac{16}{3}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{22}{Jul} In an isosceles $\triangle ABC$, $AB=AC$. $P$ is a
+	random point on $BC$. Show that ${AB}^2 - {AP}^2 = PB \times PC$.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=.6]{images/0722_Tri.jpeg}
+		\caption{Isosceles $\triangle ABC$.}
+		\label{fig:0722_Tri}
+	\end{figure}
+	\begin{solution}
+		We can construct a line $AO \perp BC$, thereby bisecting $BC$.
+		\begin{align*}
+			AB^2 - AP^2 & = AO^2 + OB^2 - \left(AO^2 + PO^2\right) \\
+			            & = OB^2 - PO^2                            \\
+			            & = (OB+PO)(OB-PO)                         \\
+			            & = PC \times PB                           \\
+			            & = PB \times PC
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{25}{Jul} In $\triangle ABC$, $\angle A = \ang{30}$ and $\angle B = \ang{45}$.
+	Points $D$ and $E$ are on sides $AB$ and $AC$ respectively, such that $AE=ED=EC$.
+	Find the ratio $\frac{AD^2}{BC^2}$.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=.6]{images/0725_Tri.jpeg}
+		\caption{$\triangle ABC$.}
+		\label{fig:0725_Tri}
+	\end{figure}
+
+	\question \qndate{26}{Jul} In $\triangle ABC$, $a$, $b$ and $c$ are the three sides.
+	$\angle C = \ang{90}$, $\angle A = \ang{60}$, $a + b = 3 + \sqrt{3}$. Find $a$, $b$
+	and $c$.
+	\begin{solution}
+		By using trigonometric ratios,
+		\begin{align*}
+			AB : AC : BC & = 2 : 1 : \sqrt{3}
+		\end{align*}
+		Multiply the ratio by $\sqrt{3}$:
+		\begin{align*}
+			AB : AC : BC       & = 2\sqrt{3} : \sqrt{3} : 3 \\
+			\because a + b     & = 3 + \sqrt{3}             \\
+			\therefore BC + AC & = a + b                    \\
+			\therefore c       & = AB = 2\sqrt{3}           \\
+		\end{align*}
+		However, we cannot determine $a$ and $b$ because of the commutative law of addition.
+		\begin{align*}
+			\begin{cases}
+				a & = 3 \text{ if } b = \sqrt{3} \text{ else } \sqrt{3} \\
+				b & = 3 \text{ if } a = \sqrt{3} \text{ else } \sqrt{3} \\
+				c & = 2\sqrt{3}
+			\end{cases}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{27}{Jul} In $\triangle ABC$, $\angle ACB = \ang{90}$, $AB \perp CD$,
+	$AC = \sqrt{5}$, $BC = 2$. Find $\sin\angle ACD$.
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[scale=.5]{images/0727_Tri.jpeg}
+		\caption{$\triangle ABC$.}
+		\label{fig:0727_Tri}
+	\end{figure}
+	\begin{solution}
+		\begin{align*}
+			\angle CAB                & = \arctan \frac{2\sqrt{5}}{5}                         \\
+			\angle ACD                & = \left(90-\arctan \frac{2\sqrt{5}}{5}\right) \degree \\
+			\therefore \sin\angle ACD & = \sin \left(90-\arctan \frac{2\sqrt{5}}{5}\right)    \\
+			                          & = \frac{2}{3}
+		\end{align*}
+	\end{solution}
+
+	\question \qndate{28}{Jul} For acute angle $\alpha$, fill in the blanks
+	with $>$, $=$, or $<$.
+	\begin{solution}
+	\begin{align*}
+		\begin{cases}
+		\because \alpha = \ang{45} &\therefore \sin \alpha = \cos \alpha \\
+		\because \alpha < \ang{45} &\therefore \sin \alpha < \cos \alpha \\
+		\because \alpha > \ang{45} &\therefore \sin \alpha > \cos \alpha \\
+		\end{cases}
+	\end{align*}
+	\end{solution}
+
+	% \question \qndate{29}{Jul} In $\triangle ABC$, $\angle ACB=\ang{90}$, $CD\perp AB$,
+	% and $AC>BC$. Which of the following ratios of sides is not equal to the value of
 \end{questions}
 \end{document}
