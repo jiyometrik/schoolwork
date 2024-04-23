@@ -1,0 +1,10 @@
+* IF: Infocomm
+
+** Basic Python
++ I/O
++ Variables & Datatypes
++ Selection (If Statements)
++ Loops (For and While)
++ Lists and Strings
+
+** Basic Web Development (HTML, CSS, JS)

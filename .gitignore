@@ -18,9 +18,9 @@ node_modules/
 *.dvi
 *.xdv
 *-converted-to.*
-# *.ps
-# *.eps
-# *.pdf
+*.ps
+*.eps
+*.pdf
 
 .pdf
 

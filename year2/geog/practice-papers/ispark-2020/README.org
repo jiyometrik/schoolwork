@@ -1,0 +1,133 @@
+#+TITLE: iSpark 2020 GE Paper
+#+AUTHOR: Darren Yap
+#+DATE: 12 May 2022
+#+STARTUP: inlineimages
+
+* section a: data response questions (15m)
+** q1 (3m)
+1. figure 1 below shows the birth and death rates in the us.
+   [[./fig1.png]]
+   study the trend shown in fig. 1 above. predict and explain the birth and death rates in 2050. [3]
+
++ the birth rate will be lower than 13.2 per 1000 people.
+   - higher cost of living
+   - aspirations increase & more material desires
+   - increased focus on career / education in order to earn money
+   - couples also marry late (in their 30s)
+     - higher chance of complications during birth
+     - dissuade couples from having children
+   - birth rate declines
++ the death rate will be lower than 8.3 per 1000 people.
+   - further improvments in healthcare access
+     - govt. improves the healthcare sys.
+   - better awareness of healthy lifestyles
+     - more ppl will exercise and eat healthily
+     - reduce chronic diseases
+
+** q2 (6m)
+2. fig. 2 shows a street scene in singapore.
+   [[./fig2.png]]
+   a. with reference to fig. 2 only explain the risks faced by the homeless. [4]
+      + poor health
+        - sleep in the open: exposed to the elements (rain / heat)
+          - can fall sick easily / poor health
+      + may be evicted from the sidewalk
+        - the man has his belongings with him in the open
+        - belongings can be stolen easily
+      + poor hygiene
+        - man looks dirty & unwashed (lacks access to washrooms)
+          - can fall sick easily
+          - make them feel discriminated against
+   b. as part of your school's community outreach club programme you have interviewed several homeless in singapore to find out their needs. what can you do to improve their wellbeing? [2]
+      + encourage them to get in contact with social services
+        - social services can help the homeless find a proper house, as well as look for jobs \rightarrow help them re-integrate into society
+      + organise a food drive
+        - encourage schoolmates to donate food items / hot meals \rightarrow homeless won't go hungry
+
+** q3 (6m)
+1. study fig. 3 below which shows the average time (in min) taken for a 5 mile (8 km) journey in london.
+   [[./fig3.png]]
+   compare the trend in the time taken between central & outer london over the years and explain why urgent steps are needed to tackle congestion in cities.
+   + both the times taken between central & outer london over the years is increasing.
+   + the time taken for a journey in central london is increasing more steeply than that in outer london.
+     - central london: increase by 8-10 min
+     - outer london: increase by 5 min
+   + reduced productivity
+     - people take a longer time to commute to work as they are stuck in traffic congestion
+     - waste more time in traffic congestion which could have been used for productive work
+     - overall less work done, economic loss for the country
+       - rising expenses in fuels
+       - higher tpt. cost (goods need to be delivered)
+   + increased stress and fatigue
+     - stuck in traffic congestion for long periods of time
+       - fatigue (long travelling times) \rightarrow accidents
+       - frustration & stress (long travelling times) \rightarrow accidents / fights
+       - exposed to fumes produced by cars \rightarrow asthma & respiratory complications
+     + air pollution
+       - car engine running / fuel burning \rightarrow greenhouse gases produced \rightarrow trap heat \rightarrow global warming
+       - particulate matter also produced \rightarrow combined with water vapour \rightarrow smog
+         + when landing on soil, slows down plant growth
+         + can enter the food chain, poisoning animals
+
+* structured essay questions (seq) and open-ended questions (oeq) [20]
+** q1 [4m]
+1. people aged 65 and older in jp make up 1/4 of its total population, and are estimated to reach 1/3 by 2050. such an aging population poses grave problems. propose some strategies for japan to ensure continued economic growth.
++ increase retirement age
+  - force people to stay in the workforce for a longer period of time
+  - more manpower in the workforce annually
+    + generate more revenue for the country to enusre continued economic growth
+  - in singapore, retirement age has increased from 60 to 62
+    + more workers are in the workforce helping to boost the economy
++ attract foreign labour
+  - migrant workers are usually younger
+    + can stay in the workforce for a longer period of time
+  - more manpower in the workforce (esp. construction sector)
+    + boost the labour supply
+  - foreign workers are seen in all industries, from construction to svcs.
+    + very convenient to employ foreign workers to boost the econ.
+** q2 [8m]
+2. improving the public transport system is the most important step to reduce traffic congestion in cities. to what extent do you agree?
+*** point
++ i agree to some extent that improving the public transport system is the most important step to reduce traffic congestion in cities.
+*** integrated public transport system
++ it is smoother and more efficient when the public transport system is streamlined
++ most integrated public transport systems also include amenities close to them
+  - this attracts more commuters and promotes public transport as a choice mode since commuters gain increased accessibility to these amenities
+**** example
++ six integrated transport hubs are built in singapore as of 2012
+  - there are plans of seven more in the next 10 years
++ all of them have linking platforms from road to rail, and include escalators \rightarrow improve accessibility and speed up bus-train transfers
++ standard contactless ticketing system (ez-link)
+  - smoother transfer between modes
+**** counter argument
++ however, this integrated public transport system may not always be the most feasible in a less-developed country as it requires extensive planning and costs.
++ not many people would be attracted to take public transport over private transport as they still feel that private transport is more convenient, therefore having little effect on traffic congestion.
+**** link
++ despite this, it is still a good strategy for reducing traffic congestion to a small extent.
+
+*** road pricing
++ using road pricing, drivers will have to pay extra fees for driving in certain roads during peak hours.
++ this discourages them from using those roads during peak hours to avoid paying more fees, on top of the expensive costs of owning a car already.
++ encourages them to take alternative modes of transport (eg. public transport)
+**** example
++ in singapore, we have the erp (electronic road pricing) system, where gantries are situated at more-congested roads and prices change as the day progresses.
++ each time a car passes one of these gantries, an amount is deducted from the driver's cashcard.
++ this has seen a 15% reduction in traffic volume on the road during peak hour.
+**** counter arugment
++ this may not be the best strategy, since some drivers may choose to use other, less-congested roads.
++ as more drivers use these roads, the less-congested roads themselves become more congested
++ not very effective if the main goal is to tackle traffic congestion
+**** link
++ despite this, this strategy still manages to deter some drivers from using busier roads, helping to reduce traffic congestion.
+*** enhanced road monitoring
++ road monitoring makes use of sensors to display real-time information to drivers (using led signboards) in the event of an accident / vehicle breakdown
++ this alerts drivers not to use the roads which the accident has occurred, and drivers may opt to use other, less-congested roads instead
+**** example
++ in singapore, we have the emas system (expressway advisory & monitoring system)
++ live information is made available to drivers regarding vehicle breakdowns or accidents, so that drivers can opt to take alternative routes.
+**** counter argument
++ again, like road pricing, this diverts traffic to less-congested roads, and causes these roads to be congested. if the main goal is to tackle traffic congestion, this may not be the best strategy as it is not very effective.
+**** link
++ despite this, this strategy still manages to deter some drivers from using roads that would be more congested, helping to reduce traffic congestion. furthermore, it reduces the chances of further accidents if a driver were to use a road which has seen a vehicle breakdown / accident.
+*** conclusion
+while an integrated public transport system is a good method by itself, it only promotes public transport as a choice mode, but fails to discourage people from driving, which may not be too effective to solve traffic congestion. however, it can be used jointly with other methods, such as road pricing or enhanced road monitoring, both of which deter people from using the roads in the first place. when combined, these methods, each with their own merits, help to magnify their effects even more, reducing traffic congestion more effectively.

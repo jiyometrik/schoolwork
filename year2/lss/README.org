@@ -1,0 +1,55 @@
+* LSS: Lower Secondary Science
+
+** Atomic Structure
+
++ Subatomic Particles
++ Electronic Configuration
++ Dot-and-Cross Diagrams
++ Isotopes & Relative Atomic Mass
+
+** Periodic Table
+
++ Groups and Periods
++ Characteristics of Group I, VII, and 0 Elements
++ Metals and Non-Metals
+
+** Chemical Bonding
+
+*** Ionic Bonding
+
++ Formation of Ions and Ionic Compounds
++ Ionic Charges
++ Writing Chemical Formulae of Ionic Compounds
++ Dot-and-Cross Diagrams
+
+*** Covalent Bonding
+
++ Valency
++ Formation of Covalent Molecules
++ Writing Chemical Formulae of Covalent Molecules
++ Dot-and-Cross Diagrams
+
+** Chemical Equation Writing
+
++ Reactants and Products
++ Stoichiometric Coefficients
+
+** Acids and Bases
+
++ Definition and Examples of Acids
++ Definition and Examples of Bases
++ Strength and Concentration of Acids and Bases
++ Common Reactions Involving Acids and Bases
++ pH and pH Indicators
+
+** Reflection of Light
+
+** Refraction of Light
+
+** Lenses
+
+** Colours of Light
+
+** Ecology
+
+** The Reproductive System
