@@ -8,8 +8,8 @@
 \RequirePackage{titlesec}
 \PassOptionsToPackage{sf, pagestyles}{titlesec}
 \titleformat{\part}[hang]{\bfseries\huge\sffamily}{\partname\ \thepart\hspace{.5em}\vrule width 1pt}{.5em}{}
-\titleformat{\chapter}[hang]{\bfseries\LARGE\sffamily}{\chaptertitlename\ \thechapter\hspace{.5em}\vrule width .7pt}{.5em}{}
-\titleformat{\section}[hang]{\bfseries\Large\sffamily}{\thesection}{.5em}{}
+\titleformat{\chapter}[hang]{\bfseries\LARGE\sffamily}{\chaptertitlename\ \thechapter\hspace{.5em}\vrule width .5pt}{.5em}{}
+\titleformat{\section}[hang]{\bfseries\Large\sffamily}{\thesection\hspace{.5em}\vrule width .5pt}{.5em}{}
 \titleformat{\subsection}[hang]{\sffamily\large}{\thesubsection}{.5em}{}
 \titleformat{\subsubsection}[hang]{\sffamily\itshape\normalsize}{\thesubsubsection}{.5em}{}
 

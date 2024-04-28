@@ -1,0 +1,71 @@
+\chapter*{Random, useless things}
+\begin{lemma}
+	If \(a\), \(b\) and \(c\) are integers with \(a \mid \ab(b + c)\) and \(a \mid b\),
+	then \(a \mid c\).
+\end{lemma}
+\begin{proof}
+	Since \(a \mid \ab(b + c)\), it then follows that we can let \(b + c = as\),
+	where \(s\) is an integer.
+	Since \(a \mid b\) also, we can let \(b = ax\), where \(x\) is also an integer.
+	By algebraic manipulation,
+	\begin{align*}
+		c & = \ab(b + c) - b \\
+		  & = as - ax        \\
+		  & = a \ab(s - x)
+	\end{align*}
+	Since it has been established that \(x \in \Z\) and \(s \in \Z\), \(\ab(s - x) \in \Z\)
+	as well. Since \(c\) is the product of \(a\) and another integer, \(a \mid c\).
+\end{proof}
+
+\begin{lemma}
+	If \(s\) and \(t\) are rational and \(t \neq 0\), then \(\slf{s}{t}\) is rational.
+\end{lemma}
+\begin{proof}
+	Since \(s, t \in \R\), we can let \(s = \slf{p}{q}\) and \(t = \slf{r}{s}\), where
+	\(p, q, r, s \in \Z\) and \(q, r, s \neq 0\). It follows that \(\slf{s}{t} = \f{ \slf{p}{q} }{ \slf{r}{s} } = \slf{ps}{qr}\).
+	Since \(p, s \in \Z\), it must be that \(ps \in \Z\). Similarly, since \(q, r \in \Z\)
+	and \(q, r \neq 0\), it follows that \(qr \in \Z\) and \(qr \neq 0\).
+	We let \(a, b \in Z\) and \(\ab(a, b) = \ab(ps, qr)\), noting that \(b \neq 0\).
+	We can write that \(\slf{s}{t} = \slf{a}{b}\).
+	\(\slf{s}{t}\) has now been written as a quotient of two integers. By definition,
+	\(\slf{s}{t}\) is rational.
+\end{proof}
+
+\begin{lemma}
+	If \(m < n\) are consecutive integers and \(m\) is even, then
+	\(4 \mid \ab(m^2 + n^2 - 1)\).
+\end{lemma}
+\begin{proof}
+	Since \(m\) is even, let \(m = 2k\), where \(k\) is also an integer.
+	It follows that \(n = m + 1 = 2k + 1\).
+	\begin{align*}
+		m^2 + n^2 - 1 & = \ab(2k)^2 + \ab(2k + 1)^2 - 1      \\
+		              & = \ab(4k^2) + \ab(4k^2 + 4k + 1) - 1 \\
+		              & = 8k^2 + 4k                          \\
+		              & = 4 \ab(2k^2 + k)
+	\end{align*}
+	We can confirm that since \(k \in \Z\), \(\ab(2k^2 + k) \in \Z\) also.
+	Since \(m^2 + n^2 - 1\) is a product of \(4\) and another integer, \(4 \mid \ab(m^2 + n^2 - 1)\).
+\end{proof}
+
+\begin{lemma}
+	If \(a\) and \(b\) are integers with \(a \neq 0\) and \(x\) is a positive integer such that
+	\(ax^2 + bx + b - a = 0\), then \(a \mid b\).
+\end{lemma}
+\begin{proof}
+	We can solve the quadratic equation provided:
+	\begin{align*}
+		ax^2 + bx + b - a & = 0                                              \\
+		x                 & = \f{ -b \pm \sqrt{b^2 - 4 a \ab(b - a)} }{ 2a } \\
+		                  & = \f{ -b \pm \sqrt{b^2 - 4ab + 4a^2} }{ 2a }     \\
+		                  & = \f{ -b \pm \sqrt{\ab(b - 2a)^2} }{ 2a }        \\
+		                  & = \f{ -b \pm \ab(b - 2a) }{2a}                   \\
+		                  & = \f{-2b + 2a}{2a}                               \\
+		                  & = \f{a - b}{a}                                   \\
+		                  & = \f{a}{a} - \f{b}{a}                            \\
+		                  & = 1 - \f{b}{a}
+	\end{align*}
+	Since \(x = 1 - \slf{b}{a} \in \Z\), it must follow that \(\slf{b}{a} \in \Z\)
+	too. We let \(\slf{b}{a} = k \in \Z\), and it follows that \(b = ak\).
+	Since \(a, k \in \Z\) and \(b \in \Z\), \(a \mid b\).
+\end{proof}
