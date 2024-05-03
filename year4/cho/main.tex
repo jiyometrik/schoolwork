@@ -11,10 +11,10 @@
 % math macros
 \newcommand*{\f}[2]{\frac{#1}{#2}}
 \newcommand*{\slf}[2]{\slashfrac[auto]{#1}{#2}}
-\newcommand*{\R}{\mathbb{R}}
-\newcommand*{\Z}{\mathbb{Z}}
-\newcommand*{\Q}{\mathbb{Q}}
-\newcommand*{\N}{\mathbb{N}}
+\newcommand*{\reals}{\mathbb{R}}
+\newcommand*{\ints}{\mathbb{Z}}
+\newcommand*{\rationals}{\mathbb{Q}}
+\newcommand*{\naturals}{\mathbb{N}}
 
 % define colours used throughout the document
 \definecolor{accent}{HTML}{EF476F}
@@ -25,18 +25,19 @@
 % wrap figures
 \usepackage{wrapfig}
 
-% essentials for math + chemistry
+% maths
 \usepackage{mathtools, amsthm, amssymb, amsmath}
 \usepackage{derivative}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
 
+% expandable brackets
 \usepackage{physics2}
 \usephysicsmodule[tightbraces=true]{ab}
 
+% chemistry
 \usepackage{chemformula, chemmacros}
 \NewChemCompoundProperty{l}{\textit{l}}
 
+% si units
 \usepackage{siunitx}
 \sisetup{
 	mode=match,
@@ -56,15 +57,21 @@
 \DeclareSIUnit{\epera}{\electron\per\atom}
 \DeclareSIUnit{\atm}{atm}
 
-% fonts
-\usepackage{libertinus-type1, libertinust1math}
-\usepackage[scaled]{sourcesanspro}
-\usepackage[scaled]{beramono}
+% fonts: unfortunately i've to use `pdflatex' here
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{STIX Two Text}[Ligatures=TeX]
+\setmathfont{STIX Two Math}[Ligatures=TeX]
+\setsansfont{TeX Gyre Heros}[Ligatures=TeX]
+\setmonofont{JetBrains Mono}[Ligatures=TeX]
 
-\title{SJChO: Homework}
-\author{Darren \color{accent} Yap}
-\date{2024}
+% use sans font for headers and footers
+\fancyhf{}
+\fancyfoot[LE,RO]{\small\sffamily\thepage}
+\fancyhead[LE]{\small\sffamily\scshape\nouppercase\leftmark}
+\fancyhead[RO]{\small\sffamily\nouppercase\rightmark}
 
+% everything about graphs and figures
 \usepackage{pgfplots, pgfplotstable}
 \pgfplotstableset{col sep=comma}
 \usetikzlibrary{
@@ -142,6 +149,7 @@
 	},
 }
 
+% fun highlights
 \usepackage{tcolorbox}
 \tcbuselibrary{breakable, skins}
 \newtcbox{\hil}[1][accent]{
@@ -154,7 +162,8 @@
 	breakable,enhanced jigsaw,
 }
 
-\usepackage{hyperref, bookmark}
+% coloured links
+\usepackage{hyperref}
 \hypersetup{
 	hidelinks,
 	colorlinks=true,
@@ -166,14 +175,18 @@
 	linkcolor=cobalt,
 }
 
+% make sure align*, aligned environments can stretch across pages
 \allowdisplaybreaks
 
-\titleformat{\chapter}[hang]{
-	\bfseries\LARGE\sffamily
-}{\chaptertitlename\ \thechapter\hspace{.5em}\(\blacktriangleright\)}{.5em}{}
+% better chapter headings
 \titleformat{\subsubsection}[hang]{
 	\sffamily\itshape\normalsize\color{accent}
 }{\thesubsubsection}{.5em}{}
+
+% finally we get to it
+\title{SJChO: Homework}
+\author{Darren \color{accent} Yap}
+\date{2024}
 
 \begin{document}
 \maketitle
@@ -181,6 +194,7 @@
 
 \setcounter{chapter}{5}
 
+% all our chapters, in order
 \include{chapters/kinetics}
 \include{chapters/equilibrium}
 \include{chapters/acids-bases}

@@ -133,17 +133,17 @@ Let \(t\) be the age of the mummy. \(n_t\) is the number of
 \ch{^{14}C} atoms after time \(t\), and \(n_0\) is that in
 the mummy while still alive.
 \begin{align*}
-	n_t                                                       & = \frac{\ab(\qty{2e3}{electron.s^{-1}})\ab(\qty{3.154e7}{\second\per\year})}{\qty{1.21e-4}{\per\year}} \\
-	                                                          & = \qty{5.213e14}{atom}                                                                                 \\
-	                                                          & = \qty{5.213e14}{electron}                                                                             \\
+	n_t                                              & = \frac{\ab(\qty{2e3}{electron.s^{-1}})\ab(\qty{3.154e7}{\second\per\year})}{\qty{1.21e-4}{\per\year}} \\
+	                                                 & = \qty{5.213e14}{atom}                                                                                 \\
+	                                                 & = \qty{5.213e14}{electron}                                                                             \\
 	\\
-	t_{\slf{1}{2}}                                            & = \frac{\ln 2}{\lambda}                                                                                \\
-	                                                          & = \frac{\ln 2}{\qty{1.21e-4}{\per\year}}                                                               \\
-	                                                          & = \qty{5728.49}{\year}                                                                                 \\
+	t_{\slf{1}{2}}                                   & = \frac{\ln 2}{\lambda}                                                                                \\
+	                                                 & = \frac{\ln 2}{\qty{1.21e-4}{\per\year}}                                                               \\
+	                                                 & = \qty{5728.49}{\year}                                                                                 \\
 	\\
-	\because n_t                                              & = n_0 \ab(\frac{1}{2})^{\frac{t}{t_{\slf{1}{2}}}}                                                      \\
-	\therefore \qty{5.213e14}{electron}                       & = \ab(\qty{6.88e14}{electron})\ab(\frac{1}{2})^{\frac{t}{\qty{5728.49}{\year}}}                        \\
-	\left(\frac{1}{2}\right)^{\frac{t}{\qty{5728.49}{\year}}} & = \num{0.7577}                                                                                         \\
-	t                                                         & = \num{5728.49} \log_{\slf{1}{2}}{0.7577}                                                              \\
-	                                                          & = \color{accent} \qty{2293}{\year}
+	\because \; n_t                                  & = n_0 \ab(\frac{1}{2})^{\slf{t}{t_{\slf{1}{2}}}}                                                       \\
+	\therefore \; \qty{5.213e14}{electron}           & = \ab(\qty{6.88e14}{electron})\ab(\frac{1}{2})^{\slf{t}{\qty{5728.49}{\year}}}                         \\
+	\ab(\frac{1}{2})^{\slf{t}{\qty{5728.49}{\year}}} & = \num{0.7577}                                                                                         \\
+	t                                                & = \num{5728.49} \log_{\slf{1}{2}}{0.7577}                                                              \\
+	                                                 & = \color{accent} \qty{2293}{\year}
 \end{align*}
