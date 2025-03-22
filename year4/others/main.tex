@@ -1,0 +1,207 @@
+\documentclass[12pt, a4paper, twoside]{pancake-book}
+
+% NOTE *** preamble ***
+\setlength{\headheight}{14.49998pt} % make latex stop complaining!
+
+% simpler commands
+\renewcommand*{\bf}[1]{\textbf{#1}}
+\renewcommand*{\it}[1]{\textit{#1}}
+\renewcommand*{\tt}[1]{\texttt{#1}}
+\newcommand*{\term}[1]{{\color{accent}\scshape#1}}
+\newcommand*{\code}[1]{{\color{cobalt}\ttfamily#1}}
+
+% math macros
+\newcommand*{\f}[2]{\frac{#1}{#2}}
+\newcommand*{\cf}[2]{\slashfrac[auto]{#1}{#2}}
+\newcommand*{\RR}{\mathbb{R}}
+\newcommand*{\ZZ}{\mathbb{Z}}
+\newcommand*{\QQ}{\mathbb{Q}}
+\newcommand*{\NN}{\mathbb{N}}
+\newcommand*{\vect}[1]{ \ensuremath{ \symbf{#1} } }
+\newcommand*{\sans}[1]{ \ensuremath{ \symsf{#1} } }
+\newcommand*{\rom}[1]{ \ensuremath{ \symup{#1} } }
+
+% define colours used throughout the document
+\definecolor{accent}{HTML}{EF476F}
+\definecolor{razz}{HTML}{DB3069} % pink -- all of these colours are very vibrant
+\definecolor{cobalt}{HTML}{1446A0} % blue
+\definecolor{naples}{HTML}{F5D547} % yellow
+
+% wrap figures
+\usepackage{wrapfig}
+
+% maths
+\usepackage{mathtools, amsthm, amssymb, amsmath}
+\usepackage{derivative}
+
+% expandable brackets
+\usepackage{physics2}
+\usephysicsmodule[tightbraces=true]{ab}
+
+% chemistry
+\usepackage{chemformula, chemmacros}
+\NewChemCompoundProperty{l}{\textit{l}}
+
+% si units
+\usepackage{siunitx}
+\sisetup{
+	mode=match,
+	propagate-math-font=true,
+	reset-math-version=false,
+	reset-text-family=false,
+	reset-text-series=false,
+	reset-text-shape=false,
+	text-family-to-math=true,
+	text-series-to-math=true,
+}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Scale=MatchLowercase, Ligatures=TeX}
+\usepackage[
+	math-style=ISO,
+	bold-style=upright,
+	sans-style=upright,
+	warnings-off={mathtools-colon,mathtools-overbracket}
+]{unicode-math}
+\setmainfont{Brill}
+\setmathfont[StylisticSet={8}]{XITS Math}
+\setsansfont{Source Sans Pro}
+\setmonofont{Source Code Pro}
+
+\usepackage{setspace}
+\onehalfspacing
+
+% use sans font for headers and footers
+\fancyhf{\sffamily}
+\fancyfoot[LE,RO]{\small\sffamily\thepage}
+\fancyhead[LE]{\small\sffamily\scshape\nouppercase\leftmark}
+\fancyhead[RO]{\small\sffamily\nouppercase\rightmark}
+
+% everything about graphs and figures
+\usepackage{pgfplots, pgfplotstable, tikz}
+\pgfplotstableset{col sep=comma}
+\usetikzlibrary{
+	positioning,
+	calc,
+	shapes,
+	backgrounds,
+	fit,
+	decorations,
+	arrows,
+	arrows.spaced,
+	intersections,
+	3d,
+	tikzmark,
+}
+\usepgfplotslibrary{
+	colorbrewer,
+	units,
+	dateplot,
+	fillbetween,
+	groupplots,
+}
+\pgfplotscreateplotcyclelist{mod RdYlBu3}{
+	{accent},
+	{cobalt},
+	{naples},
+}
+\pgfplotscreateplotcyclelist{mod mark list}{
+	every mark/.append style={solid,fill=\pgfplotsmarklistfill}\\
+	every mark/.append style={solid,fill=\pgfplotsmarklistfill},mark=*\\
+	every mark/.append style={solid,fill=\pgfplotsmarklistfill},mark=square*\\
+	every mark/.append style={solid,fill=\pgfplotsmarklistfill},mark=triangle*\\
+	every mark/.append style={solid},mark=star\\
+	every mark/.append style={solid,fill=\pgfplotsmarklistfill},mark=diamond*\\
+	every mark/.append style={solid,fill=\pgfplotsmarklistfill!40},mark=otimes*\\
+	every mark/.append style={solid},mark=|\\
+	every mark/.append style={solid,fill=\pgfplotsmarklistfill},mark=pentagon*\\
+}
+\pgfplotsset{
+	width=8cm,
+	compat=1.16,
+	clip mode=individual,
+	label style={font=\small},
+	tick label style={
+		font=\small,
+		/pgf/number format/1000 sep={\,}
+		/pgf/number format/precision=3,
+		/pgf/number format/fixed,
+		/pgf/number format/fixed zerofill,
+	},
+	legend style={
+		at={(0.5, 1.05)},
+		anchor=south,
+		legend columns=-1,
+		font=\footnotesize,
+		draw=none,
+		fill=none,
+	},
+	colormap/viridis,
+	unit code/.code 2 args={\unit{#1#2}},
+	unit markings={slash space},
+	every axis plot post/.append style={
+		align=center,
+		ultra thick,
+		axis lines=left,
+		axis x line=bottom,
+		axis y line=left,
+		axis line style={semithick},
+		enlargelimits=0.05,
+	},%
+	cycle multi list={
+		mod mark list\nextlist
+		linestyles*\nextlist
+		mod RdYlBu3
+	},
+}
+
+% fun highlights
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable, skins}
+\newtcbox{\hil}[1][accent]{
+	on line,
+	arc=0pt,
+	outer arc=0pt,
+	colback=#1!25!white,colframe=#1,
+	boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
+	boxrule=0pt,bottomrule=1pt,toprule=1pt,
+	breakable,enhanced jigsaw,
+}
+
+% coloured links
+\usepackage{hyperref, bookmark}
+\hypersetup{
+	hidelinks,
+	colorlinks=true,
+	breaklinks=true,
+	urlcolor=razz,
+	bookmarksopen=false,
+	pdftitle={Other shenanigans},
+	pdfauthor={Darren Yap},
+	linkcolor=cobalt,
+}
+
+% make sure align*, aligned environments can stretch across pages
+\allowdisplaybreaks
+
+% better chapter headings
+\titleformat{\subsubsection}[hang]{
+	\sffamily\itshape\normalsize\color{accent}
+}{\thesubsubsection}{.5em}{}
+
+% finally we get to it
+\title{Other shenanigans}
+\author{Darren \color{accent} Yap}
+\date{2024}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+
+% all our chapters, in order
+\include{chapters/calc}
+\end{document}

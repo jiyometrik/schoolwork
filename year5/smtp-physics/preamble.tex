@@ -1,0 +1,83 @@
+\setlength{\headheight}{14.49998pt} % make latex stop complaining!
+
+% simpler commands
+\renewcommand{\bf}[1]{\textbf{#1}}
+\renewcommand{\it}[1]{\textit{#1}}
+\renewcommand{\tt}[1]{\texttt{#1}}
+\newcommand{\term}[1]{{\color{razz}\scshape#1}}
+\newcommand{\code}[1]{{\color{razz}\ttfamily#1}}
+
+% math macros
+\newcommand{\mv}[1]{\ensuremath{\symbf{#1}}}
+
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\df}[2]{\dfrac{#1}{#2}}
+\newcommand{\lf}[2]{\slashfrac[auto]{#1}{#2}}
+\newcommand{\reals}{\symbb{R}}
+\newcommand{\rationals}{\symbb{Q}}
+\newcommand{\ints}{\symbb{Z}}
+
+\newcommand{\ii}{\mv{\hat{i}}}
+\newcommand{\jj}{\mv{\hat{j}}}
+\newcommand{\kk}{\mv{\hat{k}}} % if ever needed
+
+% define colours used throughout the document
+% \definecolor{accent}{HTML}{EF476F}
+\definecolor{razz}{HTML}{DB3069} % pink -- all of these colours are very vibrant
+% \definecolor{cobalt}{HTML}{1446A0} % blue
+% \definecolor{naples}{HTML}{F5D547} % yellow
+
+% wrap figures
+\usepackage{wrapfig}
+
+% maths
+% \usepackage{mathtools, amsthm, amssymb, amsmath}
+\usepackage{derivative}
+
+% expandable brackets
+\usepackage{physics2}
+\usephysicsmodule[tightbraces=true]{ab}
+
+% si units
+\usepackage{siunitx}
+\sisetup{mode=match}
+
+% font
+\usepackage{fontspec}
+\defaultfontfeatures{Scale=MatchUppercase, Ligatures=TeX}
+\usepackage[
+  math-style=TeX,
+  bold-style=upright,
+  sans-style=upright,
+  warnings-off={mathtools-colon,mathtools-overbracket}
+]{unicode-math}
+\setmainfont{libertinus serif}
+\setmathfont{libertinus math}
+\setsansfont{libertinus sans}
+\setmonofont{source code pro}
+
+% fun highlights
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable,theorems}
+\newtcbox{\hil}[1][razz]{
+  on line,
+  arc=0pt,
+  outer arc=0pt,
+  colback=#1!25!white,%colframe=#1,
+  boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
+  boxrule=0pt,%bottomrule=1pt,toprule=1pt,
+  breakable,enhanced jigsaw,
+}
+
+% make sure align*, aligned environments can stretch across pages
+\allowdisplaybreaks
+
+% better chapter headings
+% \titleformat{\subsubsection}[hang]{
+%   \sffamily\itshape\normalsize\color{accent}
+% }{\thesubsubsection}{.5em}{}
+
+% numbering for equations, figures and tables etc
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
