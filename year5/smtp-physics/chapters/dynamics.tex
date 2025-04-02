@@ -82,7 +82,7 @@ mass, we define
 \end{itemize}
 
 Taking the centre of the platform to be the origin,
-we also know that the \bf{centre of mass} of the platform is
+we also know that the \term{centre of mass} of the platform is
 \begin{align*}
   x &= \f{m_b \mv{s}_b + m_p \mv{s}_p}{m_b + m_p} \\
   &= \f{6.0 \times 1.0 + 120 \times 0.0}{120 + 6.0} \\
@@ -131,15 +131,15 @@ and vice versa. Since
 
 \it{Explain if this collision is an elastic, inelastic or perfectly
 inelastic collision.}
-The \bf{elasticity} of a collision is dependent on the loss of kinetic energy
+The \term{elasticity} of a collision is dependent on the loss of kinetic energy
 from the system after the collision.
 \begin{align*}
   \text{KE} &= \f{1}{2}m\mv{v}^2 \\
   &= \f{\mv{p}^2}{2m} \\
-  \sum \text{KE}_i &= \f{\ab(2.0)^2}{2\times 1.0} +
+  \sum \text{KE} &= \f{\ab(2.0)^2}{2\times 1.0} +
   \f{\ab(-1.0)^2}{2\times 3.0} \\
   &= \qty{2.2}{\joule} \\
-  \sum \text{KE}_f &= \f{\ab(0.0)^2}{2\times 1.0} +
+  \sum \text{KE}' &= \f{\ab(0.0)^2}{2\times 1.0} +
   \f{\ab(1.0)^2}{2\times 3.0} \\
   &= \qty{0.2}{\joule}
 \end{align*}
@@ -176,13 +176,13 @@ Taking downwards as \(+y\), the terminal velocity of the putty is
 \end{align*}
 The collision between the lump of putty and frame is perfectly
 inelastic because the putty is assumed to
-have adhered to the frame. By the \bf{principle of conservation of momentum},
+have adhered to the frame. By the \term{principle of conservation of momentum},
 \begin{align*}
   m_p\mv{u}_p + 0 &= m_p\mv{v}_p + m_f\mv{v}_f \\
   \mv{v}_f &= \f{m_p\mv{u}_p}{m_p + m_f}
 \end{align*}
 
-By the \bf{law of conservation of energy}, all kinetic energy will be
+By the \term{law of conservation of energy}, all kinetic energy will be
 converted to elastic potential energy at the instant where the
 maximum stretch distance is reached.
 \begin{align*}
@@ -190,7 +190,9 @@ maximum stretch distance is reached.
   \mv{x}' &= \sqrt{\f{m_f\ab(\f{m_p\mv{u}_p}{m_p + m_f})^2}{k}} \\
   &= \sqrt{\f{0.150\times \ab(\f{0.200\times 2.426}{0.150 +
   0.200})^2}{21.02}} \\
-  &= \hil{\qty{0.117}{\metre}}
+  &= \qty{0.117}{\metre} \\
+  \Delta\mv{s} &= \mv{x}' - 0.0400 \\
+  &= \hil{\qty{0.077}{\metre}}
 \end{align*}
 
 \section{Rocket fuel}
@@ -198,7 +200,13 @@ A rocket of empty mass \(M_0\) carries fuel with an effective mass \(m\).
 The fuel is combusted and ejected out of the rocket at a rate of
 \(\odv{m}{t} = \lambda\)
 with speed \(v_e\) relative to the rocket. \it{Derive the equation of
-motion of a rocket travelling at speed \(v\) inside Earth.}\sidenote{Skipped.}
+motion of a rocket travelling at speed \(v\) inside Earth.}\sidenote{Unsolved.}
+
+At any time \(t\), the mass of the rocket \(M\ab(t)\) is
+\begin{equation}
+  M\ab(t) = M_0 + m\ab(t)
+  \label{eq:mt}
+\end{equation}
 
 \section{Falling sand}
 Sand falls through a hole in a sandbag at a rate of
@@ -207,8 +215,8 @@ on the pan of a weighing machine directly below. The hole is
 \qty{1.00}{\metre} above the pan.
 
 \it{Find the velocity of the sand just before it hits the pan.}
-Neglecting air resistance, the sand is in \bf{free fall}. The
-\bf{terminal velocity} is thus
+Neglecting air resistance, the sand is in \term{free fall}. The
+\term{terminal velocity} is thus
 \(v = \sqrt{2gh}\), where \(g\) is the gravitational constant and
 \(h\) is the height from which
 the sand has fallen.
@@ -222,8 +230,8 @@ the sand has fallen.
 of momentum of the sand per second due to the impact?}
 We know that \(\Delta\mv{p} = m\Delta\mv{v}\).
 \begin{align*}
-  \Delta\mv{p} \text{ (per second)} &= m\cdot\Delta\mv{v} \\
-  &= 0.100 \cdot 4.43 \\
+  \Delta\mv{p} \text{ (per second)} &= m\Delta\mv{v} \\
+  &= 0.100 \times 4.43 \\
   &= \hil{\qty{0.443}{\kg\metre\per\second}}
 \end{align*}
 
@@ -268,7 +276,8 @@ The goal here is to obtain an expression for \(m_2\), in terms of the
 given factors
 \(m_1\), \(\alpha\), and \(\beta\).
 
-The \bf{law of conservation of momentum} dictates that, for a head-on collision,
+The \term{law of conservation of momentum} dictates that, for a
+head-on collision,
 \begin{equation}
   m_1\mv{u}_1 + m_2\mv{u}_2 = m_1\mv{v}_1 + m_2\mv{v}_2
 \end{equation}
@@ -281,7 +290,7 @@ Applying this in the horizontal and vertical directions respectively,
   \label{eq:pconvy}
 \end{align}
 
-Since the collision was \bf{elastic}, the relative speed of approach
+Since the collision was \term{elastic}, the relative speed of approach
 is equal to the relative speed of separation.
 \begin{equation}
   \mv{u} = \mv{v}_2 \cos \beta - \mv{v}_1 \cos \alpha
@@ -349,14 +358,14 @@ last fragment immediately after the explosion?}
 
 Throughout this problem, \(+y\) is northward, and \(+x\) eastward.
 
-Find the final velocity of the rocket.
+The final velocity of the rocket, \(\mv{v}_1\), is
 \begin{align*}
   \mv{v}_1 &= \sqrt{\mv{v}_0^2 + 2\mv{a}\mv{s}}\\
   &= \sqrt{\ab(300)^2 + 2\ab(-9.81)(1000)} \\
   &= \qty{265.3}{\metre\per\second}
 \end{align*}
 Let the three fragments be \(A\), \(B\) and \(C\), each with mass
-\(m\). By the \bf{law of conservation of momentum}\sidenote{\(\ii\)
+\(m\). By the \term{law of conservation of momentum}\sidenote{\(\ii\)
 and \(\jj\) are unit vectors in the \(x\)-- and \(y\)--directions.},
 \begin{align*}
   m(\mv{v}_A + \mv{v}_B + \mv{v}_C) &= -3m\mv{v}_1 \\
@@ -374,7 +383,7 @@ When two hydrogen atoms of mass \(m\) combine to form a diatomic
 hydrogen molecule,
 the potential energy of the system after they combine is \(-A\),
 where \(A\) is a positive quantity called the
-\bf{binding energy} of the molecule.
+\term{binding energy} of the molecule.
 
 \it{Show that in a collision that involves only two hydrogen atoms,
   it is impossible to form a
@@ -424,7 +433,7 @@ of a hydrogen atom is \(m = \qty{1.67e-27}{\kg}\). \it{Find}
 Let the final speed of the hydrogen molecule and hydrogen atom be
 \(\mv{v}\) and \(\mv{w}\) respectively,
 and let their directions of travel be \(\alpha\) and \(\beta\).
-We can apply the \bf{law of conservation of momentum} in both the
+We can apply the \term{law of conservation of momentum} in both the
 \(x\) and \(y\) directions,
 taking rightwards and upwards as \(+x\) and \(+y\). Since \(\mv{p} = -\mv{p}'\),
 \begin{align}
@@ -465,13 +474,84 @@ Substituting \cref{eq:alphabeta} back into \cref{eq:hconvx},
 Substituting this \term{glorious} discovery \cref{eq:w2v} back into
 \ref{eq:econv2},
 \begin{align*}
-  v^2 + 4v^2 &= \f{3mu^2+2A}{m} \\
-  v &= \sqrt{\f{3mu^2+2A}{5m}} \\
+  \mv{v}^2 + 4\mv{v}^2 &= \f{3mu^2+2A}{m} \\
+  \mv{v} &= \sqrt{\f{3mu^2+2A}{5m}} \\
   &= \hil{\qty{1.53e4}{\metre\per\second}}\\
-  \therefore\; w &= -2\sqrt{\f{3mu^2+2A}{5m}}\\
+  \therefore\; \mv{w} &= -2\sqrt{\f{3mu^2+2A}{5m}}\\
   &= \hil{\qty{-3.05e4}{\metre\per\second}}
 \end{align*}
 We note that the hydrogen molecule and hydrogen atom travel in
 exactly opposite directions, since \(\alpha=\beta\) while the signs
-of \(v\) and \(w\)
+of \(\mv{v}\) and \(\mv{w}\)
 are opposite.
+
+\section{Staircase}
+A ball bounces inelastically down a flight of steps in a plane
+perpendicular to the front edges of the steps.
+The horizontal component of the velocity remains constant throughout
+but the vertical component of the velocity is reduced to a fraction
+\(e\) of the vertical velocity before impact: \(\mv{v}_y' = e\mv{v}_y\).
+
+Each step is \qty{0.20}{\metre} high and \qty{0.30}{\metre} deep.
+The ball always bounces exactly in the middle of each step; after
+each bounce it rises to the height of the previous step.
+Air resistance can be neglected.\sidenote{\(+x\) and \(+y\) are
+rightwards and upwards, respectively.}
+
+\it{Show that the value of the constant \(e\) for these impacts is \num{0.71}.}
+
+In the vertical direction, \(\mv{v}_y' = \sqrt{\mv{v}_y^2 +
+2\mv{a}\mv{s}}\). With \(\mv{v}_y = 0\)
+at the ball's maximum height,
+\begin{align*}
+  \mv{v}_y' &= \sqrt{2\ab(-g)\ab(-0.20)} \\
+  &= \sqrt{0.4g}
+\end{align*}
+
+Additionally, for every vertical drop the ball undergoes starting
+from the edge of the previous
+step to the platform of the next, \(\mv{v}_y' = \sqrt{\mv{v}_y^2 +
+2\mv{a}\mv{s}}\) also.
+\begin{align*}
+  \mv{v}_y &= \sqrt{\mv{v}_y'^2 - 2\mv{a}\mv{s}} \\
+  &= \sqrt{0.4g - 2\ab(-g)\ab(0.20)} \\
+  &= \sqrt{0.8g}
+\end{align*}
+
+Comparing \(\mv{v}_y\) and \(\mv{v}_y'\),
+\begin{align*}
+  e &= \lf{\mv{v}_y'}{\mv{v}_y} \\
+  &= \lf{ \sqrt{0.4g} }{ \sqrt{0.8g} } \\
+  &= \lf{1}{ \sqrt{2} } \\
+  &= \hil{0.71}
+\end{align*}
+
+\it{Show also that the horizontal component of the velocity of the
+ball is \qty{0.62}{\metre\per\second}.}
+
+The time taken between collisions is the sum of the time of descent
+and time of ascent
+of the ball. Since \(\mv{v}' = \mv{v} + \mv{a}t\), the time \(t\)
+between collisions is
+\begin{align*}
+  t &= \lf{\mv{v}_y}{\mv{a}} + \lf{\mv{v}_y'}{\mv{a}} \\
+  &= \f{\sqrt{0.4g} + \sqrt{0.8g}}{g} \\
+  &= \f{\sqrt{0.4} + \sqrt{0.8}}{\sqrt{g}}
+\end{align*}
+Since the horizontal velocity \(\mv{v}_x\) is constant throughout,
+\(\mv{s}_x = \mv{v}_xt\):
+\begin{align*}
+  \mv{v}_x &= \lf{\mv{s}_x}{t} \\
+  &= \f{\mv{s}_x\sqrt{g}}{\sqrt{0.4} + \sqrt{0.8}} \\
+  &= \hil{\qty{0.62}{\metre\per\second}}
+\end{align*}
+
+At the bottom of the steps, the ball continues to bounce along a
+horizontal pavement.
+The collisions of the ball with the pavement have the same value of
+\(e = 0.71\).
+\it{Show that the ball does not bounce beyond a distance from the
+bottom of the steps, and find this distance.}
+
+After the \(n\)--th bounce, the vertical component of velocity will
+be \({\mv{v}_y}_n = e^{n-1}\mv{u}_y\).
