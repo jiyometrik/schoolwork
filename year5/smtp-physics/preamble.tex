@@ -9,7 +9,6 @@
 
 % math macros
 \newcommand{\mv}[1]{\ensuremath{\symbf{#1}}}
-
 \newcommand{\f}[2]{\frac{#1}{#2}}
 \newcommand{\df}[2]{\dfrac{#1}{#2}}
 \newcommand{\lf}[2]{\slashfrac[auto]{#1}{#2}}
@@ -19,67 +18,64 @@
 
 \newcommand{\ii}{\mv{\hat{i}}}
 \newcommand{\jj}{\mv{\hat{j}}}
-\newcommand{\kk}{\mv{\hat{k}}} % if ever needed
+\newcommand{\kk}{\mv{\hat{k}}}
 
-% define colours used throughout the document
-% \definecolor{accent}{HTML}{EF476F}
-% \definecolor{razz}{HTML}{DB3069} % pink -- all of these colours are
-% very vibrant
-\definecolor{razz}{HTML}{4357AD}
-% \definecolor{cobalt}{HTML}{1446A0} % blue
-% \definecolor{naples}{HTML}{F5D547} % yellow
+% define accnet colour used throughout the document
+\definecolor{razz}{HTML}{DB5375}
 
 % wrap figures
 \usepackage{wrapfig}
 
 % maths
-% \usepackage{mathtools, amsthm, amssymb, amsmath}
-\usepackage{derivative}
+\usepackage{derivative, amsthm, mathtools, amsmath}
+\usepackage{cancel}
 
 % expandable brackets
 \usepackage{physics2}
 \usephysicsmodule[tightbraces=true]{ab}
 
-% si units
-\usepackage{siunitx}
-\sisetup{mode=match}
-
 % font
 \usepackage{fontspec}
-\defaultfontfeatures{Scale=MatchUppercase, Ligatures=TeX}
+\defaultfontfeatures{Scale=MatchLowercase}
 \usepackage[
   math-style=TeX,
   bold-style=upright,
   sans-style=upright,
   warnings-off={mathtools-colon,mathtools-overbracket}
 ]{unicode-math}
-\setmainfont{tex gyre pagella}
-\setmathfont{asana math}
-\setsansfont{clear sans}
-\setmonofont{iosevka}
+\setmainfont{cochineal}
+\setsansfont{ubuntu}
+\setmathfont{libertinus math}
+
+% si units
+\usepackage{siunitx}
+\sisetup{
+  mode=math,
+  propagate-math-font=true,
+  reset-math-version=true,
+  reset-text-family=false,
+  reset-text-series=false,
+  text-family-to-math=false,
+  text-series-to-math=false
+}
 
 % fun highlights
 \usepackage[most]{tcolorbox}
 \tcbuselibrary{breakable,theorems}
 \newtcbox{\hil}[1][razz]{
   on line,
-  arc=0pt,
-  outer arc=0pt,
-  colback=#1!25!white,%colframe=#1,
+  arc=0pt,outer arc=0pt,
+  colback=#1!25!white,
   boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
-  boxrule=0pt,%bottomrule=1pt,toprule=1pt,
+  boxrule=0pt,
   breakable,enhanced jigsaw,
 }
 
 % make sure align*, aligned environments can stretch across pages
 \allowdisplaybreaks
 
-% better chapter headings
-% \titleformat{\subsubsection}[hang]{
-%   \sffamily\itshape\normalsize\color{accent}
-% }{\thesubsubsection}{.5em}{}
-
 % numbering for equations, figures and tables etc
 \numberwithin{equation}{section}
 \numberwithin{table}{section}
 \numberwithin{figure}{section}
+\newtheorem{problem}{\hil{Problem}}[section]
