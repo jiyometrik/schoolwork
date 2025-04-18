@@ -1,0 +1,98 @@
+\documentclass[11pt, a4paper]{pancake-article}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\usepackage[style=nature]{biblatex}
+\addbibresource{Bibliography.bib}
+
+\usepackage{siunitx}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Scale=MatchLowercase, Ligatures=TeX}
+\setmainfont{cochineal}
+\setsansfont{source sans pro}
+\setmonofont{source code pro}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\tint}[1]{{\color{accent}#1}}
+
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  colorlinks,
+  breaklinks=true,
+  urlcolor=accent,
+  citecolor=accent,
+  linkcolor=accent,
+  bookmarksopen=false,
+  pdftitle={SMTP4 Geography Term Paper},
+  pdfauthor={Darren Yap},
+}
+
+\usepackage[abbreviations,automake,nomain]{glossaries-extra}
+\makeglossaries
+\newabbreviation{we}{WE}{wind energy}
+\newabbreviation{wt}{WT}{wind turbines}
+\newabbreviation{wf}{WF}{wind farms}
+\newabbreviation{ff}{FF}{fossil fuels}
+\newabbreviation{re}{RE}{renewable energy}
+
+\title{Up, up and away: \tint{Wind energy} and China's adoption}
+\author{Darren Yap}
+\date{\scshape Year Four Term Paper}
+
+% start the document!
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+\Glsxtrfull{we} is often considered one of the cleanest ways to produce
+electricity, being cheap and eco-friendly \cite{premalatha_2014_wind}.
+This leads many countries to increase WE investments to counter the
+rapid depletion of \glsxtrfull{ff}, an energy source widely known
+to be non-renewable.
+By erecting turbines in favourable areas with strong winds, \glsxtrfull{wf}
+are established: the mechanical energy
+winds carry turn the blades of the \glsxtrfull{wt}, after which
+it is converted to electrical energy sent to a power plant for
+consumption \cite{nejad_2022_wind}. \glsxtrshort{wt} are distributed over a large
+land area interconnected with said power collection system. Because
+\glsxtrshort{we} generated correlates with wind speed, onshore
+\glsxtrshort{wf} are most
+prevalent near coasts \cite{davis_2023_the}, where wind speeds are the highest.
+
+\section{On wind energy}
+China is becoming increasingly aware of the environmental detriments
+\glsxtrlong{ff} bring.
+International carbon dioxide emissions already reside at 35 billion
+megatonnes today \cite{trndle_2020_tradeoffs},
+with \glsxtrshort{ff} exploitation comprising 48 per cent of China's
+emissions \cite{zhang_2012_large}---a
+large margin that requires reduction.
+No doubt continued \glsxtrshort{ff} exploitation hastens global warming
+and endangers
+natural and human life. Because \glsxtrshort{we} produces near zero
+carbon emissions,
+environmentally conscious governments and companies have turned to it
+to reduce their
+emissions, slowing global warming down if done on a large scale.
+In the US, 96 million megatonnes of emissions were avoided by
+introducing \glsxtrshort{we} \cite{chen_2016_growing}, establishing it
+as a compelling \glsxtrfull{re} source for worldwide carbon
+emission reductions.
+
+\glsxtrshort{we} has also become increasingly affordable. Modern technological
+improvements to the turbine have allowed it to generate a record power
+output, while its cost has dropped dramatically.
+
+\printglossaries
+\printbibliography[heading=bibintoc]
+
+\end{document}
