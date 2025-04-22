@@ -1,0 +1,48 @@
+\chapter{Energy}
+
+\section{Bead and wire}
+\begin{problem}
+  Under the influence of gravity, a bead slides along a frictionless wire whose
+  height is given by the function \(y\ab(x)\). At position \(\ab(x_0,
+  y_0) = \ab(0,0)\),
+  the wire is vertical. The bead passes this point with a speed
+  \(V\) downwards.
+
+  What should the shape of the wire be such that the vertical speed
+  remains \(V\) at all times?
+\end{problem}
+
+Treat \(x\) and \(y\) as functions of time \(t\), that is,
+\(x\ab(t)\) and \(y\ab(t)\). The horizontal and vertical speeds can
+be written as \(v_x = \odv{x\ab(t)}{t}\) and \(v_y = \odv{y\ab(t)}{t}\).
+
+We have the condition in \cref{eq:vertspeed}.
+\begin{equation}
+  \odv{y\ab(t)}{t} = V\qquad y(0) = 0
+  \label{eq:vertspeed}
+\end{equation}
+Integrating \cref{eq:vertspeed} w.r.t. \(t\), we obtain
+\cref{eq:vertdistance}, which satisfies the initial condition.
+\begin{equation}
+  y\ab(t) = Vt + y(0) = Vt
+  \label{eq:vertdistance}
+\end{equation}
+
+According to the \term{law of conservation of energy}, the ball's
+energy must be conserved at all points of the wire. We can write the
+ball's total energy as the sum of its gravitational potential energy
+and kinetic energy at a time \(t\).
+\begin{equation*}
+  E\ab(t) = mgy\ab(t) + \f{1}{2}m\ab[v\ab(t)]^2
+\end{equation*}
+And since \(v\ab(t) = \sqrt{{v_x}^2 + {v_y}^2}\), we can say that
+\begin{equation}
+  E\ab(t) = mgy\ab(t) + \f{1}{2}m\ab[\ab(\odv{x\ab(t)}{t})^2 +
+  \ab(\odv{y\ab(t)}{t})^2]
+\end{equation}
+At \(t = 0\), \(y\ab(t) = 0\). As such, the ball's initial energy is
+\begin{align*}
+  E\ab(0) = \cancelto[razz]{0}{mgy\ab(0)} +
+  \f{1}{2}m\ab[\ab(\odv{x\ab(t)}{t})^2 +
+  \cancelto[razz]{V}{\ab(\odv{y\ab(t)}{t})}^2]
+\end{align*}
