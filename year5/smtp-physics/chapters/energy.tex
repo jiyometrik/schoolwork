@@ -14,17 +14,17 @@
 
 Treat \(x\) and \(y\) as functions of time \(t\), that is,
 \(x\ab(t)\) and \(y\ab(t)\). The horizontal and vertical speeds can
-be written as \(v_x = \odv{x\ab(t)}{t}\) and \(v_y = \odv{y\ab(t)}{t}\).
+be written as \(v_x = \odv{x}{t}\) and \(v_y = \odv{y}{t}\).
 
 We have the condition in \cref{eq:vertspeed}.
 \begin{equation}
-  \odv{y\ab(t)}{t} = V\qquad y(0) = 0
+  \odv{y}{t} = V\qquad y\ab(0) = 0
   \label{eq:vertspeed}
 \end{equation}
 Integrating \cref{eq:vertspeed} w.r.t. \(t\), we obtain
 \cref{eq:vertdistance}, which satisfies the initial condition.
 \begin{equation}
-  y\ab(t) = Vt + y(0) = Vt
+  y\ab(t) = Vt + y\ab(0) = Vt
   \label{eq:vertdistance}
 \end{equation}
 
@@ -37,12 +37,43 @@ and kinetic energy at a time \(t\).
 \end{equation*}
 And since \(v\ab(t) = \sqrt{{v_x}^2 + {v_y}^2}\), we can say that
 \begin{equation}
-  E\ab(t) = mgy\ab(t) + \f{1}{2}m\ab[\ab(\odv{x\ab(t)}{t})^2 +
-  \ab(\odv{y\ab(t)}{t})^2]
+  E\ab(t) = mgy\ab(t) + \f{1}{2}m\ab[\ab(\odv{x}{t})^2 +
+  \ab(\odv{y}{t})^2]
 \end{equation}
-At \(t = 0\), \(y\ab(t) = 0\). As such, the ball's initial energy is
+At \(t = 0\), \(x = 0\) and \(y = 0\). As such, the ball's initial energy is
 \begin{align*}
-  E\ab(0) = \cancelto[razz]{0}{mgy\ab(0)} +
-  \f{1}{2}m\ab[\ab(\odv{x\ab(t)}{t})^2 +
-  \cancelto[razz]{V}{\ab(\odv{y\ab(t)}{t})}^2]
+  E\ab(0) = \cancel{mgy\ab(0)} +
+  \f{1}{2}m\ab[\cancel{\ab(\odv{x}{t})^2} + V^2]
+  = \f{mV^2}{2}
 \end{align*}
+
+Using the law of \term{conservation of energy}, \(E\ab(0) = E\ab(t)\)
+for any time \(t\).
+\begin{align*}
+  E\ab(0) &= E\ab(t)\\
+  \f{\cancel{m}\,V^2}{2} &= \cancel{m}\,gy +
+  \f{1}{2}\cancel{m}\,\ab[\ab(\odv{x}{t})^2 + V^2]
+\end{align*}
+\begin{equation}
+  \label{eq:horzspeed}
+  v_x = \odv{x}{t} = \pm\sqrt{-2gy}
+\end{equation}
+
+Using the \term{chain rule}, \(\odv{y}{x} = \odv{y}{t}\div\odv{x}{t}\).
+With \cref{eq:vertspeed,eq:horzspeed}, we get an expression for \(\odv{y}{x}\):
+\begin{equation}
+  \odv{y}{x} = \pm\f{V}{\sqrt{-2gy}}
+\end{equation}
+Integrating this is simple.
+\begin{align*}
+  \odv{y}{x} &= \pm\f{V}{\sqrt{-2gy}} \\
+  \sqrt{-2g}\int\sqrt{y}\:\odif{y} &= \pm\int V\:\odif{x}  \\
+  \f{2\sqrt{-2g}}{3}y^{\lf{3}{2}} + \cancel{y\ab(0)} &= \pm Vx +
+  \cancel{x\ab(0)}
+\end{align*}
+
+And we get an expression for \(y\) in terms of \(x\).\sidenote{Since
+the wire always points downwards, we only consider the negative option.}
+\begin{equation}
+  y = -\ab(Vax)^{\lf{2}{3}}\qquad a = \f{3}{2\sqrt{-2g}}
+\end{equation}
