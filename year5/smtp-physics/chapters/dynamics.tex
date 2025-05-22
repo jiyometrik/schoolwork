@@ -213,8 +213,6 @@ the maximum length of the spring,
   \f{1}{2}k\mv{s}^2 \\
   \f{k}{2}\mv{s}^2 - m\mv{g}\mv{s} + m\mv{g}x_0 -
   \f{\mv{v}^2\ab(m_p+m_f)}{2} &= 0 \\
-  \mv{s} &= \f{m\mv{g} + \sqrt{\ab(m\mv{g})^2 - 2k\ab[mx_0\mv{g} -
-  \f{1}{2}\ab(m_p + m_f)\mv{v}^2]}}{k} \\
   \mv{s} &= \qty{0.340}{\metre} \\
   \therefore\;\mv{s} - x_0 &= \hil{\qty{0.270}{\metre}}
 \end{align*}
@@ -733,3 +731,63 @@ first term is \({\mv{v}_y}_0\) and its common ratio is \(e\).
 \end{align*}
 Therefore, the maximum distance travelled by the ball is
 \hil{\qty{0.863}{\metre}}.
+
+\section{Unrelated problem}
+This problem is \bf{not in the SMTP tutorial}, but is taken from
+David Morin's {\scshape Introductory Classical Mechanics, with
+Problems and Solutions}. This is \bf{Problem 4.9.38} (`Perpendicular vectors`).
+
+\begin{problem}[Perpendicular vectors]
+  A mass \(m\) moving with speed \(v\) collides elastically with a
+  stationary mass \(2m\). Their resulting velocities are \(\mv{v}_1\)
+  and \(\mv{v}_2\) respectively. Show that \(\mv{v}_2\) must be
+  perpendicular to \(2\mv{v}_1+\mv{v}_2\).
+\end{problem}
+
+Since the masses collided elastically, both \it{momentum} and
+\it{kinetic energy} are conserved (\cref{eq:pvcom,eq:pvcoe}):
+\begin{equation}
+  \cancel{m}\mv{v} = \cancel{m}\mv{v}_1 + 2\cancel{m}\mv{v}_2
+  \label{eq:pvcom}
+\end{equation}
+\begin{equation}
+  \cancel{\f{m}{2}}v^2 = \cancel{\f{m}{2}}{\ab|\mv{v}_1|}^2 +
+  2\cdot\cancel{\f{m}{2}}{\ab|\mv{v}_2|}^2
+  \label{eq:pvcoe}
+\end{equation}
+
+Since the vectors \(\mv{v}_2\) and \(2\mv{v}_1+\mv{v}_2\) must be
+perpendicular, their \term{dot product} must equal \(0\).
+\begin{align*}
+  \eqnmark[razz]{v2}{\mv{v}_2} \cdot \ab(2\mv{v}_1 +
+  \eqnmark[razz]{v22}{\mv{v}_2})
+  &= \eqnmark[razz]{vv2}{{\ab|\mv{v}_2|}^2} +
+  2\eqnmarkbox[razz]{v1}{\mv{v}_1}\cdot\mv{v}_2 \\
+  &= {\ab|\mv{v}_2|}^2 +
+  \eqnmark[ncs]{2v2}{2\mv{v}_2} \cdot
+  \eqnmarkbox[razz]{vdiff}{\ab(\mv{v}-\eqnmark[ncs]{2v22}{2\mv{v}_2})} \\
+  &= {\ab|\mv{v}_2|}^2 - \eqnmark[ncs]{4v2}{4{\ab|\mv{v}_2|}^2} +
+  2\mv{v}\cdot\mv{v}_2 \\
+  &= -3{\ab|\mv{v}_2|}^2 + \eqnmarkbox[ncs]{2vv2}{2\mv{v}\cdot\mv{v}_2}
+\end{align*}
+
+From \cref{eq:pvcom} we know that
+\begin{align*}
+  \ab|\mv{v}_1|^2 = \ab|\mv{v}-2\mv{v}_2|^2 &= v^2 -
+  4\eqnmarkbox[ncs]{4vv2}{\mv{v}\cdot\mv{v}_2} + 4\ab|\mv{v}_2|^2 \\
+  \eqnmarkbox[ncs]{2vv22}{2\mv{v}\cdot\mv{v}_2} &=
+  \f{1}{2}\ab(\eqnmarkbox[razz]{v2v12}{v^2 - \ab|\mv{v}_1|^2} +
+  4\ab|\mv{v}_2|^2) \\
+  &= \f{1}{2}\ab(\eqnmarkbox[razz]{v22}{2\ab|\mv{v}_2|^2} + 4
+  \ab|\mv{v}_2|^2) \\
+  &= 3\ab|\mv{v}_2|^2
+\end{align*}
+
+Substituting this result back into where we stopped in determining
+the dot product, we get
+\begin{align*}
+  \mv{v}_2 \cdot \ab(2\mv{v}_1 + \mv{v}_2) &= -3{\ab|\mv{v}_2|}^2 +
+  \eqnmarkbox[ncs]{2vv2}{2\mv{v}\cdot\mv{v}_2} \\
+  &= -3{\ab|\mv{v}_2|}^2 + 3{\ab|\mv{v}_2|^2}\\
+  &= \hil{0}
+\end{align*}

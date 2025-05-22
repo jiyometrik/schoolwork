@@ -1,4 +1,5 @@
 \setlength{\headheight}{14.49998pt} % make latex stop complaining!
+\setcounter{tocdepth}{0}
 
 % simpler commands
 \renewcommand{\bf}[1]{\textbf{#1}}
@@ -20,8 +21,10 @@
 \newcommand{\jj}{\mv{\hat{j}}}
 \newcommand{\kk}{\mv{\hat{k}}}
 
-% define accnet colour used throughout the document
+% define accent colour used throughout the document
 \definecolor{razz}{HTML}{DB5375}
+\definecolor{ncs}{HTML}{26547C}
+\definecolor{sung}{HTML}{ffd166}
 
 % wrap figures
 \usepackage{wrapfig}
@@ -38,39 +41,43 @@
 \usepackage{fontspec}
 \defaultfontfeatures{Scale=MatchLowercase}
 \usepackage[
-  math-style=TeX,
-  warnings-off={mathtools-colon,mathtools-overbracket}
+	math-style=TeX,
+	warnings-off={mathtools-colon,mathtools-overbracket}
 ]{unicode-math}
-\setmainfont{tex gyre pagella}
+\setmainfont{stix two text}
 \setsansfont{source sans pro}
 \setmonofont{source code pro}
-\setmathfont{asana math}
+\setmathfont{stix two math}
 
 % si units
 \usepackage{siunitx}
 \sisetup{
-  mode=math,
-  propagate-math-font=false,
-  reset-math-version=true,
-  reset-text-family=false,
-  reset-text-series=false,
-  text-family-to-math=false,
-  text-series-to-math=false
+	mode=math,
+	propagate-math-font=false,
+	reset-math-version=true,
+	reset-text-family=false,
+	reset-text-series=false,
+	text-family-to-math=false,
+	text-series-to-math=false
 }
 
 % drawings
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+% annotate equation
+\usepackage{annotate-equations}
 
 % fun highlights
 \usepackage[most]{tcolorbox}
 \tcbuselibrary{breakable,theorems}
 \newtcbox{\hil}[1][razz]{
-  on line,
-  arc=0pt,outer arc=0pt,
-  colback=#1!25!white,
-  boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
-  boxrule=0pt,
-  breakable,enhanced jigsaw,
+	on line,
+	arc=0pt,outer arc=0pt,
+	colback=#1!25!white,
+	boxsep=0pt,left=1pt,right=1pt,top=2pt,bottom=2pt,
+	boxrule=0pt,
+	breakable,enhanced jigsaw,
 }
 
 % make sure align*, aligned environments can stretch across pages

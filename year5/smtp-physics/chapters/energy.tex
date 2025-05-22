@@ -1,12 +1,74 @@
 \chapter{Energy}
 
-\section{Bead and wire}
+\section{String and pucks}
+
+This problem is taken from David Morin's {\scshape Introduction to
+Classical Mechanics: With Problems and Solutions}
+as \bf{Problem 4.11.4} (`Pulling the pucks').
+
 \begin{problem}
-  Under the influence of gravity, a bead slides along a frictionless wire whose
-  height is given by the function \(y\ab(x)\). At position \(\ab(x_0,
-  y_0) = \ab(0,0)\),
-  the wire is vertical. The bead passes this point with a speed
-  \(V\) downwards.
+  A string of length \(2l\) connects two hockey pucks that lie on
+  frictionless ice (\cref{fig:pucks}). A constant horizontal force
+  \(\mv{F}\) is applied
+  to the midpoint of the string, perpendicular to it. How much
+  kinetic energy is lost when the pucks collide, assuming they stick together?
+\end{problem}
+
+\begin{wrapfigure}{o}{0.5\textwidth}
+  \centering
+  \begin{tikzpicture}
+    \filldraw[razz] (0,0) circle(2pt);
+    \filldraw[razz] (0,3) circle(2pt);
+    \draw(0,0)--(0,3);
+    \draw[-Stealth,ultra thick] (0,1.5)--(2,1.5);
+    \node at (1.2,1.8){$\mv{F}$};
+  \end{tikzpicture}
+  \caption{String and two pucks}
+  \label{fig:pucks}
+\end{wrapfigure}
+
+Let \(\theta\) be the angle between the stretched string (along which
+tension \(\mv{T}\) also lies) and \(\mv{F}\). The tension in the
+string \(\mv{T} = \lf{\mv{F}}{2\cos\theta}\). Looking at the top
+puck, the component of the tension in the \(y\)--direction is
+\(-\mv{T}\sin\theta=-\lf{\mv{F}\tan\theta}{2}\). Since the force
+applied is the displacement derivative of the work done,
+\begin{wrapfigure}{o}{0.5\textwidth}
+  \centering
+  \begin{tikzpicture}
+    \filldraw[razz] (0,0) circle(2pt);
+    \filldraw[razz] (0,3) circle(2pt);
+    \draw(0,0)--(1,1.5)--(0,3);
+    \draw[-Stealth,ultra thick, dashed] (0,1.5)--(2,1.5);
+    \node at (1.2,1.8){$\mv{F}$};
+    \node at (.9,1.52){$\theta$};
+    \node at (0.5,.77){$\mv{T}$};
+  \end{tikzpicture}
+  \caption{String and two pucks, stretched}
+  \label{fig:pucksstretched}
+\end{wrapfigure}
+\begin{align*}
+  W_y &= \int_{l}^{0}-\f{F\tan\theta}{2}\:\odif{y} \\
+  &= \int_{\lf{\pi}{2}}^{0}-\f{F\tan\theta}{2}\:\odif{\ab(l\sin\theta)}\\
+  &= \int_{\lf{\pi}{2}}^{0} -\f{Fl\sin\theta}{2}\:\odif{\theta}\\
+  &= \ab[\f{Fl\cos\theta}{2}]_{\lf{\pi}{2}}^0 \\
+  &= \f{1}{2}Fl
+\end{align*}
+By the \term{work-energy theorem}, this work equals \(W_y =
+\lf{mv_y^2}{2}\). The kinetic energy lost when the two pucks stick
+together is twice this quantity, since \(v_x\) doesn't change.
+Therefore the loss in kinetic energy is \hil{\(Fl\)}.
+
+\section{Bead and wire}
+This problem is taken from David Morin's {\scshape Introduction to
+Classical Mechanics: With Problems and Solutions}
+as \bf{Problem 4.11.6} (`Constant \(\dot{y}\)').
+
+\begin{problem}
+  Under the influence of gravity, a bead slides along a frictionless
+  wire whose height is given by the function \(y\ab(x)\). At position
+  \(\ab(x_0, y_0) = \ab(0,0)\), the wire is vertical. The bead passes
+  this point with a speed \(V\) downwards.
 
   What should the shape of the wire be such that the vertical speed
   remains \(V\) at all times?
@@ -14,11 +76,11 @@
 
 Treat \(x\) and \(y\) as functions of time \(t\), that is,
 \(x\ab(t)\) and \(y\ab(t)\). The horizontal and vertical speeds can
-be written as \(v_x = \odv{x}{t}\) and \(v_y = \odv{y}{t}\).
+be written as \(v_x = \dot{x}\) and \(v_y = \dot{y}\).
 
 We have the condition in \cref{eq:vertspeed}.
 \begin{equation}
-  \odv{y}{t} = V\qquad y\ab(0) = 0
+  \dot{y} = V\qquad y\ab(0) = 0
   \label{eq:vertspeed}
 \end{equation}
 Integrating \cref{eq:vertspeed} w.r.t. \(t\), we obtain
@@ -37,13 +99,12 @@ and kinetic energy at a time \(t\).
 \end{equation*}
 And since \(v\ab(t) = \sqrt{{v_x}^2 + {v_y}^2}\), we can say that
 \begin{equation}
-  E\ab(t) = mgy\ab(t) + \f{1}{2}m\ab[\ab(\odv{x}{t})^2 +
-  \ab(\odv{y}{t})^2]
+  E\ab(t) = mgy\ab(t) + \f{1}{2}m\ab(\dot{x}^2 + \dot{y}^2)
 \end{equation}
 At \(t = 0\), \(x = 0\) and \(y = 0\). As such, the ball's initial energy is
 \begin{align*}
-  E\ab(0) = \cancel{mgy\ab(0)} +
-  \f{1}{2}m\ab[\cancel{\ab(\odv{x}{t})^2} + V^2]
+  E\ab(0) = \cancelto{0}{mgy\ab(0)} +
+  \f{1}{2}m\ab(\cancelto{0}{\dot{x}^2} + V^2)
   = \f{mV^2}{2}
 \end{align*}
 
@@ -51,16 +112,15 @@ Using the law of \term{conservation of energy}, \(E\ab(0) = E\ab(t)\)
 for any time \(t\).
 \begin{align*}
   E\ab(0) &= E\ab(t)\\
-  \f{\cancel{m}\,V^2}{2} &= \cancel{m}\,gy +
-  \f{1}{2}\cancel{m}\,\ab[\ab(\odv{x}{t})^2 + V^2]
+  \f{\cancel{m}V^2}{2} &= \cancel{m}gy + \f{1}{2}\cancel{m}\ab(\dot{x}^2 + V^2)
 \end{align*}
 \begin{equation}
   \label{eq:horzspeed}
-  v_x = \odv{x}{t} = \pm\sqrt{-2gy}
+  v_x = \dot{x} = \pm\sqrt{-2gy}
 \end{equation}
 
-Using the \term{chain rule}, \(\odv{y}{x} = \odv{y}{t}\div\odv{x}{t}\).
-With \cref{eq:vertspeed,eq:horzspeed}, we get an expression for \(\odv{y}{x}\):
+Using the \term{chain rule}, \(\odv{y}/{x} = \lf{\dot{y}}{\dot{x}}\).
+With \cref{eq:vertspeed,eq:horzspeed}, we get an expression for \(\odv{y}/{x}\):
 \begin{equation}
   \odv{y}{x} = \pm\f{V}{\sqrt{-2gy}}
 \end{equation}
@@ -68,8 +128,8 @@ Integrating this is simple.
 \begin{align*}
   \odv{y}{x} &= \pm\f{V}{\sqrt{-2gy}} \\
   \sqrt{-2g}\int\sqrt{y}\:\odif{y} &= \pm\int V\:\odif{x}  \\
-  \f{2\sqrt{-2g}}{3}y^{\lf{3}{2}} + \cancel{y\ab(0)} &= \pm Vx +
-  \cancel{x\ab(0)}
+  \f{2\sqrt{-2g}}{3}y^{\lf{3}{2}} + \cancelto{0}{y\ab(0)} &= \pm Vx +
+  \cancelto{0}{x\ab(0)}
 \end{align*}
 
 And we get an expression for \(y\) in terms of \(x\).\sidenote{Since
