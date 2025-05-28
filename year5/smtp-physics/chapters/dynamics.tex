@@ -3,7 +3,7 @@
 \section{Two pulleys}
 \begin{wrapfigure}{o}{0.5\textwidth}
   % \centering
-  \includegraphics[scale=.35]{assets/twopulleys.png}
+  \includegraphics[scale=.33]{assets/twopulleys.png}
   \caption{A two-pulley system}
   \label{fig:twopulleys}
 \end{wrapfigure}
@@ -98,7 +98,7 @@ Substituting \cref{eq:pcomball} into \cref{eq:timetaken},
 \section{Two carts}
 \begin{wrapfigure}{o}{0.4\textwidth}
   \centering
-  \includegraphics[scale=0.5]{assets/momentumgraph.png}
+  \includegraphics[width=0.35\textwidth]{assets/momentumgraph.png}
   \caption{Momentum--time graph for two carts}
   \label{fig:twocarts}
 \end{wrapfigure}
@@ -238,7 +238,7 @@ We can say that
 \end{equation}
 
 Furthermore, since \(\odv{m}{t}=\lambda\), we can say that
-\(\f{m_1 - m_0}{t_1-t_0}\) is true too. Substituting \(t_0 = 0\),
+\(\f{m_1 - m_0}{t_1-t_0}=\lambda\) is true too. Substituting \(t_0 = 0\),
 \(t_1 = t\) (at any time \(t\) throughout the fuel's motion), and \(m_1 = 0\),
 \begin{equation}
   M\ab(t) = M_0 - \lambda t
@@ -365,20 +365,6 @@ We know that \(\Delta\mv{p} = m\Delta\mv{v}\).
 We know that \(\mv{F} = \odv{\mv{p}}{t}\). therefore, \(\mv{F} =
 \lf{\Delta\mv{p}}{\Delta t} = \hil{\qty{0.443}{\newton}}\).
 
-\begin{problem}
-  If the total mass of the sand is \qty{1.00}{\kg}, what is the
-  reading of the balance (in \unit{\kg}) when the last grain of sand
-  hits the pan?
-\end{problem}
-The reading on a weighing balance is \(\mv{F}/g\), where \(\mv{F}\)
-is the net force exerted on the surface.
-\begin{align*}
-  \mv{F} &= -\ab[-\mv{g} + \ab(-\mv{F}_\text{sand--pan})] \\
-  &= 9.81 + 0.443 \\
-  &= \qty{10.253}{\newton}\\
-  \text{reading} &= \lf{10.253}{g} \\
-  &= \hil{\qty{1.05}{\kg}}
-\end{align*}
 
 \section{Colliding atoms}
 \begin{problem}
@@ -539,7 +525,7 @@ the hydrogen molecule must be at rest after the collision.
 \end{equation}
 
 Initially, the total energy in the system is \(E = \f{1}{2}m{u_1}^2 +
-\f{1}{2}m{u_2}^2 = \f{m\ab({u_1}^2 + {u_2}^2)}{2}\).
+\f{1}{2}m{u_2}^2\).
 After the collision, some energy has been converted to potential
 energy (due to the aforementioned binding energy),
 hence
@@ -731,63 +717,3 @@ first term is \({\mv{v}_y}_0\) and its common ratio is \(e\).
 \end{align*}
 Therefore, the maximum distance travelled by the ball is
 \hil{\qty{0.863}{\metre}}.
-
-\section{Unrelated problem}
-This problem is \bf{not in the SMTP tutorial}, but is taken from
-David Morin's {\scshape Introductory Classical Mechanics, with
-Problems and Solutions}. This is \bf{Problem 4.9.38} (`Perpendicular vectors`).
-
-\begin{problem}[Perpendicular vectors]
-  A mass \(m\) moving with speed \(v\) collides elastically with a
-  stationary mass \(2m\). Their resulting velocities are \(\mv{v}_1\)
-  and \(\mv{v}_2\) respectively. Show that \(\mv{v}_2\) must be
-  perpendicular to \(2\mv{v}_1+\mv{v}_2\).
-\end{problem}
-
-Since the masses collided elastically, both \it{momentum} and
-\it{kinetic energy} are conserved (\cref{eq:pvcom,eq:pvcoe}):
-\begin{equation}
-  \cancel{m}\mv{v} = \cancel{m}\mv{v}_1 + 2\cancel{m}\mv{v}_2
-  \label{eq:pvcom}
-\end{equation}
-\begin{equation}
-  \cancel{\f{m}{2}}v^2 = \cancel{\f{m}{2}}{\ab|\mv{v}_1|}^2 +
-  2\cdot\cancel{\f{m}{2}}{\ab|\mv{v}_2|}^2
-  \label{eq:pvcoe}
-\end{equation}
-
-Since the vectors \(\mv{v}_2\) and \(2\mv{v}_1+\mv{v}_2\) must be
-perpendicular, their \term{dot product} must equal \(0\).
-\begin{align*}
-  \eqnmark[razz]{v2}{\mv{v}_2} \cdot \ab(2\mv{v}_1 +
-  \eqnmark[razz]{v22}{\mv{v}_2})
-  &= \eqnmark[razz]{vv2}{{\ab|\mv{v}_2|}^2} +
-  2\eqnmarkbox[razz]{v1}{\mv{v}_1}\cdot\mv{v}_2 \\
-  &= {\ab|\mv{v}_2|}^2 +
-  \eqnmark[ncs]{2v2}{2\mv{v}_2} \cdot
-  \eqnmarkbox[razz]{vdiff}{\ab(\mv{v}-\eqnmark[ncs]{2v22}{2\mv{v}_2})} \\
-  &= {\ab|\mv{v}_2|}^2 - \eqnmark[ncs]{4v2}{4{\ab|\mv{v}_2|}^2} +
-  2\mv{v}\cdot\mv{v}_2 \\
-  &= -3{\ab|\mv{v}_2|}^2 + \eqnmarkbox[ncs]{2vv2}{2\mv{v}\cdot\mv{v}_2}
-\end{align*}
-
-From \cref{eq:pvcom} we know that
-\begin{align*}
-  \ab|\mv{v}_1|^2 = \ab|\mv{v}-2\mv{v}_2|^2 &= v^2 -
-  4\eqnmarkbox[ncs]{4vv2}{\mv{v}\cdot\mv{v}_2} + 4\ab|\mv{v}_2|^2 \\
-  \eqnmarkbox[ncs]{2vv22}{2\mv{v}\cdot\mv{v}_2} &=
-  \f{1}{2}\ab(\eqnmarkbox[razz]{v2v12}{v^2 - \ab|\mv{v}_1|^2} +
-  4\ab|\mv{v}_2|^2) \\
-  &= \f{1}{2}\ab(\eqnmarkbox[razz]{v22}{2\ab|\mv{v}_2|^2} + 4
-  \ab|\mv{v}_2|^2) \\
-  &= 3\ab|\mv{v}_2|^2
-\end{align*}
-
-Substituting this result back into where we stopped in determining
-the dot product, we get
-\begin{align*}
-  \mv{v}_2 \cdot \ab(2\mv{v}_1 + \mv{v}_2) &= -3{\ab|\mv{v}_2|}^2 +
-  \eqnmarkbox[ncs]{2vv2}{2\mv{v}\cdot\mv{v}_2} \\
-  &= -3{\ab|\mv{v}_2|}^2 + 3{\ab|\mv{v}_2|^2}\\
-  &= \hil{0}
-\end{align*}

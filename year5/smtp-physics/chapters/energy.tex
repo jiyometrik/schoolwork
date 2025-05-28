@@ -74,6 +74,7 @@ as \bf{Problem 4.11.6} (`Constant \(\dot{y}\)').
   remains \(V\) at all times?
 \end{problem}
 
+\subsection{My solution}
 Treat \(x\) and \(y\) as functions of time \(t\), that is,
 \(x\ab(t)\) and \(y\ab(t)\). The horizontal and vertical speeds can
 be written as \(v_x = \dot{x}\) and \(v_y = \dot{y}\).
@@ -116,24 +117,67 @@ for any time \(t\).
 \end{align*}
 \begin{equation}
   \label{eq:horzspeed}
-  v_x = \dot{x} = \pm\sqrt{-2gy}
+  v_x = \dot{x} = \pm\sqrt{2gy}
 \end{equation}
 
 Using the \term{chain rule}, \(\odv{y}/{x} = \lf{\dot{y}}{\dot{x}}\).
 With \cref{eq:vertspeed,eq:horzspeed}, we get an expression for \(\odv{y}/{x}\):
 \begin{equation}
-  \odv{y}{x} = \pm\f{V}{\sqrt{-2gy}}
+  \odv{y}{x} = \pm\f{V}{\sqrt{2gy}}
 \end{equation}
 Integrating this is simple.
 \begin{align*}
-  \odv{y}{x} &= \pm\f{V}{\sqrt{-2gy}} \\
-  \sqrt{-2g}\int\sqrt{y}\:\odif{y} &= \pm\int V\:\odif{x}  \\
-  \f{2\sqrt{-2g}}{3}y^{\lf{3}{2}} + \cancelto{0}{y\ab(0)} &= \pm Vx +
+  \odv{y}{x} &= \pm\f{V}{\sqrt{2gy}} \\
+  \sqrt{2g}\int\sqrt{y}\:\odif{y} &= \pm\int V\:\odif{x}  \\
+  \f{2\sqrt{2g}}{3}y^{\lf{3}{2}} + \cancelto{0}{y\ab(0)} &= \pm Vx +
   \cancelto{0}{x\ab(0)}
 \end{align*}
 
 And we get an expression for \(y\) in terms of \(x\).\sidenote{Since
 the wire always points downwards, we only consider the negative option.}
 \begin{equation}
-  y = -\ab(Vax)^{\lf{2}{3}}\qquad a = \f{3}{2\sqrt{-2g}}
+  y = -\ab(Vax)^{\lf{2}{3}}\qquad a = \f{3}{2\sqrt{2g}}
+  \label{eq:mysolution}
 \end{equation}
+
+\subsection{Book solution}
+Using the \term{principle of conservation of energy}, we claim that
+\begin{equation*}
+\f{1}{2}mV^2 = \f{1}{2}mv^2 + mgy \Rightarrow v = \sqrt{V^2-2gy}
+\end{equation*}
+at any point in the bead's motion where its velocity is \(v\) and vertical displacement
+\(y < 0\).
+
+The vertical component of the speed is \(\dot{y}=v\sin\theta\), where
+\(\tan\theta=y'=\odv{y}{x}\) is the slope of the wire. We can then say that
+\(\sin\theta=\f{\tan\theta}{\sqrt{1+\tan^2\theta}}=\f{y'}{\sqrt{1+{y'}^2}}\). Since \(\dot{y}=v\sin\theta=-V\), and
+\begin{equation*}
+-V = v\sin\theta=\sqrt{V^2-2gy}\ab(\f{y'}{\sqrt{1+{y'}^2}})
+\end{equation*}
+Solving for \(y'\equiv\odv{y}{x}\), we get
+\begin{equation}
+\odv{y}{x} = \f{-V}{\sqrt{-2gy}}
+\label{eq:dydxe}
+\end{equation}
+
+\(V\) is a constant! Integrating both sides and using \cref{eq:dydxe}, we get
+\begin{align*}
+\int-V\:\odif{x} &= \int \f{y'\sqrt{V^2-2gy}}{\sqrt{1+{y'}^2}}\:\odif{y} \\
+Vx &= \f{\ab(-2gy)^{\lf{3}{2}}}{3g}
+\end{align*}
+The constant of integration has been omitted because \(x_0 = 0\) and \(y_0=0\) too.
+Therefore,
+\begin{equation}
+y = -\f{\ab(3Vgx)^{\lf{2}{3}}}{2g}
+  \label{eq:booksol}
+\end{equation}
+
+To confirm that the answer in \cref{eq:booksol} is indeed the same as what we obtained in 
+\cref{eq:mysolution}, we use
+\begin{align*}
+y_0 &= -\ab(Vx \f{3}{2\sqrt{-2g}})^{\lf{2}{3}} \\
+&= -3^{\lf{2}{3}} \times 2^{-\lf{2}{3}} \times \ab(-2)^{-\lf{1}{3}}\times V^{\lf{2}{3}} x^{\lf{2}{3}} g^{-\lf{1}{3}} \\
+&= -\f{3^{\lf{2}{3}} V^{\lf{2}{3}} g^{\lf{2}{3}} x^{\lf{2}{3}}}{g^1} \times \ab(-1)^{\lf{1}{3}} \times 2^{-1} \\
+&= -\f{\ab(3Vgx)^{\lf{2}{3}}}{2g} \\
+&= y_1 \:\qed\\
+\end{align*}
