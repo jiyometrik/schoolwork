@@ -81,7 +81,6 @@
 \renewcommand{\headrulewidth}{.4pt}
 \renewcommand{\footrulewidth}{0pt}
 
-
 \fancyhead[LE, RO]{\chaptername{} \thechapter}
 \fancyhead[RE, LO]{\nouppercase{\leftmark}}
 \fancyfoot[LE, RO]{\thepage}
@@ -93,13 +92,18 @@
   \renewcommand{\footrulewidth}{0pt}
   \fancyfoot[LE, RO]{\thepage}
 }
+%* fun titles
+\RequirePackage{titlesec}
+\titleformat{\chapter}[hang]{\normalfont\sffamily\huge\color{razz}}{\thechapter\hspace{.5em}\vrule width .7pt}{.5em}{}
+\titleformat{\section}[hang]{\normalfont\sffamily\LARGE\color{razz}}{\thesection\hspace{.5em}\vrule width .7pt}{.5em}{}
+\titleformat{\subsection}[hang]{\itshape\sffamily\Large\color{razz}}{\thesubsection}{.5em}{}
 
 %* Marginalia
 \RequirePackage{sidenotes}
 \RequirePackage{marginfix}
 
 \newcommand{\smartragged}{\checkoddpage \ifoddpage\raggedright \else
-\raggedleft\fi}
+    \raggedleft\fi}
 
 \providecommand{\marginaliasize}{\footnotesize}
 \DeclareCaptionFont{marginaliasize}{\marginaliasize}
@@ -107,10 +111,10 @@
 \let\@oldmarginpar\marginpar
 \renewcommand{\marginpar}[2][]{%
   \ifx#1\empty\empty % when #1 is empty, we are really looking to see
-  % that \empty = \empty
-  \@oldmarginpar{\smartragged\marginaliasize #2}%
+    % that \empty = \empty
+    \@oldmarginpar{\smartragged\marginaliasize #2}%
   \else
-  \@oldmarginpar[\raggedleft\marginaliasize #1]{\raggedright\marginaliasize #2}%
+    \@oldmarginpar[\raggedleft\marginaliasize #1]{\raggedright\marginaliasize #2}%
   \fi
 }
 
@@ -123,7 +127,7 @@
 %* Assorted random bits
 \makeatletter
 \newcommand{\ifdraft}[2][]{\ifdim\overfullrule>\z@
-\expandafter#2\else\expandafter#1\fi}
+    \expandafter#2\else\expandafter#1\fi}
 \makeatother
 \newcommand{\notetoself}[1]{\ifdraft{\sidenote{\color{gray}#1}}}
 

@@ -1,0 +1,259 @@
+\chapter{Gravitation}
+\label{ch:gravitation}
+
+\section{Jupiter's moons}
+\begin{problem}
+The planet Jupiter has a number of moons. Data of some of these moons are given.
+Plot a graph of \(\log_{10} T\) against \(\log_{10} r\).
+\end{problem}
+
+\begin{table}[htpb]
+	\footnotesize
+	\sisetup{
+		table-number-alignment = center,
+		round-mode=figures,
+		round-precision=3,
+		table-auto-round=true,
+	}
+	\begin{tabular}{l c c c c}
+		\toprule
+		moon     & period \(T\) / days & mean distance from centre of Jupiter \(r\) / \unit{\giga\metre} & \(\log_{10} T\)  & \(\log_{10} r\)   \\
+		\midrule
+		Sinope   & \num{758}           & \num{23.7}                                                      & \num{2.88}       & \num{10.37}       \\
+		Leda     & \num{239}           & \num{11.1}                                                      & \hil{\num{2.38}} & \hil{\num{10.05}} \\
+		Callisto & \num{16.7}          & \num{1.88}                                                      & \hil{\num{1.22}} & \hil{\num{9.27}}  \\
+		Io       & \num{1.77}          & \num{.422}                                                      & \hil{\num{.248}} & \hil{\num{8.63}}  \\
+		Metis    & \num{.295}          & \num{.128}                                                      & \num{-.53}       & \num{8.11}        \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:jupitermoon}
+	\caption{Data on Jupiter's moons (selection)}
+\end{table}
+
+The graph is shown in \cref{fig:moons}.
+
+\begin{figure}[htpb]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+				tuftelike,
+				title={Graph of \(\log_{10} T\) against \(\log_{10} r\)},
+				xlabel={\(\log_{10} r\)},
+				ylabel={\(\log_{10} T\)},
+				% grid style=dashed,
+			]
+			\addplot coordinates {(8.11,-.53)(8.63,.248)(9.27,1.22)(10.05,2.38)(10.37,2.88)};
+		\end{axis}
+	\end{tikzpicture}
+	\label{fig:moons}
+	\caption{Graph of \(\log_{10} T\) against \(\log_{10} r\)}
+\end{figure}
+
+\begin{problem}
+Use the data in \cref{tab:jupitermoon} to determine Jupiter's mass.
+\end{problem}
+
+Let the mass of Jupiter be \(M\).
+
+Using a graphing calculator, the equation of the line in \cref{fig:moons} was found to be
+\begin{equation}
+	\label{eq:linreg}
+	\lg T = \num{1.47678}\cdot\lg r - \num{12.49742}
+\end{equation}
+The period of each of Jupiter's moons is controlled by the centripetal
+force they experience keeping them in orbit. This centripetal force is provided
+by the gravitational force of attraction between the moon and Jupiter. We can write
+\begin{align*}
+	\f{GM\cancel{m}}{r^2} & = \cancel{m}r\omega^2 = \f{4\pi^2\cancel{m}r}{T^2} \\
+	T^2                   & = \f{4\pi^2}{GM} r^3
+\end{align*}
+We can linearise this:
+\begin{equation}
+	\label{eq:linearisation}
+	\lg T = \f{1}{2}\lg{\f{4\pi^2}{GM}} + \f{3}{2} \lg r
+\end{equation}
+So we obtain
+\begin{align*}
+	\f{1}{2}\lg{\f{4\pi^2}{GM}} & = -\num{12.49742}             \\
+	M                           & = \hil{\qty{17.9}{\kilogram}}
+\end{align*}
+
+\section{Binary stars}
+\begin{problem}
+In a binary star system, two stars \(A\) and \(B\) follow
+circular orbits of radii \(R\) and \(r\) respectively about their
+common centre of mass \(O\). The masses of stars \(A\) and \(B\) are \(M\) and \(m\) respectively.
+Show that the period of rotation of star \(A\) is equal to that of star \(B\).
+\end{problem}
+The \hil{gravitational force} acting on \(B\) due to \(A\) provides
+the centripetal acceleration required for \(B\) to follow its circular orbit; this holds with
+respect to star \(A\) also.
+Since the magnitude of this gravitational force \(F_g = \f{GMm}{\ab(R+r)^2}\) is equal
+for both stars, so too is the magnitude of the centripetal force (\(\lf{4\pi^2 MR}{{T_A}^2}\) for \(A\), \(\lf{4\pi^2 mr}{T_B^2}\) for \(B\))
+acting on either star.
+
+Therefore
+\begin{equation}
+	\label{eq:equalperiod}
+	\f{\cancel{4\pi^2}MR}{T_A^2} = \f{\cancel{4\pi^2}mr}{T_B^2}
+\end{equation}
+
+We knew from before that the centre of mass \(O\) is situated between \(A\) and \(B\).
+By treating \(O\) as a pivot to a massless rod on which \(A\) and \(B\) balance, we can use the \term{principle of moments}
+and say that \(mr = MR\): the anticlockwise moment contributed by \(M\) is equal to the clockwise moment contributed by \(m\).
+\begin{equation}
+	\label{eq:com}
+	\f{R}{r} = \f{m}{M}
+\end{equation}
+Substituting \cref{eq:com} back into \cref{eq:equalperiod}, we get that \(T_A^2 = T_B^2\quad\Rightarrow T_A = T_B\quad\blacksquare\).
+
+\begin{problem}
+Show that the period \(T\) of rotation of the stars is given by
+\begin{equation*}
+	T^2 = \f{4\pi^2 \ab(R+r)^3}{G\ab(M+m)}
+\end{equation*}
+\end{problem}
+With respect to \(A\), the gravitational force exerted on it by \(B\) provides its centripetal acceleration.
+\begin{equation}
+	\label{eq:fgfca}
+	\f{G\cancel{M}m}{\ab(R+r)^2}=\f{4\pi^2 R\cancel{M}}{T^2}
+\end{equation}
+This also happens for \(B\).
+\begin{equation}
+	\label{eq:fgfcb}
+	\f{GM\cancel{m}}{\ab(R+r)^2}=\f{4\pi^2 r\cancel{m}}{T^2}
+\end{equation}
+Adding \cref{eq:fgfca,eq:fgfcb}, we obtain
+\begin{equation*}
+	\f{G}{\ab(R+r)^2}\cdot\ab(M+m) = \f{4\pi^2}{T^2} \cdot \ab(R+r)
+\end{equation*}
+This leads to our \textsc{glorious} conclusion:
+\begin{equation}
+	\label{eq:proven}
+	T^2 = \f{4\pi^2 \ab(R+r)^3}{G\ab(M+m)}\quad\blacksquare
+\end{equation}
+\begin{problem}
+For a given binary star system, observations give the period as \(T = \qty{3.42e5}{\second}\)
+and the magnitude of the velocity of one star relative to the other as \(\Delta v = \qty{2.26e5}{\metre\per\second}\).
+Calculate the total mass of the binary star system.
+\end{problem}
+We first dissect the meaning of \hil{relative velocity}. With stars \(A\) and \(B\) to illustrate,
+\begin{equation*}
+	\Delta\mv{v} = \mv{v}_A - \mv{v}_B
+\end{equation*}
+But since \(A\) and \(B\) have tangential velocities in opposite directions,
+\begin{equation*}
+	\Delta {v} = v_A - \ab(-v_B) = v_A + v_B
+\end{equation*}
+For circular motion, \(v = r\omega = \lf{2\pi r}{T}\).
+Since \(T\) is identical for both stars,
+\begin{equation}
+	\label{eq:relv}
+	\Delta {v} = v_A + v_B = \ab(R+r)\cdot\f{2\pi}{T}
+\end{equation}
+We can substitute \cref{eq:relv} into \cref{eq:proven} from previously:
+\begin{align*}
+	m+M & = \f{\ab(R+r)^3\omega^2}{G}                   \\
+	    & = \f{\omega^2}{G}\ab(\f{\Delta{v}}{\omega})^3 \\
+	    & = \f{\ab(\Delta{v})^3}{G\omega}               \\
+	    & = \f{T\ab(\Delta{v})^3}{2\pi G}               \\
+	    & = \hil{\qty{9.42e30}{\kg}}
+\end{align*}
+
+\section{Oily planet}
+\begin{problem}
+A planet consists of a solid core of radius \(R\) covered uniformly with a thick
+layer of fluid of thickness \(\lf{R}{2}\). The density of the fluid is \(\rho\) and
+that of the solid core is \(2\rho\). Write down the gravitational field strength at \(P\)
+and \(Q\) respectively in terms of \(G\), \(R\) and \(\rho\). Sketch the variation of \(g\) with the distance \(r\) from the planet's centre.
+\end{problem}
+Recall that \(m = \rho V\) for any object of mass \(m\), volume \(V\) and density \(\rho\).
+
+We know that the mass of the spherical \it{solid} region is
+\begin{equation*}
+	m_s = \f{4}{3}\pi R^3 \cdot 2\rho = \f{8}{3}\pi\rho R^3
+\end{equation*}
+and the mass of the \it{liquid} region is
+\begin{equation*}
+	m_l = \f{4}{3} \pi\rho\ab[\ab(\lf{3R}{2})^3 - R^3] = \f{19}{6}\pi\rho R^3
+\end{equation*}
+Knowing that the gravitational field strength \(g\) a distance of \(r\) away from a point mass \(m\) is given by \(g = \lf{Gm}{r^2}\),
+\begin{align}
+	\label{eq:gfp}
+	g_P & = \f{\lf{8\pi\rho R^3}{3}}{R^2} = \lf{8G\pi\rho R}{3}                  \\
+	\label{eq:gfq}
+	g_Q & = \f{\lf{31\pi\rho R^3}{6}}{\ab(\lf{3R}{2})^2} = \lf{62G\pi\rho R}{27}
+\end{align}
+Outside of the planet, we know that \(g \propto \lf{1}{r^2}\). The graph is as follows:
+\begin{figure}[htpb]
+	\begin{tikzpicture}[
+			declare function={
+					gwrtr(\x) = (\x<=10) * ((1.161)*\x) + and(\x>10, \x<=15) * (\x) + (\x>15) * ((0.2)/(\x*\x));
+				}
+		]
+		\begin{axis}[
+				plainplot,
+				title={Graph of \(g\) against \(r\)},
+				xlabel={\(r\)},ylabel={\(g\)},
+				xmin=0,xmax=25,
+				%ymin=0,%ymax=100,
+			]
+			\pgfplotsinvokeforeach{10, 15}{
+				\draw[dashed] ({rel axis cs: 0,0} -| {axis cs: #1, 0}) -- ({rel axis cs: 0,1} -| {axis cs: #1, 0});
+			}
+			\addplot[smooth] {gwrtr(x)};
+		\end{axis}
+	\end{tikzpicture}
+\end{figure}
+
+
+\section{Spring balances and the Earth}
+\begin{problem}
+The Earth may be considered to be a uniform sphere of radius \(R = \qty{6370}{\km}\),
+spinning on its axis with a period of \(T = \qty{24.0}{\hour}\). The gravitational field
+at the Earth's surface is identical with that of a point mass of \(M = \qty{5.98e24}{\kilogram}\)
+at the centre of the Earth. For a \(m = \qty{1.00}{\kilogram}\) mass at the Equator,
+\begin{itemize}
+	\item calculate the gravitational force acting on the mass,
+	\item determine the force required to maintainthe circular path of the mass,
+	\item and deduce the reading on an accurate spring balance supporting the mass.
+\end{itemize}
+\end{problem}
+Using \term{Newton's law of gravitation}, we find that
+\begin{equation}
+	\label{eq:massspringbalance}
+	F_g = \f{GMm}{R^2} = \hil{\qty{9.83}{\newton}}
+\end{equation}
+The force required to maintain the circular path of the mass is the \hil{centripetal force} acting on it.
+\begin{equation}
+	\label{eq:masscentripetal}
+	F_c = mR\omega^2 = \f{4\pi^2mR}{T^2} = \hil{\qty{3.37e-2}{\newton}}
+\end{equation}
+The gravitational force acting on the mass and the force exerted by the spring balance on it
+provide for the centripetal acceleration. Therefore \(F_c = F_g - N\), and \(N = \hil{\qty{9.80}{\newton}}\) from \cref{eq:massspringbalance,eq:masscentripetal}.
+
+\begin{problem}
+What would the acceleration of the mass on the Earth's surface due to
+\begin{itemize}
+	\item the gravitational force alone?
+	\item the force measured on the spring balance?
+\end{itemize}
+\end{problem}
+\hil{\qty{9.83}{\meter\per\second\squared}} and \hil{\qty{9.80}{\meter\per\second\squared}} respectively.
+\begin{problem}
+Suppose a mass \(m\) is hung on the spring balance, and the system is now
+brought to a latitude of angle \(\theta\). Deduce a general expression for the force measured
+by the spring balance in terms of \(\theta\), and define all other symbols used.
+\end{problem}
+Let \(G\) be the gravitational constant, \(M\) be the mass of the Earth,
+\(R\) be the Earth's radius, and \(T\) be its period of rotation (a day).
+
+At the latitudes, the gravitational force acting on the mass and the force exerted by the spring balance on the mass still provides its centripetal acceleration.
+Since the spring balance is vertical to the mass, we only consider the vertical component of the normal force \(N \csc \theta\).
+\begin{equation*}
+	\f{GMm}{R^2} - N\csc\theta = mR\omega^2 = \f{4\pi^2mR}{T^2}
+\end{equation*}
+From here,
+\begin{equation}
+	N = \ab(\f{GM}{R^2} - \f{4R\pi^2}{T^2})m\sin\theta
+\end{equation}
