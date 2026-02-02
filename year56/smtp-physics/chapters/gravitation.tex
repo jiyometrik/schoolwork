@@ -53,12 +53,56 @@ The graph is shown in \cref{fig:moons}.
 Use the data in \cref{tab:jupitermoon} to determine Jupiter's mass.
 \end{problem}
 
+After converting the raw \(T\) and \(r\) data to SI units (in \unit{\second} and \unit{\metre} respectively)
+and then filling in the columns \(\log_{10} \ab(\lf{T}{\unit{\second}})\) and \(\log_{10} \ab(\lf{r}{\unit{\metre}})\),
+we get the following data:
+\begin{table}[htpb]
+	\footnotesize
+	\sisetup{
+		table-number-alignment = center,
+		round-mode=figures,
+		round-precision=4,
+		table-auto-round=true,
+	}
+	\begin{tabular}{l c c}
+		\toprule
+		moon     & \(\log_{10} \ab(\lf{T}{\unit{\second}})\) & \(\log_{10} \ab(\lf{r}{\unit{\metre}})\) \\
+		\midrule
+		Sinope   & \num{7.8162}                              & \num{-7.62525}                           \\
+		Leda     & \num{7.3149}                              & \num{-7.9546770}                         \\
+		Callisto & \num{6.1592}                              & \num{-8.725842}                          \\
+		Io       & \num{5.184487}                            & \num{-9.374687549}                       \\
+		Metis    & \num{4.40633575846}                       & \num{-9.892790}                          \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:jupitermoon_si}
+	\caption{Data on Jupiter's moons (selection) in SI units}
+\end{table}
+
+Let's plot a new graph with the data in \cref{tab:jupitermoon_si}.
+\begin{figure}[htpb]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+				tuftelike,
+				title={Graph of \(\log_{10} \ab(\lf{T}{\unit{\second}})\) against \(\log_{10} \ab(\lf{r}{\unit{\metre}})\)},
+				xlabel={\(\log_{10} \ab(\lf{r}{\unit{\metre}})\)},
+				ylabel={\(\log_{10} \ab(\lf{T}{\unit{\second}})\)},
+				% grid style=dashed,
+			]
+			\addplot coordinates {(-9.893,4.406)(-9.375,5.184)(-8.726,6.159)(-7.955,7.315)(-7.625,7.816)};
+		\end{axis}
+	\end{tikzpicture}
+	\label{fig:moons_si}
+	\caption{Graph of \(\log_{10} \ab(\lf{T}{\unit{\second}})\) against \(\log_{10} \ab(\lf{r}{\unit{\metre}})\)}
+\end{figure}
+
 Let the mass of Jupiter be \(M\).
 
 Using a graphing calculator, the equation of the line in \cref{fig:moons} was found to be
 \begin{equation}
 	\label{eq:linreg}
-	\lg T = \num{1.47678}\cdot\lg r - \num{12.49742}
+	\lg T = \num{1.5027}\cdot\lg r + \num{19.27173}
 \end{equation}
 The period of each of Jupiter's moons is controlled by the centripetal
 force they experience keeping them in orbit. This centripetal force is provided
@@ -70,12 +114,11 @@ by the gravitational force of attraction between the moon and Jupiter. We can wr
 We can linearise this:
 \begin{equation}
 	\label{eq:linearisation}
-	\lg T = \f{1}{2}\lg{\f{4\pi^2}{GM}} + \f{3}{2} \lg r
+	\lg T = \f{3}{2} \lg r - \f{1}{2}\lg{M} + \f{1}{2}\lg{\f{4\pi^2}{G}}
 \end{equation}
 So we obtain
 \begin{align*}
-	\f{1}{2}\lg{\f{4\pi^2}{GM}} & = -\num{12.49742}             \\
-	M                           & = \hil{\qty{17.9}{\kilogram}}
+	\f{1}{2}\ab(\lg{\f{4\pi^2}{G}} - \lg{M}) & = \num{19.27173} \\
 \end{align*}
 
 \section{Binary stars}
@@ -180,9 +223,9 @@ and the mass of the \it{liquid} region is
 Knowing that the gravitational field strength \(g\) a distance of \(r\) away from a point mass \(m\) is given by \(g = \lf{Gm}{r^2}\),
 \begin{align}
 	\label{eq:gfp}
-	g_P & = \f{\lf{8\pi\rho R^3}{3}}{R^2} = \lf{8G\pi\rho R}{3}                  \\
+	g_P & = \f{\lf{8\pi\rho R^3}{3}}{R^2} = \lf{8G\pi\rho R}{3}                                                       \\
 	\label{eq:gfq}
-	g_Q & = \f{\lf{31\pi\rho R^3}{6}}{\ab(\lf{3R}{2})^2} = \lf{62G\pi\rho R}{27}
+	g_Q & = \f{m_s + m_l}{\ab(\lf{3R}{2})^2} = \f{4G}{9R^2}\ab(\f{8}{3}+\f{19}{6})\pi\rho R^3 = \lf{70G\pi\rho R}{27}
 \end{align}
 Outside of the planet, we know that \(g \propto \lf{1}{r^2}\). The graph is as follows:
 \begin{figure}[htpb]
@@ -240,6 +283,7 @@ What would the acceleration of the mass on the Earth's surface due to
 \end{itemize}
 \end{problem}
 \hil{\qty{9.83}{\meter\per\second\squared}} and \hil{\qty{9.80}{\meter\per\second\squared}} respectively.
+
 \begin{problem}
 Suppose a mass \(m\) is hung on the spring balance, and the system is now
 brought to a latitude of angle \(\theta\). Deduce a general expression for the force measured
@@ -248,12 +292,114 @@ by the spring balance in terms of \(\theta\), and define all other symbols used.
 Let \(G\) be the gravitational constant, \(M\) be the mass of the Earth,
 \(R\) be the Earth's radius, and \(T\) be its period of rotation (a day).
 
-At the latitudes, the gravitational force acting on the mass and the force exerted by the spring balance on the mass still provides its centripetal acceleration.
-Since the spring balance is vertical to the mass, we only consider the vertical component of the normal force \(N \csc \theta\).
+At the latitude \(\theta\), the gravitational force acting on the mass still points towards
+the centre of the Earth. But the Earth still rotates on its axis! Therefore, the centripetal force
+still points horizontally, towards the Earth's centre of rotation.
+
+Therefore, the \term{tension} that pulls the mass attached to the spring balance is
 \begin{equation*}
-	\f{GMm}{R^2} - N\csc\theta = mR\omega^2 = \f{4\pi^2mR}{T^2}
+	\ab|T| = \sqrt{\ab|F_c|^2 + \ab|F_g|^2 - 2 \ab|F_g|\ab|F_c|\cos\theta}
 \end{equation*}
-From here,
+Using the expressions we got in previous parts,
+\begin{align*}
+	\ab|T| & = \sqrt{\ab(\f{4R\pi^2}{T^2})^2 + \ab(\f{GM}{R^2})^2 - \f{8\pi^2GM}{RT^2}\cos\theta} \\
+	       & = \f{\sqrt{16\pi^2 R^6 + G^2M^2T^2 - 8\pi^2GMT^2R^3\cos\theta}}{R^2T^2}
+\end{align*}
+
+
+\section{Three-body problem?}
+\begin{problem}
+For a uniform sphere of mass \(m\), the gravitational potential at points on the surface of, or outside, the sphere is exactly the same as if the sphere were a point mass \(m\) situated at the centre of the sphere. The Sun, Earth and Moon may be assumed to be uniform spheres.
+\end{problem}
+
+\section{Rocket ship}
+bi B bii A biii DE
+
+% \setcounter{section}{7}
+\section{Fine line}
+\begin{problem}
+Points \(E\) and \(M\) are the centres of the Earth and the Moon respectively.
+On the line \(EM\) lies a point \(P\), a distance from the Earth equal to \num{0.90} of the
+distance from the Earth to the Moon.
+Show that the magnitude of the gravitational field strength due to the Earth is equal to
+that at the moon. \(m_E = \qty{5.98e24}{\kilogram}\), \(m_M = \qty{7.33e22}{\kilogram}\) and \(\ab|EP| = \qty{3.84e10}{\metre}\).
+\end{problem}
+
+\begin{align*}
+	\ab|g_P| & = \f{Gm_E}{\ab|EP|^2} - \f{Gm_M}{\ab|MP|^2}                       \\
+	         & = \f{G}{\ab|EM|^2} \ab[\f{m_E}{\ab(0.9)^2} - \f{m_M}{\ab(0.1)^2}] \\
+	         & = 0
+\end{align*}
+Since the resultant gravitational field strength is zero, and the
+gravitational field strengths due the Moon and the Earth are directly opposite,
+both gravitational field strengths are equal in magnitude.
+
+\begin{problem}
+Calculate the gravitational potential at \(P\).
+\end{problem}
+Since gravitational potential is a scalar, we just need to sum up the gravitational potentials
+relative to the Earth and the Moon.
+\begin{align*}
+	\phi_P & = \phi_E + \phi_M                                 \\
+	       & = -\f{Gm_E}{\ab|EP|} + \ab(-\f{Gm_M}{\ab|MP|})    \\
+	       & = -\f{G}{\ab|EP|}\ab(\f{m_E}{0.9} + \f{m_M}{0.1}) \\
+	       & = \hil{\qty{-1.28e4}{\joule\per\kilogram}}
+\end{align*}
+
+\begin{problem}
+The gravitational potential at the surface of the Earth is \qty{-62.5e6}{\joule\per\kilogram} and
+that at the surface of the moon is \qty{-2.81e6}{\joule\per\kilogram}. Using these facts and the value
+of the gravitational potential at \(P\), sketch a graph illustrating the variation of gravitational potential along a line from the surface of the Earth to the surface of the Moon.
+Label your graph with appropriate numerical values.
+\end{problem}
+
+\begin{problem}
+Find the least possible kinetic energy of a space vehicle of mass \(m_S = \qty{2000}{\kilogram}\)
+as it leaves the Earth's surface if it is to reach the Moon's surface. Give one reason why, in practice,
+the value of the minimum kinetic energy might be different from the value you calculated.
+\end{problem}
+We can use the \term{principle of conservation of energy} to tackle this.
+Since \(\phi_P\) is the point of maximum \(\phi\), we need to make sure the
+change in gravitational energy from the surface of the Earth to \(P\) is conserved
+by the change in kinetic energy we calculate.
+\begin{align*}
+	{U_k}_i + m_S\phi_E & = \cancelto{0}{{U_k}_f} + m_S\phi_P \\
+	{U_k}_i             & = m_S\ab(\phi_P - \phi_E)           \\
+	                    & = \hil{\qty{1.250e11}{\joule}}
+\end{align*}
+
+\begin{problem}
+A student asks if the value of the speed required above can be calculated with \(v^2 - u^2 = 2as\), with \(v = 0\) and \(a = g_E\).
+Is this right?
+\end{problem}
+
+\hil{No.} Kinematic equations (such as \(v^2 - u^2 = 2as\)) mandate that the acceleration
+of the moving body is constant. Since \(\phi\) can vary with the object's distance from the Earth,
+so can \(g = -\odv{\phi}/{r}\). Since \(g\) is no longer constant, kinematic equations cannot apply.
+
+
+\section{Extra problem}
+This is \bf{CQ-B6} from the Lecture Notes.
+
+\begin{problem}
+A space station of mass \qty{4.50e5}{\kilogram} is in a low Earth orbit at an altitude of \qty{4.15e5}{\metre}. Calculate the
+energy required to bring it to a medium Earth orbit of altitude \qty{2.02e7}{\metre}.
+\end{problem}
+
+Since the space station is \it{already} in orbit, gravitational force provides the centripetal force. For any radius \(r\) of the station's orbit,
+\begin{align*}
+	F_g               & = F_c         \\
+	\f{GMm}{r^2}      & = \f{mv^2}{r} \\
+	U_k = \f{mv^2}{2} & = \f{GMm}{2r}
+\end{align*}
+The total energy at any orbit radius \(r\) is then the sum of the kinetic and gravitational potential energies.
 \begin{equation}
-	N = \ab(\f{GM}{R^2} - \f{4R\pi^2}{T^2})m\sin\theta
+	\label{eq:te_station}
+	U = U_k + U_p = \f{GMm}{2r} - \f{GMm}{r} = -\f{GMm}{2r}
 \end{equation}
+The extra work that was done is then the change in energy from the low Earth orbit radius to the medium Earth orbit radius.
+\begin{align*}
+	\Delta{U} & = \f{GMm}{2}\ab(\f{1}{r_i} - \f{1}{r_f})                           \\
+	          & = \f{GMm}{2}\ab(\f{1}{R + r_\text{LEO}} - \f{1}{R + r_\text{MEO}}) \\
+	          & =\hil{\qty{9.868e12}{\joule}}
+\end{align*}

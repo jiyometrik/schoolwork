@@ -3,64 +3,64 @@
 
 %* Footnotes to sidenotes
 \DeclareOption{sidefootnotes}{
-  \renewcommand{\footnote}[2][]{\sidenote[#1]{#2}}
-  \renewcommand{\footnotetext}[2][]{\sidenotetext[#1]{#2}}
-  \renewcommand{\footnotemark}[1][]{\sidenotemark[#1]}
+	\renewcommand{\footnote}[2][]{\sidenote[#1]{#2}}
+	\renewcommand{\footnotetext}[2][]{\sidenotetext[#1]{#2}}
+	\renewcommand{\footnotemark}[1][]{\sidenotemark[#1]}
 }
 \DeclareOption{letterpaper}{
-  \PassOptionsToPackage{
-    letterpaper,
-    left=1in,
-    top=1in,
-    headsep=2\baselineskip,
-    textwidth=26pc,
-    marginparsep=2pc,
-    marginparwidth=12pc,
-    textheight=44\baselineskip,
-    headheight=1.2\baselineskip
-  }{geometry}
+	\PassOptionsToPackage{
+		letterpaper,
+		left=1in,
+		top=1in,
+		headsep=2\baselineskip,
+		textwidth=26pc,
+		marginparsep=2pc,
+		marginparwidth=12pc,
+		textheight=44\baselineskip,
+		headheight=1.2\baselineskip
+	}{geometry}
 }
 
 \DeclareOption{a4paper}{
-  \PassOptionsToPackage{
-    a4paper,
-    left=24.8mm,
-    top=27.4mm,
-    headsep=2\baselineskip,
-    textwidth=107mm,
-    marginparsep=8.2mm,
-    marginparwidth=49.4mm,
-    textheight=49\baselineskip,
-    headheight=1.2\baselineskip
-  }{geometry}
+	\PassOptionsToPackage{
+		a4paper,
+		left=24.8mm,
+		top=27.4mm,
+		headsep=2\baselineskip,
+		textwidth=107mm,
+		marginparsep=8.2mm,
+		marginparwidth=49.4mm,
+		textheight=49\baselineskip,
+		headheight=1.2\baselineskip
+	}{geometry}
 }
 
 \DeclareOption{b5paper}{
-  \PassOptionsToPackage{
-    b5paper,
-    left=14.66mm,
-    top=13.88mm,
-    textwidth=102.66mm,
-    marginparsep=7.33mm,
-    marginparwidth=36.66mm,
-    textheight=38\baselineskip,
-    includehead
-  }{geometry}
+	\PassOptionsToPackage{
+		b5paper,
+		left=14.66mm,
+		top=13.88mm,
+		textwidth=102.66mm,
+		marginparsep=7.33mm,
+		marginparwidth=36.66mm,
+		textheight=38\baselineskip,
+		includehead
+	}{geometry}
 }
 
 % Added by me
 \DeclareOption{legalpaper}{
-  \PassOptionsToPackage{
-    legalpaper,
-    left=1in,
-    top=1in,
-    headsep=2\baselineskip,
-    textwidth=26pc,
-    marginparsep=2pc,
-    marginparwidth=12pc,
-    textheight=56\baselineskip,
-    headheight=1.2\baselineskip
-  }{geometry}
+	\PassOptionsToPackage{
+		legalpaper,
+		left=1in,
+		top=1in,
+		headsep=2\baselineskip,
+		textwidth=26pc,
+		marginparsep=2pc,
+		marginparwidth=12pc,
+		textheight=56\baselineskip,
+		headheight=1.2\baselineskip
+	}{geometry}
 }
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
@@ -85,12 +85,11 @@
 \fancyhead[RE, LO]{\nouppercase{\leftmark}}
 \fancyfoot[LE, RO]{\thepage}
 
-
 \fancypagestyle{plain}{
-  \fancyhf{}
-  \renewcommand{\headrulewidth}{0pt}
-  \renewcommand{\footrulewidth}{0pt}
-  \fancyfoot[LE, RO]{\thepage}
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+	\fancyfoot[C]{\thepage}
 }
 %* fun titles
 \RequirePackage{titlesec}
@@ -103,19 +102,19 @@
 \RequirePackage{marginfix}
 
 \newcommand{\smartragged}{\checkoddpage \ifoddpage\raggedright \else
-    \raggedleft\fi}
+		\raggedleft\fi}
 
 \providecommand{\marginaliasize}{\footnotesize}
 \DeclareCaptionFont{marginaliasize}{\marginaliasize}
 
 \let\@oldmarginpar\marginpar
 \renewcommand{\marginpar}[2][]{%
-  \ifx#1\empty\empty % when #1 is empty, we are really looking to see
-    % that \empty = \empty
-    \@oldmarginpar{\smartragged\marginaliasize #2}%
-  \else
-    \@oldmarginpar[\raggedleft\marginaliasize #1]{\raggedright\marginaliasize #2}%
-  \fi
+	\ifx#1\empty\empty % when #1 is empty, we are really looking to see
+		% that \empty = \empty
+		\@oldmarginpar{\smartragged\marginaliasize #2}%
+	\else
+		\@oldmarginpar[\raggedleft\marginaliasize #1]{\raggedright\marginaliasize #2}%
+	\fi
 }
 
 \DeclareCaptionJustification{smartragged}{\smartragged}
@@ -127,7 +126,7 @@
 %* Assorted random bits
 \makeatletter
 \newcommand{\ifdraft}[2][]{\ifdim\overfullrule>\z@
-    \expandafter#2\else\expandafter#1\fi}
+		\expandafter#2\else\expandafter#1\fi}
 \makeatother
 \newcommand{\notetoself}[1]{\ifdraft{\sidenote{\color{gray}#1}}}
 
@@ -151,7 +150,7 @@
 \RequirePackage[hidelinks]{hyperref}
 \RequirePackage{cleveref}
 \RequirePackage[
-  backend=biber,
-  style=apa,
-  sorting=ynt
+	backend=biber,
+	style=apa,
+	sorting=ynt
 ]{biblatex}

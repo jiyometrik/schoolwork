@@ -3,22 +3,23 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 
-\usepackage[style=nature]{biblatex}
+\usepackage[style=nature, backend=biber]{biblatex}
 \addbibresource{Bibliography.bib}
 
 \usepackage{siunitx}
 
 \usepackage{fontspec}
 \defaultfontfeatures{Scale=MatchLowercase, Ligatures=TeX}
-\setmainfont{cochineal}
-\setsansfont{source sans pro}
-\setmonofont{source code pro}
+\setmainfont{libertinus serif}
+\setsansfont{tex gyre heros}
+\setmonofont{monaspace neon var}
+% \setmonofont{source code pro}
 
 \usepackage{setspace}
 \onehalfspacing
 
 \usepackage[dvipsnames]{xcolor}
-\newcommand{\tint}[1]{{\color{accent}#1}}
+\newcommand{\tint}[1]{\textcolor{accent}{#1}}
 
 \usepackage{hyperref}
 \hypersetup{

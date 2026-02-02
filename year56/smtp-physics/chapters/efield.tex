@@ -1,0 +1,300 @@
+\chapter{Electric field}
+
+\section{Electric dipole}
+\begin{problem}
+In free space, two point charges \(q_1 = \qty{+12}{\nano\coulomb}\) and \(q_2 = \qty{-12}{\nano\coulomb}\) are located \(d = \qty{10}{\cm}\) apart on the \(x\)-axis
+and arranged symmetrically about the \(y\)-axis. A point \(M\) is \(L = \qty{12}{\cm}\) above the origin on the \(y\)-axis.
+What is the magnitude and direction of the electric field at point \(M\)?
+\end{problem}
+The distance from \(q_1\) and \(q_2\) to point \(M\) is \(r = \sqrt{\ab(\lf{d}{2})^2 + L^2} = \qty{13}{\cm}\).
+The angle of elevation of \(q_1\) to \(M\) (or \(q_2\) to \(M\)) is \(\theta = \arctan\f{L}{\lf{d}{2}} = \ang{67.38}\).
+
+Since \(q_1\) and \(q_2\) are of the same magnitude, the magnitude of the electric field at point \(M\) due to either point charge is the same:
+\begin{equation*}
+	\ab|E_1| = \ab|E_2| = \f{q_1}{4\pi\epsilon_0 r^2} = \qty{6.382e3}{\newton\per\coulomb}
+\end{equation*}
+Since the electric field due to \(q_1\) points away from \(q_1\) and the electric field due to \(q_2\) points towards \(q_2\), the vertical components of the electric fields cancel out, while the horizontal components add up.
+The net electric field at \(M\) is
+\begin{equation*}
+	\ab|E_\text{net}| = 2\ab|E_1|\cos\theta = \hil{\qty{4.91e3}{\newton\per\coulomb}}
+\end{equation*}
+The resultant electric field at point \(M\) points parallel to the \hil{positive \(x\)-axis}.
+
+\begin{problem}
+If a third charge \(q_3 = \qty{-2}{\nano\coulomb}\) is placed at point \(M\), what is the magnitude and direction of the force on \(q_3\) due to \(q_1\) and \(q_2\)?
+\end{problem}
+Again, we can find the vector sum of the forces due to \(q_1\) and \(q_2\) on \(q_3\).
+The magnitude of the force on \(q_3\) due to either point charge is
+\begin{equation*}
+	\ab|F_1| = \ab|F_2| = \f{q_1 q_3}{4\pi\epsilon_0 r^2} = \qty{1.277e-5}{\newton}
+\end{equation*}
+Using the same reasoning as before, the net force on \(q_3\) is
+\begin{equation*}
+	\ab|F_\text{net}| = 2\ab|F_1|\cos\theta = \hil{\qty{9.82e-6}{\newton}}
+\end{equation*}
+
+\begin{problem}
+The charges \(q_1\) and \(q_2\) form an electric dipole, since they have equal magnitude but opposite signs,
+and are separated by a constant distance \(d\). Point \(M\) is located a distance \(L\) above the origin.
+How does the electric field strength at point \(M\) vary with distance \(L\) when \(L\) is large?
+\end{problem}
+From before, the net electric field at point \(M\) is
+\begin{equation}
+	\label{eq:efield-dipole}
+	\ab|E_\text{net}| = 2\ab|E_1|\cdot\cos\theta = \f{2q}{4\pi\epsilon_0 r^2}\cdot\f{\lf{d}{2}}{r} = \f{q}{4\pi\epsilon_0}\f{d}{r^3}
+\end{equation}
+
+When \(L \gg d\), \(\lf{d}{L} \ll 1\).
+Our aim now is to determine the behaviour of \(\lf{d}{r^3}\) under this circumstance.
+We can use Taylor series to help us.
+\begin{align*}
+	\f{d}{r^3} & = d\ab(L^2 + \f{d^2}{4})^{-\lf{3}{2}}         \\
+	           & = dL^{-3}\ab(1 + \f{d^2}{4L^2})^{-\lf{3}{2}}  \\
+	           & \approx dL^{-3}\ab(1 - \f{3}{2}\f{d^2}{4L^2}) \\
+	           & \approx dL^{-3}
+\end{align*}
+
+Substituting this result back into \cref{eq:efield-dipole}, we have
+\begin{equation*}
+	\ab|E_\text{net}| \approx \f{q}{4\pi\epsilon_0}\f{d}{L^3}
+\end{equation*}
+
+\begin{problem}
+Now, \(M\) lies along the positive \(x\)-axis at a distance \(L\) from the origin.
+How does the electric field strength at point \(M\) vary with distance \(L\) when \(L\) is large?
+\end{problem}
+\(M\) is a distance \(r_1 = L + \lf{d}{2}\) from \(q_1\) and a distance \(r_2 = L - \lf{d}{2}\) from \(q_2\).
+The net electric field at point \(M\) is the vector sum of the electric fields due to \(q_1\) and \(q_2\):
+\begin{equation}
+	\label{eq:efield-dipole-horz}
+	\ab|E_\text{net}| = \ab|E_1| - \ab|E_2| = \f{q}{4\pi\epsilon_0}\ab(\f{1}{r_1^2} - \f{1}{r_2^2})
+\end{equation}
+
+Now our concern is the behaviour of \(\ab(\lf{1}{r_1^2} - \lf{1}{r_2^2})\) when \(L \gg d \iff \lf{d}{L} \ll 1\).
+For \(r_1\):
+\begin{align*}
+	\f{1}{r_1^2} & = \ab(L + \f{d}{2})^{-2}        \\
+	             & = L^{-2}\ab(1 + \f{d}{2L})^{-2} \\
+	             & \approx L^{-2}\ab(1 - \f{d}{L}) \\
+	             & \approx L^{-2}
+\end{align*}
+And for \(r_2\):
+\begin{align*}
+	\f{1}{r_2^2} & = \ab(L - \f{d}{2})^{-2}        \\
+	             & = L^{-2}\ab(1 - \f{d}{2L})^{-2} \\
+	             & \approx L^{-2}\ab(1 + \f{d}{L}) \\
+	             & \approx L^{-2}
+\end{align*}
+Substituting back into \cref{eq:efield-dipole-horz}:
+\begin{align*}
+	\ab|E_\text{net}| & \approx \f{q}{4\pi\epsilon_0}\ab(L^{-2} - L^{-2}) \\
+	                  & = \f{q}{4\pi\epsilon_0}\ab(0)                     \\
+	                  & = \hil{0}
+\end{align*}
+
+This should not be surprising! As \(M\) moves significantly further
+away from the dipole along the \(x\)-axis, \(r_1 \approx r_2\).
+Since \(q_1\) and \(q_2\) are of \hil{equal magnitude and opposite charge}, the electric fields due to
+either charge are also of equal magnitude and opposite direction, resulting in a net electric field of \hil{zero} at point \(M\).
+
+
+\section{Electric plates}
+\begin{marginfigure}
+	\includegraphics[scale=.4]{assets/twoplates.png}
+	\caption{Projected electron}
+	\label{fig:twoplates}
+\end{marginfigure}
+\begin{problem}
+An electron of mass \(m = \qty{9.11e-31}{\kg}\) and charge \(e = \qty{-1.60e-19}{\coulomb}\) is
+projected with an initial speed \(v_0 = \qty{1.6e6}{\metre\per\second}\) into a uniform electric field
+region between two parallel plates. The electric field is directed vertically downward, and
+the field outside the plates is zero. Which of the plates has a higher potential?
+\end{problem}
+Since the electric field is directed vertically downward, the \hil{upper plate} has a higher potential.
+
+\begin{problem}
+The electron enters the field midway between the plates with its velocity perpendicular to the field.
+It takes a parabolic trajectory within the field. If the electron just misses the upper plate
+as it exits the field, how much time does it spend between the plates?
+\end{problem}
+The electron travels a horizontal distance \(x = \qty{2.00e-2}{\metre}\) with its initial
+horizontal velocity \(v_0\).\sidenote{Analogous to projectile motion in a uniform gravitational field, we can take the horizontal velocity to be constant.}
+The time taken is therefore \(t = \lf{x}{v_0} = \hil{\qty{1.25e-8}{\second}}\).
+
+\begin{problem}
+By considering the acceleration of the electron, find the magnitude of the electric field strength
+between the plates.
+\end{problem}
+Consider the vertical motion of the electron. It travels
+a vertical distance \(y = \qty{5.00e-3}{\metre}\) with zero initial vertical velocity.
+Thus, its vertical acceleration \(a = \lf{2y}{t^2}\).
+
+Since this acceleration is caused solely by the electric force due to the electric field,
+the electric force is \(F = ma = eE\). Therefore,
+\begin{align*}
+	E & = \f{ma}{e}                               \\
+	  & = \f{2my}{et^2}                           \\
+	  & = \hil{\qty{3.64e2}{\newton\per\coulomb}}
+\end{align*}
+
+\begin{problem}
+What is the change in the kinetic energy and in the electrical potential energy of the electron?
+\end{problem}
+The change in kinetic energy depends on the initial and final speeds of the electron.
+\begin{align*}
+	\Delta U_k & = \f{1}{2}m\ab(v_f^2 - {v_0}^2)            \\
+	           & = \f{m}{2}\ab[v_0^2 + \ab(at)^2 - {v_0}^2] \\
+	           & = \f{ma^2t^2}{2}                           \\
+	           & = \hil{\qty{2.92e-19}{\joule}}
+\end{align*}
+We can relate the change in electric potential energy to the potential difference.
+\begin{align*}
+	\Delta U_p & = e\Delta V                     \\
+	           & = eE\Delta y                    \\
+	           & = \hil{\qty{-2.92e-19}{\joule}}
+\end{align*}
+
+\section{Electric potential}
+\begin{problem}
+Two point charges \(q_1 = \qty{12}{\nano\coulomb}\) and \(q_2 = \qty{-12}{\nano\coulomb}\)
+are placed \(d = \qty{10}{\centi\metre}\) apart on the \(x\)-axis symmetrically about the origin.
+Point \(N\) lies on the \(x\)-axis a distance \(L = \qty{2}{\centi\metre}\) to the left of the origin.
+What is the electric potential due to the two charges at \(N\)?
+\end{problem}
+Electric potential is a scalar quantity, so we can add the sum of the electric potentials due to \(q_1\) and \(q_2\)
+individually.
+\begin{equation*}
+	V = \f{q_1}{4\pi\epsilon_0\ab(\lf{d}{2} - L)} + \f{q_2}{4\pi\epsilon_0 \ab(\lf{d}{2}+L)} = \hil{\qty{2.05e3}{\volt}}
+\end{equation*}
+
+\begin{problem}
+A third charge \(q_3 = \qty{-2}{\nano\coulomb}\) is placed at \(N\).
+What is the electrical potential energy of this three-charge configuration?
+\end{problem}
+Electric potential energy is also a scalar quantity, so we can sum up
+the electrical potential energies in between each pair of charges---\(\ab(q_1, q_2)\),
+\(\ab(q_1, q_3)\) and \(\ab(q_2, q_3)\).
+\begin{align*}
+	U & = U_{12}+U_{13}+U_{23}                                                                       \\
+	  & =\f{1}{4\pi\epsilon_0}\ab(\f{q_1q_2}{d} + \f{q_1q_3}{\lf{d}{2}-L} + \f{q_2q_3}{\lf{d}{2}+L}) \\
+	  & = \hil{\qty{-1.70e-5}{\joule}}
+\end{align*}
+
+
+\section{Isolated nucleus}
+\begin{marginfigure}
+	\includegraphics[width=.85\textwidth]{assets/v-vs-r.png}
+	\caption{Variation of \(V\) with \(r\)}
+	\label{fig:v-vs-r}
+\end{marginfigure}
+An isolated nucleus in a vacuum produces an electric potential \(V\)
+at a distance \(r\) from its centre, as in \cref{fig:v-vs-r}.
+
+\begin{problem}
+Use data in \cref{fig:v-vs-r} to show that there are \(54\)
+protons of charge \(+e = \qty{1.60e-19}{\coulomb}\) in the nucleus.
+\end{problem}
+At \(r = \qty{1.0e-10}{\metre}\), \(V = \qty{780}{\volt}\)
+\begin{align*}
+	Q & = 4\pi\epsilon_0Vr                                      \\
+	n & = \lf{Q}{e} = \lf{4\pi\epsilon_0Vr}{e} = \hil{\num{54}} \\
+\end{align*}
+
+\begin{problem}
+A single proton is placed a distance of \(d = \qty{2.0e-8}{\metre}\)
+from the centre of the nucleus. Suggest why it may be assumed that the proton
+and nucleus behave as point charges.
+\end{problem}
+\hil{\(d\) is much greater than the radius of a proton.}\footnote{The radius of a proton is \qty{8.4e-16}{\metre}!}
+
+\begin{problem}
+Determine the acceleration of the proton whose mass is \(m = \qty{1.67e-27}{\kg}\) at distance \(d\).
+\end{problem}
+\begin{align*}
+	F & = \f{Qe}{4\pi\epsilon_0d^2}                     \\
+	a & = \lf{F}{m}                                     \\
+	  & = \f{Qe}{4\pi\epsilon_0d^2m}                    \\
+	  & = \hil{\qty{1.87e16}{\metre\per\square\second}}
+\end{align*}
+
+\begin{problem}
+Determine the change \(\Delta E_k\) in kinetic energy of the proton (initially at distance \(d\))
+when it has reached infinity.
+\end{problem}
+At infinity, the electric potential energy between two point charges tends to zero,
+since the distance between them becomes very large.
+
+Using the \term{principle of conservation of energy}:
+\begin{align*}
+	{E_k}_0 + U_0               & = {E_k}_f + U_f                \\
+	0 + \f{Qe}{4\pi\epsilon_0d} & = {E_k}_f + 0                  \\
+	\Delta{E_k}                 & = {E_k}_f - {E_k}_0            \\
+	                            & = \f{Qe}{4\pi\epsilon_0d}      \\
+	                            & = \hil{\qty{6.24e-19}{\joule}}
+\end{align*}
+
+
+\section{Charged metal spheres}
+Two charged solid metal spheres \(A\) and \(B\) are situated
+in a vacuum. Their centres are separated by a distance \(r = \qty{30.0}{\centi\metre}\),
+as in \cref{fig:two-solid-spheres}.
+\begin{marginfigure}
+	\includegraphics[width=\textwidth]{assets/two-solid-spheres.png}
+	\caption{Two charged solid metal spheres}
+	\label{fig:two-solid-spheres}
+\end{marginfigure}
+
+Point \(P\) is a point on the line joining the centres of the spheres,
+a distance \(x\) away from the centre of sphere \(A\).
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.7\textwidth]{assets/e-vs-x-two-spheres.png}
+	\caption{Variation of \(E\) with \(x\)}
+	\label{fig:e-vs-x}
+\end{figure}
+
+
+\begin{problem}
+Why does \(E = 0\) for two regions of \(x\), as in \cref{fig:e-vs-x}?
+\end{problem}
+By definition, the electric field strength within conducting objects is zero.
+Since the measurement of \(x\) includes the radii of the spheres, the regions
+of \(x\) equal to the radii have \(E = 0\).
+
+\begin{problem}
+From \cref{fig:e-vs-x}, what are the radii of the spheres? Do the charges
+of the spheres have the same, or the opposite, signs?
+\end{problem}
+We now know that the regions of \(x\) where \(E = 0\) correspond to the spheres'
+radii. Hence, \hil{\(r_A = \qty{0.040}{\metre}\)}, and \hil{\(r_B = \qty{0.020}{\metre}\)}.
+
+From \cref{fig:e-vs-x}, \(E\) is high near the spheres, and dips closer to zero
+near the midpoint between the spheres. Therefore, the electric field lines
+must point in opposite directions between the spheres---\hil{the spheres have the same sign}.
+
+\begin{problem}
+A lithium nucleus (\(q = \qty{4.80e-19}{\coulomb}\), \(m = \qty{1.16e-26}{\kilogram}\)) moves
+along the line joining the centres of the two spheres.
+\begin{itemize}
+	\item Estimate the energy gained by this nucleus as it moves from \(x_0 = \qty{0.160}{\metre}\)
+	      to \(x_1 = \qty{0.210}{\metre}\).
+	\item Calculate the acceleration of the nucleus where \(x = \qty{.250}{\metre}\).
+\end{itemize}
+\end{problem}
+
+\begin{align*}
+	V & = \int_{x_0}^{x_1} E\odif{x}   \\
+	  & \approx E\ab(x_1 - x_0)        \\
+	  & \approx \qty{6.0e3}{\volt}     \\
+	U & = qV                           \\
+	  & = \hil{\qty{2.88e-15}{\joule}}
+\end{align*}
+
+The nucleus gains \qty{2.88e-15}{\joule} of energy.
+
+At \(x_2 = \qty{.250}{\metre}\), \(E = \qty{3.0e-5}{\volt\per\metre}\).
+\begin{align*}
+	F & = qE                                            \\
+	a & = \lf{F}{m} = \lf{qE}{m}                        \\
+	  & = \hil{\qty{1.24e13}{\metre\per\square\second}}
+\end{align*}

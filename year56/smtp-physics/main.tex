@@ -1,4 +1,4 @@
-\documentclass[11pt, twoside, a4paper]{pancake-book}
+\documentclass[12pt, a4paper, oneside, sidefootnotes]{pancake-book}
 
 \include{preamble}
 \hypersetup{
@@ -11,21 +11,30 @@
   pdfauthor={Darren Yap},
   linkcolor=razz,
 }
+\allowdisplaybreaks
 
-\title{\sffamily H2 Physics SMTP Tutorials}
-\author{\sffamily\bf{Yap} Hao Ming Darren}
-\date{\sffamily 2025}
+\title{\sffamily H2 Physics --- SMTP Tutorials}
+\author{Darren \sffamily\bf{Yap}}
+\date{\sffamily 2025--2026}
 
 \begin{document}
 \maketitle
 \tableofcontents
 \setcounter{chapter}{2}
 
-% all our chapters, in order
+% c1 content
+\part{Year one}
+\setcounter{chapter}{2}
 \include{chapters/dynamics}
 \include{chapters/equilibrium}
+% \setcounter{chapter}{4}
 \include{chapters/energy}
 \include{chapters/circular}
 \setcounter{chapter}{9}
 \include{chapters/gravitation}
+
+% c2 content 
+\part{Year two}
+\setcounter{chapter}{11}
+\include{chapters/efield}
 \end{document}
