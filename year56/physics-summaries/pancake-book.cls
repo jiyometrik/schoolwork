@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{pancake-book}[2021/09/09 Annotated book class]
+\ProvidesClass{pancake-book}[2025/12/31 Jiyo's custom book class]
 
 %* Footnotes to sidenotes
 \DeclareOption{sidefootnotes}{
@@ -93,9 +93,10 @@
 }
 %* fun titles
 \RequirePackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-10pt}{20pt}
 \titleformat{\chapter}[hang]{\normalfont\sffamily\huge\color{jiyopink}}{\thechapter\hspace{.5em}\vrule width .9pt}{.5em}{}
 \titleformat{\section}[hang]{\normalfont\sffamily\LARGE\color{jiyopink}}{\thesection\hspace{.5em}\vrule width .9pt}{.5em}{}
-\titleformat{\subsection}[hang]{\itshape\sffamily\Large\color{jiyopink}}{\thesubsection}{.5em}{}
+\titleformat{\subsection}[hang]{\itshape\sffamily\Large\color{jiyopink}}{\vrule width .9pt}{.5em}{}
 
 %* Marginalia
 \RequirePackage{sidenotes}

@@ -1,0 +1,93 @@
+\chapter{Quantities and measurements}
+
+\section{Quantities and units}
+\bf{Physical quantities} can only be defined in terms of other physical quantities, usually base quantities.
+\begin{example}{}{derived-quantities}
+	The definition of \it{velocity} is `the rate of change in \it{displacement}
+	with respect to \it{time}', and not `the change in displacement per second'.
+\end{example}
+
+\begin{table}[htpb]
+	\centering
+	\begin{tabular}{c c}
+		\toprule
+		base quantity             & base unit        \\
+		\midrule
+		mass                      & \unit{\kilogram} \\
+		length                    & \unit{\metre}    \\
+		time                      & \unit{\second}   \\
+		electric current          & \unit{\ampere}   \\
+		thermodynamic temperature & \unit{\kelvin}   \\
+		amount of substance       & \unit{\mol}      \\
+		luminous intensity        & \unit{\candela}  \\
+		\bottomrule
+	\end{tabular}
+	\label{tab:base-quantities}
+\end{table}
+
+\begin{definition}{Homogeneity}{homogeneous}
+	A physical equation is \bf{homogeneous} if all terms have the same units, when
+	expressed in SI base units.
+\end{definition}
+\Cref{def:homogeneous} is necessary for a physical equation to be valid.
+
+\begin{table}[htpb]
+	\centering
+	\begin{tabular}{c c}
+		SI prefix & factor     \\
+		\toprule
+		pico      & \num{e-12} \\
+		nano      & \num{e-9}  \\
+		micro     & \num{e-6}  \\
+		milli     & \num{e-3}  \\
+		centi     & \num{e-2}  \\
+		deci      & \num{e-1}  \\
+		kilo      & \num{e3}   \\
+		mega      & \num{e6}   \\
+		giga      & \num{e9}   \\
+		tera      & \num{e12}  \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\section{Error and uncertainty}
+A measurement \(X\) is reported as
+\begin{equation*}
+	X = x \pm \Delta x,
+\end{equation*}
+where \(x\) is the \bf{measured value} and \(\Delta x\) is the \bf{absolute uncertainty}.
+\(\lf{\Delta x}{x}\) is the \bf{fractional uncertainty}.
+
+\(\Delta x\) must be expressed to 1 significant figure, after which \(x\) must be rounded to the same decimal place as \(\Delta x\).
+\begin{table}[htpb]
+	\centering
+	\begin{tabular}{c c}
+		\toprule
+		operation         & uncertainty                                                                                 \\
+		\midrule
+		\(z = x\pm y\)    & \(\Delta z = \Delta x + \Delta y\)                                                          \\
+		\(k = x^ay^bz^c\) & \(\f{\Delta k}{k} = \ab|a|\f{\Delta x}{x} + \ab|b|\f{\Delta y}{y} + \ab|c|\f{\Delta z}{z}\) \\
+		\(y = f\ab(x)\)   & \(\Delta y = \f{1}{2}\ab(\max y - \min y)\)                                                 \\
+		\bottomrule
+	\end{tabular}
+	\label{eq:uncertainty}
+\end{table}
+
+\begin{definition}{Systematic error}{systematic-error}
+	\bf{Systematic errors} are deviations of the mean value from the true value of a measurement, with \it{fixed direction}
+	and \it{similar magnitude}.
+
+	They can be reduced by improving the experimental design.
+\end{definition}
+\begin{definition}{Random error}{random-error}
+	\bf{Random errors} are deviations of the mean value from the true value of a measurement
+	that \it{vary in magnitude and direction}.
+
+	They can be reduced by finding the mean of repeated measurements.
+\end{definition}
+\begin{definition}{Precision}{precision}
+	The degree of consistency and agreement among independent measurements of the same quantity.
+\end{definition}
+\begin{definition}{Accuracy}{accuracy}
+	The closeness of agreement between a measured value and the true value of a quantity.
+\end{definition}

@@ -1,0 +1,85 @@
+\chapter{Dynamics}
+\section{First law}
+\begin{definition}{N1L}{n1l}
+	A body will continue in its state of rest or move at constant speed in a straight line,
+	unless an \it{external resultant force} acts on it.
+\end{definition}
+\begin{definition}{Inertia}{inertia}
+	The resistance to a change in the state of motion of an object.
+\end{definition}
+\section{Second law}
+\begin{definition}{N2L}{n2l}
+	The \it{rate of change of linear momentum} of a body is \it{directly proportional to the resultant force} acting on it
+	and its direction is in the \it{same direction} as this resultant force.
+	\[\sum \va{F} \propto \dot{\va{p}} = \odv{\ab(mv)}{t}\]
+\end{definition}
+When a body has constant mass, \cref{def:n2l} can be simplified to
+\begin{equation*}
+	\sum \va{F} = m\dot{v} = ma
+	\label{eq:n2l}
+\end{equation*}
+\section{Third law}
+\begin{definition}{N3L}{n3l}
+	If body A exerts a force on body B, then body B exerts an \it{equal and opposite} force on body A.
+	\[\va{F}_\text{AB} = -\va{F}_\text{BA}\]
+	This results in an action-reaction pair, for which
+	\begin{itemize}
+		\item forces act on different bodies,
+		\item are of the same nature,
+		\item and are equal in magnitude and opposite in direction
+	\end{itemize}
+\end{definition}
+\section{Momentum}
+\begin{definition}{PCOLM}{pcolm}
+	The \it{total momentum} of a closed system is constant when no external resultant force acts on it.
+	\[\sum p_i = \sum p_f\]
+\end{definition}
+
+\begin{definition}{Elasticity}{elasticity}
+	A collision between two objects is \bf{perfectly elastic} if the total kinetic energy of the system before and after
+	the collision is unchanged.
+\end{definition}
+For a perfectly elastic collision between objects A and B, \(\va{v}_A - \va{v}_B = \va{u}_B - \va{u}_A\); the relative
+speed of approach equals the relative speed of separation.
+
+\begin{example}{}{pcolm}
+	A tritium nucleus of mass \(3m\) and initial speed \(u\) collides \it{elastically} with a deuterium nucleus
+	of mass \(2m\) and initial speed \(-u\). We can solve for the final velocities \(v_D\) and \(v_T\) by applying
+	\cref{def:pcolm,def:elasticity}:
+	\begin{align*}
+		3mu - 2mu & = 3mv_T + 2mv_D \\
+		u - (-u)  & = v_D - v_T
+	\end{align*}
+\end{example}
+
+\begin{definition}{Impulse}{impulse}
+	The product of the \it{average force} acting on an object and the \it{time interval} during which it acts.
+	\[\va{J} = \ab<F>\Delta t = \int \va{F}\odif{t}\]
+
+	The \bf{impulse-momentum theorem} states that the impulse of a force acting on an object is equal to its change in momentum.
+	\[\va{J} = \Delta \va{p} = \va{p}_f-\va{p}_i\]
+\end{definition}
+
+\section{Special types of forces}
+\subsection{Elastic spring force}
+For elastic strings or springs that obey \bf{Hooke's Law}, the
+external force pulling on the string is
+\begin{equation*}
+	F = k\Delta x = k\ab(l - l_0)
+\end{equation*}
+where \(k\) is the \bf{spring constant} and \(x\) is the \bf{extension} of the spring.
+The elastic potential energy is the area under the \(F\)-\(x\) graph:
+\begin{equation*}
+	U = \f{1}{2}kx^2
+\end{equation*}
+\subsection{Upthrust}
+\begin{definition}{Upthrust}{upthrust}
+	The \it{net upward force} exerted by a fluid on a body floating/submerged in it.
+	\[U = m_f g = \rho_f V_f g\]
+	where \(m_f\) is the mass of fluid displaced, \(\rho_f\) is the density of the fluid and \(V_f\) is the volume of fluid displaced.
+\end{definition}
+\subsection{Drag force}
+\begin{definition}{Drag force}{drag-force}
+	The force resisting an object \it{moving relative to a fluid} that \it{opposes}
+	its motion.
+\end{definition}

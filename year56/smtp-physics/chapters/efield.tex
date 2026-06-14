@@ -48,9 +48,8 @@ When \(L \gg d\), \(\lf{d}{L} \ll 1\).
 Our aim now is to determine the behaviour of \(\lf{d}{r^3}\) under this circumstance.
 We can use Taylor series to help us.
 \begin{align*}
-	\f{d}{r^3} & = d\ab(L^2 + \f{d^2}{4})^{-\lf{3}{2}}         \\
-	           & = dL^{-3}\ab(1 + \f{d^2}{4L^2})^{-\lf{3}{2}}  \\
-	           & \approx dL^{-3}\ab(1 - \f{3}{2}\f{d^2}{4L^2}) \\
+	\f{d}{r^3} & = d\ab(L^2 + \f{d^2}{4})^{-\lf{3}{2}} \\
+	           & \approx d\ab(L^2)^{-\lf{3}{2}}        \\
 	           & \approx dL^{-3}
 \end{align*}
 
@@ -73,16 +72,12 @@ The net electric field at point \(M\) is the vector sum of the electric fields d
 Now our concern is the behaviour of \(\ab(\lf{1}{r_1^2} - \lf{1}{r_2^2})\) when \(L \gg d \iff \lf{d}{L} \ll 1\).
 For \(r_1\):
 \begin{align*}
-	\f{1}{r_1^2} & = \ab(L + \f{d}{2})^{-2}        \\
-	             & = L^{-2}\ab(1 + \f{d}{2L})^{-2} \\
-	             & \approx L^{-2}\ab(1 - \f{d}{L}) \\
+	\f{1}{r_1^2} & = \ab(L + \f{d}{2})^{-2} \\
 	             & \approx L^{-2}
 \end{align*}
 And for \(r_2\):
 \begin{align*}
-	\f{1}{r_2^2} & = \ab(L - \f{d}{2})^{-2}        \\
-	             & = L^{-2}\ab(1 - \f{d}{2L})^{-2} \\
-	             & \approx L^{-2}\ab(1 + \f{d}{L}) \\
+	\f{1}{r_2^2} & = \ab(L - \f{d}{2})^{-2} \\
 	             & \approx L^{-2}
 \end{align*}
 Substituting back into \cref{eq:efield-dipole-horz}:
@@ -142,9 +137,9 @@ What is the change in the kinetic energy and in the electrical potential energy 
 \end{problem}
 The change in kinetic energy depends on the initial and final speeds of the electron.
 \begin{align*}
-	\Delta U_k & = \f{1}{2}m\ab(v_f^2 - {v_0}^2)            \\
-	           & = \f{m}{2}\ab[v_0^2 + \ab(at)^2 - {v_0}^2] \\
-	           & = \f{ma^2t^2}{2}                           \\
+	\Delta U_k & = \f{1}{2}m\ab({v_f}^2 - {v_0}^2)            \\
+	           & = \f{m}{2}\ab[{v_0}^2 + \ab(at)^2 - {v_0}^2] \\
+	           & = \f{ma^2t^2}{2}                             \\
 	           & = \hil{\qty{2.92e-19}{\joule}}
 \end{align*}
 We can relate the change in electric potential energy to the potential difference.
